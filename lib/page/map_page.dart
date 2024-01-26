@@ -49,7 +49,7 @@ class _MapPageState extends State<MapPage> {
     markers.addAll(_createMarkersFromVertices(vertices));
   }
 
-  List<Vertex> _createVertices() {
+  /*List<Vertex> _createVertices() {
     return [
       Vertex(
         id: 'College of Bussiness Administration and Accountancy',
@@ -269,7 +269,7 @@ class _MapPageState extends State<MapPage> {
         coordinates: const LatLng(17.559926916993817, 120.38429536127504),
       ),
     ];
-  }
+  }*/
 
   Set<Marker> _createMarkersFromVertices(List<Vertex> vertices) {
     Set<Marker> markerSet = {};

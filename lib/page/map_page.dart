@@ -32,6 +32,10 @@ class _MapPageState extends State<MapPage> {
     target: LatLng(17.559974974088316, 120.38454523460766),
     zoom: 18,
   );
+  static const _initialCameraPosition2 = CameraPosition(
+    target: LatLng(17.559974974088316, 120.38454523460766),
+    zoom: 14,
+  );
   Set<Marker> markers = {};
   Set<Polyline> polylines = {};
   List<Vertex> vertices = [];
@@ -348,7 +352,7 @@ class _MapPageState extends State<MapPage> {
               backgroundColor: Color.fromARGB(255, 26, 99, 194),
               foregroundColor: Colors.white,
               onPressed: () => _googleMapController.animateCamera(
-                CameraUpdate.newCameraPosition(_initialCameraPosition),
+                CameraUpdate.newCameraPosition(_initialCameraPosition2),
               ),
               child: const Icon(Icons.location_searching),
             ),

@@ -29,8 +29,8 @@ class MapPage extends StatefulWidget {
 class _MapPageState extends State<MapPage> {
   late GoogleMapController _googleMapController;
   static const _initialCameraPosition = CameraPosition(
-    target: LatLng(17.5605477, 120.384427),
-    zoom: 17,
+    target: LatLng(17.559974974088316, 120.38454523460766),
+    zoom: 18,
   );
   Set<Marker> markers = {};
   Set<Polyline> polylines = {};
@@ -315,7 +315,7 @@ class _MapPageState extends State<MapPage> {
         ), // Remove the back button
       ),
       body: GoogleMap(
-        mapType: MapType.satellite,
+        mapType: MapType.normal,
         markers: markers,
         myLocationButtonEnabled: false,
         zoomControlsEnabled: false,

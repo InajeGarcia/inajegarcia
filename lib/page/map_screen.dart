@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:geolocator/geolocator.dart';
 
+//Ajay baro atoy nga isina kuma nga vertex para ijay map_page
+
 class Vertex {
   final String id;
   final LatLng coordinates;

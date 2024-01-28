@@ -18,18 +18,12 @@ class WelcomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              "Explore",
-              style: GoogleFonts.openSans(
-                fontSize: 50,
-                color: Color(0xFF0045A0),
-                fontWeight: FontWeight.w900,
-                fontStyle: FontStyle.italic,
-              ),
-            ),
+            //SizedBox(
+            //  height: 400,
+            //),
             Column(
               children: [
-                SizedBox(height: 80),
+                SizedBox(height: 500),
                 Material(
                   color: Color.fromARGB(255, 0, 158, 82),
                   borderRadius: BorderRadius.circular(40),
@@ -44,13 +38,14 @@ class WelcomeScreen extends StatelessWidget {
                     },
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 12, horizontal: 140),
+                          EdgeInsets.symmetric(vertical: 12, horizontal: 100),
                       // Adjust the vertical padding as needed
                       child: Text(
                         "Explore",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
+                          fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.w900,
                           letterSpacing: 1,
                         ),

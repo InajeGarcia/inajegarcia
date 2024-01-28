@@ -39,7 +39,7 @@ class WelcomeScreen extends StatelessWidget {
                     child: Container(
                       padding:
                           EdgeInsets.symmetric(vertical: 12, horizontal: 100),
-                      // Adjust the vertical padding as needed
+                      // adjust para sa button
                       child: Text(
                         "Explore",
                         style: TextStyle(

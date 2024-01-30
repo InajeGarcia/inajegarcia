@@ -1,22 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:sharkspinpoint/colleges/c_arch.dart';
-import 'package:sharkspinpoint/colleges/c_as.dart';
-import 'package:sharkspinpoint/colleges/c_baa.dart';
-import 'package:sharkspinpoint/colleges/c_cit.dart';
-import 'package:sharkspinpoint/colleges/c_cje.dart';
-import 'package:sharkspinpoint/colleges/c_e.dart';
-import 'package:sharkspinpoint/colleges/c_fad.dart';
-import 'package:sharkspinpoint/colleges/c_hs.dart';
-import 'package:sharkspinpoint/colleges/c_htm.dart';
-import 'package:sharkspinpoint/colleges/c_law.dart';
-import 'package:sharkspinpoint/colleges/c_med.dart';
-import 'package:sharkspinpoint/colleges/c_n.dart';
-import 'package:sharkspinpoint/colleges/c_pad.dart';
-import 'package:sharkspinpoint/colleges/c_sw.dart';
-import 'package:sharkspinpoint/colleges/c_te.dart';
-import 'package:sharkspinpoint/colleges/c_tech.dart';
+
+class College {
+  final String name;
+  final String imagePath;
+
+  College(this.name, this.imagePath);
+}
 
 class CollegesPage extends StatelessWidget {
+  // List of colleges with names and image paths
   final List<College> colleges = [
     College('College of Architecture', 'images/carch1.jpg'),
     College('College of Arts and Sciences', 'images/carch1.jpg'),
@@ -38,6 +30,7 @@ class CollegesPage extends StatelessWidget {
     College('College of Teacher Education', 'images/admin.jpg'),
     College('College of Technology', 'images/ctech1.jpg'),
     College('Laboratory School', 'images/ctech1.jpg'),
+    // Add more colleges with respective image paths
   ];
 
   @override
@@ -56,14 +49,15 @@ class CollegesPage extends StatelessWidget {
             centerTitle: true,
             toolbarHeight: 100,
             elevation: 0,
-            backgroundColor: Color.fromARGB(255, 26, 99, 194),
-            automaticallyImplyLeading: false,
+            backgroundColor:
+                Color.fromARGB(255, 26, 99, 194), // Set the background color
+            automaticallyImplyLeading: false, // Remove the back button
             shape: ContinuousRectangleBorder(
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(40.0),
                 bottomRight: Radius.circular(40.0),
               ),
-            ),
+            ), // Remove the back button
           ),
           body: ListView.builder(
             itemCount: colleges.length,
@@ -71,57 +65,23 @@ class CollegesPage extends StatelessWidget {
               final college = colleges[index];
               Color boxColor;
               if (index % 3 == 0) {
-                boxColor = Color(0xFFC1E1C1); // Green
+                // Green
+                boxColor = Color(0xFFC1E1C1);
               } else if (index % 3 == 1) {
-                boxColor = Color(0xFFC1E1C1); // Blue
+                // Blue
+                boxColor = Color(0xFFC1E1C1);
               } else {
-                boxColor = Color(0xFFC1E1C1); // Yellow
+                // Yellow
+                boxColor = Color(0xFFC1E1C1);
               }
 
               return InkWell(
                 onTap: () {
+                  // Example: Navigate to a new screen when a college is tapped
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) {
-                        switch (index) {
-                          case 0:
-                            return CArchCollege(college);
-                          case 1:
-                            return CAsCollege(college);
-                          case 2:
-                            return CBaaCollege(college);
-                          case 3:
-                            return CCitCollege(college);
-                          case 4:
-                            return CCjeCollege(college);
-                          case 5:
-                            return CECollege(college);
-                          case 6:
-                            return CFadCollege(college);
-                          case 7:
-                            return CHsCollege(college);
-                          case 8:
-                            return CHtmCollege(college);
-                          case 9:
-                            return CLawCollege(college);
-                          case 10:
-                            return CMedCollege(college);
-                          case 11:
-                            return CNCollege(college);
-                          case 12:
-                            return CPadCollege(college);
-                          case 13:
-                            return CSwCollege(college);
-                          case 14:
-                            return CTeCollege(college);
-                          case 15:
-                            return CTechCollege(college);
-
-                          default:
-                            return CollegeDetailsScreen(college);
-                        }
-                      },
+                      builder: (context) => CollegeDetailsScreen(college),
                     ),
                   );
                 },
@@ -136,7 +96,7 @@ class CollegesPage extends StatelessWidget {
                       college.name,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 51, 51, 51),
+                        color: Color.fromARGB(255, 51, 51, 51), // Text color
                       ),
                     ),
                     subtitle: Text("Click for ${college.name}"),

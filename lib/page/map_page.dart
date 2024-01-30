@@ -714,9 +714,10 @@ class _MapPageState extends State<MapPage> {
         ), // Remove the back button
       ),
       body: GoogleMap(
-        mapType: MapType.satellite,
+        mapType: MapType.hybrid,
         markers: markers,
-        myLocationButtonEnabled: false,
+        polylines: polylines,
+        myLocationButtonEnabled: true,
         zoomControlsEnabled: false,
         initialCameraPosition: _initialCameraPosition,
         onMapCreated: (controller) {
@@ -829,8 +830,8 @@ class _MapPageState extends State<MapPage> {
             path[i].coordinates,
             path[i + 1].coordinates,
           ],
-          color: Colors.yellow,
-          width: 3,
+          color: Color.fromARGB(255, 97, 255, 77),
+          width: 6,
         ),
       );
     }

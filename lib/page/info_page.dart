@@ -16,29 +16,16 @@ class InfoPage extends StatelessWidget {
         centerTitle: true,
         toolbarHeight: 100,
         elevation: 0,
-        backgroundColor:
-            Color.fromARGB(255, 26, 99, 194), // Set the background color
-        automaticallyImplyLeading: false, // Remove the back button
+        backgroundColor: Color.fromARGB(255, 26, 99, 194),
+        automaticallyImplyLeading: false,
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(40.0),
             bottomRight: Radius.circular(40.0),
           ),
-        ), // Remove the back button
+        ),
       ),
       body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(
-                'images/welcome.jpg'), // Replace with your background image
-            fit: BoxFit.cover,
-            colorFilter: ColorFilter.mode(
-              const Color.fromARGB(255, 255, 255, 255)
-                  .withOpacity(0.7), // Adjust the opacity here (0.0 to 1.0)
-              BlendMode.lighten,
-            ),
-          ),
-        ),
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0),
           child: Column(
@@ -49,8 +36,7 @@ class InfoPage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: Colors
-                      .white, // Set text color to white for better visibility
+                  color: Colors.white,
                 ),
               ),
               SizedBox(height: 16),
@@ -101,8 +87,7 @@ class InfoPage extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(height: 16),
-              // Add more sections as needed
-              // ...
+              // Add lang pag may idadagdag
             ],
           ),
         ),

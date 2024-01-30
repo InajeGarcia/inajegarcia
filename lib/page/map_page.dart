@@ -818,9 +818,13 @@ class _MapPageState extends State<MapPage> {
     if (pathIndex < 0 || pathIndex >= paths.length) return;
 
     polylines.clear();
+    markers.clear();
+
     selectedPathIndex = pathIndex;
 
     List<Vertex> path = paths[pathIndex];
+
+    markers.addAll(_createMarkersFromPaths([path]));
 
     for (int i = 0; i < path.length - 1; i++) {
       polylines.add(

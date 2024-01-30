@@ -714,7 +714,7 @@ class _MapPageState extends State<MapPage> {
         ), // Remove the back button
       ),
       body: GoogleMap(
-        mapType: MapType.satellite,
+        mapType: MapType.normal,
         markers: markers,
         polylines: polylines,
         myLocationButtonEnabled: true,

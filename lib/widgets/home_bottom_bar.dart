@@ -46,8 +46,8 @@ class _HomeState extends State<Home> {
               backgroundColor: Color.fromARGB(255, 43, 163, 105),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.favorite_rounded),
-              label: "Favorites",
+              icon: Icon(Icons.book_rounded),
+              label: "Colleges",
               backgroundColor: Color.fromARGB(255, 26, 99, 194),
             ),
             BottomNavigationBarItem(
@@ -56,8 +56,8 @@ class _HomeState extends State<Home> {
               backgroundColor: Color.fromARGB(255, 219, 184, 87),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.notifications_rounded),
-              label: "Notifications",
+              icon: Icon(Icons.place_rounded),
+              label: "Spot",
               backgroundColor: Color.fromARGB(255, 43, 163, 105),
             ),
             BottomNavigationBarItem(

@@ -745,7 +745,7 @@ class _MapPageState extends State<MapPage> {
                   CameraUpdate.newCameraPosition(
                     CameraPosition(
                       target: LatLng(17.55999787585745, 120.38449803821894),
-                      zoom: 17,
+                      zoom: 18,
                     ),
                   ),
                 );

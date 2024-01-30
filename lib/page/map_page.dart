@@ -735,10 +735,24 @@ class _MapPageState extends State<MapPage> {
               backgroundColor: Color.fromARGB(
                   255, 219, 184, 87), // Customize the color as needed
               foregroundColor: Colors.white,
-              onPressed: () => _googleMapController.animateCamera(
-                CameraUpdate.newCameraPosition(_initialCameraPosition),
-              ),
-              child: const Icon(Icons.navigation),
+              onPressed: () {
+                // Reappear the pins and reset the map
+                markers.clear();
+                polylines.clear();
+                markers.addAll(_createMarkersFromPaths(paths));
+
+                _googleMapController.animateCamera(
+                  CameraUpdate.newCameraPosition(
+                    CameraPosition(
+                      target: LatLng(17.55999787585745, 120.38449803821894),
+                      zoom: 17,
+                    ),
+                  ),
+                );
+
+                setState(() {});
+              },
+              child: const Icon(Icons.refresh),
             ),
           ),
           Positioned(

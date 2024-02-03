@@ -27,6 +27,7 @@ class MapPage extends StatefulWidget {
 }
 
 class _MapPageState extends State<MapPage> {
+  bool pinsVisible = true;
   late GoogleMapController _googleMapController;
   static CameraPosition _initialCameraPosition = const CameraPosition(
       target: LatLng(17.5610601915866, 120.3833079655142), zoom: 17);
@@ -1352,15 +1353,29 @@ class _MapPageState extends State<MapPage> {
         ), // Remove the back button
       ),
       body: GoogleMap(
-        mapType: MapType.hybrid,
-        markers: markers,
+        mapType: MapType.satellite,
+        markers: pinsVisible ? markers : Set<Marker>(),
         polylines: polylines,
         myLocationButtonEnabled: true,
         zoomControlsEnabled: false,
         initialCameraPosition: _initialCameraPosition,
         onMapCreated: (controller) {
-          // Do something with the controller if needed
           _googleMapController = controller;
+        },
+        onCameraMove: (CameraPosition position) {
+          if (position.zoom > 10) {
+            if (!pinsVisible) {
+              setState(() {
+                pinsVisible = true;
+              });
+            }
+          } else {
+            if (pinsVisible) {
+              setState(() {
+                pinsVisible = false;
+              });
+            }
+          }
         },
       ),
       floatingActionButton: Stack(

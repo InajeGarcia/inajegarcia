@@ -28,7 +28,7 @@ class CollegesPage extends StatelessWidget {
     College('College of Social Work', 'images/csw.jpg'),
     College('College of Teacher Education', 'images/cte.jpg'),
     College('College of Technology', 'images/ctech.png'),
-    College('Laboratory School', 'images/ls.jpg'),
+    College('Laboratory School', 'images/ls.png'),
     // Add more colleges with respective image paths
   ];
 

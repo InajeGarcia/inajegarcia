@@ -1,4 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:sharkspinpoint/colleges/carch.dart';
+import 'package:sharkspinpoint/colleges/cas.dart';
+import 'package:sharkspinpoint/colleges/cbaa.dart';
+import 'package:sharkspinpoint/colleges/ccje.dart';
+import 'package:sharkspinpoint/colleges/ccit.dart';
+import 'package:sharkspinpoint/colleges/cfad.dart';
+import 'package:sharkspinpoint/colleges/chs.dart';
+import 'package:sharkspinpoint/colleges/claw.dart';
+import 'package:sharkspinpoint/colleges/cmed.dart';
+import 'package:sharkspinpoint/colleges/cn.dart';
+import 'package:sharkspinpoint/colleges/cpad.dart';
+import 'package:sharkspinpoint/colleges/csw.dart';
+import 'package:sharkspinpoint/colleges/cte.dart';
+import 'package:sharkspinpoint/colleges/ctech.dart';
+import 'package:sharkspinpoint/colleges/ls.dart';
 
 class College {
   final String name;
@@ -62,27 +77,12 @@ class CollegesPage extends StatelessWidget {
             itemCount: colleges.length,
             itemBuilder: (context, index) {
               final college = colleges[index];
-              Color boxColor;
-              if (index % 3 == 0) {
-                // Green
-                boxColor = Color(0xFFC1E1C1);
-              } else if (index % 3 == 1) {
-                // Blue
-                boxColor = Color(0xFFC1E1C1);
-              } else {
-                // Yellow
-                boxColor = Color(0xFFC1E1C1);
-              }
+              Color boxColor = Color(0xFFC1E1C1);
 
               return InkWell(
                 onTap: () {
                   // Example: Navigate to a new screen when a college is tapped
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => CollegeDetailsScreen(college),
-                    ),
-                  );
+                  navigateToCollegeDetails(context, college);
                 },
                 child: Container(
                   decoration: BoxDecoration(
@@ -98,7 +98,7 @@ class CollegesPage extends StatelessWidget {
                         color: Color.fromARGB(255, 51, 51, 51), // Text color
                       ),
                     ),
-                    subtitle: Text("Click for ${college.name}"),
+                    subtitle: Text("• ${college.name}"),
                     leading: Image.asset(
                       college.imagePath,
                       width: 56,
@@ -112,6 +112,14 @@ class CollegesPage extends StatelessWidget {
           ),
         ),
       );
+  void navigateToCollegeDetails(BuildContext context, College college) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => CollegeDetailsScreen(college),
+      ),
+    );
+  }
 }
 
 class CollegeDetailsScreen extends StatelessWidget {

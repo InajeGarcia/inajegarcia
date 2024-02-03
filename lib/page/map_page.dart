@@ -714,7 +714,7 @@ class _MapPageState extends State<MapPage> {
         ), // Remove the back button
       ),
       body: GoogleMap(
-        mapType: MapType.satellite,
+        mapType: MapType.hybrid,
         markers: markers,
         polylines: polylines,
         myLocationButtonEnabled: true,
@@ -851,10 +851,8 @@ class _MapPageState extends State<MapPage> {
           color: Color.fromARGB(255, 97, 255, 77),
           width: 6,
           patterns: [
-            // Create a dashed pattern with a gap of 10 units
-
-            // Add a gap of 5 units
-            PatternItem.gap(5.0), PatternItem.dash(10.0),
+            PatternItem.gap(5.0),
+            PatternItem.dot,
           ],
         ),
       );

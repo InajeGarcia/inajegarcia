@@ -10,26 +10,25 @@ class College {
 class CollegesPage extends StatelessWidget {
   // List of colleges with names and image paths
   final List<College> colleges = [
-    College('College of Architecture', 'images/carch1.jpg'),
-    College('College of Arts and Sciences', 'images/carch1.jpg'),
+    College('College of Architecture', 'images/carch.png'),
+    College('College of Arts and Sciences', 'images/cas.jpg'),
     College('College of Business Administration and Accountancy',
-        'images/cbaadean.jpg'),
-    College(
-        'College of Communication and Information Technology', 'images/11.png'),
-    College('College of Criminal Justice Education', 'images/ccje1.jpg'),
-    College('College of Engineering', 'images/ce1.jpg'),
-    College('College of Fine Arts and Design', 'images/cfad2.jpg'),
-    College('College of Health Science', 'images/cn1.jpg'),
-    College(
-        'College of Hospitality and Tourism Management', 'images/chtm1.jpg'),
-    College('College of Law', 'images/claw1.jpg'),
-    College('College of Medicine', 'images/cn1.jpg'),
-    College('College of Nursing', 'images/cn1.jpg'),
-    College('College of Public Administration', 'images/cpad1.jpg'),
-    College('College of Social Work', 'images/ccje1.jpg'),
-    College('College of Teacher Education', 'images/admin.jpg'),
-    College('College of Technology', 'images/ctech1.jpg'),
-    College('Laboratory School', 'images/ctech1.jpg'),
+        'images/cbaa.jpg'),
+    College('College of Communication and Information Technology',
+        'images/ccit.jpg'),
+    College('College of Criminal Justice Education', 'images/ccje.png'),
+    College('College of Engineering', 'images/ce.jpg'),
+    College('College of Fine Arts and Design', 'images/cfad.jpg'),
+    College('College of Health Science', 'images/cn.jpg'),
+    College('College of Hospitality and Tourism Management', 'images/chtm.jpg'),
+    College('College of Law', 'images/claw.jpg'),
+    College('College of Medicine', 'images/cmed.jpg'),
+    College('College of Nursing', 'images/cn.jpg'),
+    College('College of Public Administration', 'images/cpad.jpg'),
+    College('College of Social Work', 'images/csw.jpg'),
+    College('College of Teacher Education', 'images/cte.jpg'),
+    College('College of Technology', 'images/ctech.png'),
+    College('Laboratory School', 'images/ls.jpg'),
     // Add more colleges with respective image paths
   ];
 

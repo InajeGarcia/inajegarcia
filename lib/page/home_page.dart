@@ -83,7 +83,7 @@ class HomePage extends StatelessWidget {
       {'imagePath': 'images/office (3).jpg', 'label': 'Office 3'},
       {'imagePath': 'images/office (4).jpg', 'label': 'Office 4'},
       {'imagePath': 'images/office (5).jpg', 'label': 'Office 5'},
-      // Add more image paths and labels as needed
+      // add image pag may additional
     ];
 
     return GridView.builder(
@@ -97,7 +97,6 @@ class HomePage extends StatelessWidget {
         int startIndex = index * 2;
         int endIndex = startIndex + 2;
 
-        // Adjust endIndex if it exceeds the length of the imagesWithLabels
         if (endIndex > officeRoomImages.length) {
           endIndex = officeRoomImages.length;
         }
@@ -120,7 +119,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.grey.withOpacity(0.5),
                             spreadRadius: 2,
                             blurRadius: 5,
-                            offset: Offset(0, 2), // changes position of shadow
+                            offset: Offset(0, 2),
                           ),
                         ],
                       ),
@@ -172,7 +171,7 @@ class HomePage extends StatelessWidget {
       {'imagePath': 'images/canteen3.jpg', 'label': 'Canteen'},
       {'imagePath': 'images/canteen4.jpg', 'label': 'Canteen'},
       {'imagePath': 'images/canteen5.jpg', 'label': 'Canteen'},
-      // Add more image paths and labels as needed
+      // Add more image
     ];
 
     return GridView.builder(
@@ -186,7 +185,6 @@ class HomePage extends StatelessWidget {
         int startIndex = index * 2;
         int endIndex = startIndex + 2;
 
-        // Adjust endIndex if it exceeds the length of the imagesWithLabels
         if (endIndex > foodOthersImages.length) {
           endIndex = foodOthersImages.length;
         }
@@ -209,7 +207,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.grey.withOpacity(0.5),
                             spreadRadius: 2,
                             blurRadius: 5,
-                            offset: Offset(0, 2), // changes position of shadow
+                            offset: Offset(0, 2),
                           ),
                         ],
                       ),
@@ -261,7 +259,7 @@ class HomePage extends StatelessWidget {
       {'imagePath': 'images/office (3).jpg', 'label': 'Office 3'},
       {'imagePath': 'images/office (4).jpg', 'label': 'Office 4'},
       {'imagePath': 'images/office (5).jpg', 'label': 'Office 5'},
-      // Add more image paths and labels as needed
+      // Add more image
     ];
 
     return GridView.builder(
@@ -275,7 +273,6 @@ class HomePage extends StatelessWidget {
         int startIndex = index * 2;
         int endIndex = startIndex + 2;
 
-        // Adjust endIndex if it exceeds the length of the imagesWithLabels
         if (endIndex > restRoomImages.length) {
           endIndex = restRoomImages.length;
         }
@@ -298,7 +295,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.grey.withOpacity(0.5),
                             spreadRadius: 2,
                             blurRadius: 5,
-                            offset: Offset(0, 2), // changes position of shadow
+                            offset: Offset(0, 2),
                           ),
                         ],
                       ),
@@ -350,7 +347,7 @@ class HomePage extends StatelessWidget {
       {'imagePath': 'images/office (3).jpg', 'label': 'Office 3'},
       {'imagePath': 'images/office (4).jpg', 'label': 'Office 4'},
       {'imagePath': 'images/office (5).jpg', 'label': 'Office 5'},
-      // Add more image paths and labels as needed
+      // Add more image
     ];
 
     return GridView.builder(
@@ -364,7 +361,6 @@ class HomePage extends StatelessWidget {
         int startIndex = index * 2;
         int endIndex = startIndex + 2;
 
-        // Adjust endIndex if it exceeds the length of the imagesWithLabels
         if (endIndex > utilitiesImages.length) {
           endIndex = utilitiesImages.length;
         }
@@ -387,7 +383,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.grey.withOpacity(0.5),
                             spreadRadius: 2,
                             blurRadius: 5,
-                            offset: Offset(0, 2), // changes position of shadow
+                            offset: Offset(0, 2),
                           ),
                         ],
                       ),

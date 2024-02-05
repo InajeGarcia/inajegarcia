@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sharkspinpoint/page/map_page.dart';
 
 class CswPage extends StatelessWidget {
   @override
@@ -29,7 +30,7 @@ class CswPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Image.asset(
-                'images/cswbuilding.jpg', // Replace with the actual image path
+                'images/cswbuilding.jpg',
                 height: 200,
                 width: double.infinity,
                 fit: BoxFit.cover,
@@ -37,7 +38,6 @@ class CswPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  // Replace the following paragraph with your own content
                   "The College of Arts and Sciences is the heart of academic exploration at our university. With a diverse range of programs, we empower students to pursue their passions and cultivate critical thinking skills. Our faculty is dedicated to providing a rich and interdisciplinary education.\n\nWhether you're interested in literature, mathematics, biology, or social sciences, the College of Arts and Sciences offers a supportive environment where students can thrive. Join us in fostering a love for learning, creativity, and intellectual curiosity.",
                   style: TextStyle(fontSize: 16),
                 ),
@@ -46,7 +46,13 @@ class CswPage extends StatelessWidget {
                 padding: const EdgeInsets.all(16.0),
                 child: ElevatedButton(
                   onPressed: () {
-                    // No function added for now
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            MapPage(selectedVertexId: 'College of Social Work'),
+                      ),
+                    );
                   },
                   child: Text('Navigate'),
                 ),

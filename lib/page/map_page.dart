@@ -22,6 +22,10 @@ class Edge {
 }
 
 class MapPage extends StatefulWidget {
+  final String? selectedVertexId;
+
+  MapPage({Key? key, this.selectedVertexId}) : super(key: key);
+
   @override
   _MapPageState createState() => _MapPageState();
 }
@@ -30,7 +34,7 @@ class _MapPageState extends State<MapPage> {
   bool pinsVisible = true;
   late GoogleMapController _googleMapController;
   static CameraPosition _initialCameraPosition = const CameraPosition(
-      target: LatLng(17.5610601915866, 120.3833079655142), zoom: 17);
+      target: LatLng(17.5610601915866, 120.3833079655142), zoom: 18);
   Set<Marker> markers = {};
   Set<Polyline> polylines = {};
   List<List<Vertex>> paths = [];
@@ -42,6 +46,53 @@ class _MapPageState extends State<MapPage> {
     super.initState();
     paths = _createPaths();
     markers.addAll(_createMarkersFromPaths(paths));
+
+    if (widget.selectedVertexId != null) {
+      _highlightSelectedMarker(widget.selectedVertexId!);
+    }
+  }
+
+  void _highlightSelectedMarker(String selectedVertexId) {
+    for (int i = 0; i < paths.length; i++) {
+      List<Vertex> path = paths[i];
+      for (Vertex vertex in path) {
+        if (vertex.id == selectedVertexId) {
+          markers.add(
+            Marker(
+              markerId: MarkerId(vertex.id),
+              position: vertex.coordinates,
+              infoWindow: InfoWindow(title: vertex.id),
+              onTap: () {
+                _showShortestPath(i);
+              },
+              icon: BitmapDescriptor.defaultMarkerWithHue(
+                  BitmapDescriptor.hueYellow),
+            ),
+          );
+
+          for (int j = 0; j < path.length - 1; j++) {
+            polylines.add(
+              Polyline(
+                polylineId: PolylineId('${path[j].id}-${path[j + 1].id}'),
+                points: [
+                  path[j].coordinates,
+                  path[j + 1].coordinates,
+                ],
+                color: Color.fromARGB(255, 97, 255, 77),
+                width: 6,
+                patterns: [
+                  PatternItem.gap(5.0),
+                  PatternItem.dot,
+                ],
+              ),
+            );
+          }
+
+          setState(() {});
+          break;
+        }
+      }
+    }
   }
 
   List<List<Vertex>> _createPaths() {
@@ -146,7 +197,7 @@ class _MapPageState extends State<MapPage> {
         ),
         Vertex(
           id: 'CCJE6',
-          coordinates: const LatLng(17.560992472858274, 120.38249371384155),
+          coordinates: const LatLng(17.561242368642116, 120.3824072048987),
         ),
         Vertex(
           id: 'College of Criminology and Justice Education',
@@ -1351,55 +1402,38 @@ class _MapPageState extends State<MapPage> {
           ),
         ),
       ),
-      body: GoogleMap(
-        mapType: MapType.satellite,
-        markers: pinsVisible ? markers : Set<Marker>(),
-        polylines: polylines,
-        myLocationButtonEnabled: true,
-        zoomControlsEnabled: false,
-        initialCameraPosition: _initialCameraPosition,
-        onMapCreated: (controller) {
-          _googleMapController = controller;
-        },
-        onCameraMove: (CameraPosition position) {
-          if (position.zoom > 10) {
-            if (!pinsVisible) {
-              setState(() {
-                pinsVisible = true;
-              });
-            }
-          } else {
-            if (pinsVisible) {
-              setState(() {
-                pinsVisible = false;
-              });
-            }
-          }
-        },
-      ),
-      floatingActionButton: Stack(
-        alignment: Alignment.topRight,
+      body: Stack(
         children: [
-          Positioned(
-            top: 650.0,
-            right: 1.0,
-            child: FloatingActionButton(
-              backgroundColor: Color.fromARGB(255, 219, 184, 87),
-              foregroundColor: Colors.white,
-              onPressed: () {
-                // reset ang map
-                markers.clear();
-                polylines.clear();
-                markers.addAll(_createMarkersFromPaths(paths));
-
-                setState(() {});
-              },
-              child: const Icon(Icons.refresh),
-            ),
+          GoogleMap(
+            mapType: MapType.satellite,
+            markers: pinsVisible ? markers : Set<Marker>(),
+            polylines: polylines,
+            myLocationButtonEnabled: true,
+            myLocationEnabled: true,
+            zoomControlsEnabled: false,
+            initialCameraPosition: _initialCameraPosition,
+            onMapCreated: (controller) {
+              _googleMapController = controller;
+            },
+            onCameraMove: (CameraPosition position) {
+              if (position.zoom > 10) {
+                if (!pinsVisible) {
+                  setState(() {
+                    pinsVisible = true;
+                  });
+                }
+              } else {
+                if (pinsVisible) {
+                  setState(() {
+                    pinsVisible = false;
+                  });
+                }
+              }
+            },
           ),
           Positioned(
-            top: 580.0,
-            right: 1.0,
+            top: 465.0,
+            right: 17.0,
             child: FloatingActionButton(
               backgroundColor: Color.fromARGB(255, 26, 99, 194),
               foregroundColor: Colors.white,
@@ -1430,6 +1464,28 @@ class _MapPageState extends State<MapPage> {
                 setState(() {});
               },
               child: const Icon(Icons.location_searching),
+            ),
+          ),
+        ],
+      ),
+      floatingActionButton: Stack(
+        alignment: Alignment.topRight,
+        children: [
+          Positioned(
+            top: 650.0,
+            right: 1.0,
+            child: FloatingActionButton(
+              backgroundColor: Color.fromARGB(255, 219, 184, 87),
+              foregroundColor: Colors.white,
+              onPressed: () {
+                // reset ang map
+                markers.clear();
+                polylines.clear();
+                markers.addAll(_createMarkersFromPaths(paths));
+
+                setState(() {});
+              },
+              child: const Icon(Icons.refresh),
             ),
           ),
           Positioned(

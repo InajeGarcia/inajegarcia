@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CmedPage extends StatelessWidget {
+class ChtmPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
@@ -29,7 +29,7 @@ class CmedPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Image.asset(
-                'images/cmedbuilding.jpg', // Replace with the actual image path
+                'images/chtmbuilding.jpg', // Replace with the actual image path
                 height: 200,
                 width: double.infinity,
                 fit: BoxFit.cover,

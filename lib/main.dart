@@ -9,6 +9,7 @@ import 'package:sharkspinpoint/colleges/ccje.dart';
 import 'package:sharkspinpoint/colleges/ce.dart';
 import 'package:sharkspinpoint/colleges/cfad.dart';
 import 'package:sharkspinpoint/colleges/chs.dart';
+import 'package:sharkspinpoint/colleges/chtm.dart';
 import 'package:sharkspinpoint/colleges/claw.dart';
 import 'package:sharkspinpoint/colleges/cmed.dart';
 import 'package:sharkspinpoint/colleges/cn.dart';
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         '/colleges/ce.dart': (context) => CePage(),
         '/colleges/cfad.dart': (context) => CfadPage(),
         '/colleges/chs.dart': (context) => ChsPage(),
+        '/colleges/chtm.dart': (context) => ChtmPage(),
         '/colleges/claw.dart': (context) => ClawPage(),
         '/colleges/cmed.dart': (context) => CmedPage(),
         '/colleges/cn.dart': (context) => CnPage(),

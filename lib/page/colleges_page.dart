@@ -160,6 +160,14 @@ class CollegesPage extends StatelessWidget {
           ),
         );
         break;
+      case 'College of Hospiltality and Tourism Management':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'chtm.dart'),
+          ),
+        );
+        break;
       case 'College of Law':
         Navigator.push(
           context,

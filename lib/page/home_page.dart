@@ -77,11 +77,11 @@ class HomePage extends StatelessWidget {
 
   Widget buildOfficeRoomTabContent() {
     List<Map<String, String>> officeRoomImages = [
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 1'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 2'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 3'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 4'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 5'},
+      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'College'},
+      {'imagePath': 'images/casbuilding.jpg', 'label': 'College'},
+      {'imagePath': 'images/ccjebuilding.jpg', 'label': 'College'},
+      {'imagePath': 'images/ccitbuilding.jpg', 'label': 'College'},
+      {'imagePath': 'images/ctebuilding.jpg', 'label': 'College'},
     ];
 
     return GridView.builder(
@@ -164,11 +164,11 @@ class HomePage extends StatelessWidget {
 
   Widget buildFoodOthersTabContent() {
     List<Map<String, String>> foodOthersImages = [
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Canteen'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Canteen'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Canteen'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Canteen'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Canteen'},
+      {'imagePath': 'images/canteen1.jpg', 'label': 'Canteen'},
+      {'imagePath': 'images/canteen2.jpg', 'label': 'Canteen'},
+      {'imagePath': 'images/canteen3.jpg', 'label': 'Canteen'},
+      {'imagePath': 'images/canteen4.jpg', 'label': 'Canteen'},
+      {'imagePath': 'images/canteen5.jpg', 'label': 'Canteen'},
     ];
 
     return GridView.builder(
@@ -338,11 +338,11 @@ class HomePage extends StatelessWidget {
 
   Widget buildUtilitiesTabContent() {
     List<Map<String, String>> utilitiesImages = [
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 1'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 2'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 3'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 4'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 5'},
+      {'imagePath': 'images/propertybuilding.jpg', 'label': 'Utility'},
+      {'imagePath': 'images/propertybuilding.jpg', 'label': 'Utility'},
+      {'imagePath': 'images/propertybuilding.jpg', 'label': 'Utility'},
+      {'imagePath': 'images/propertybuilding.jpg', 'label': 'Utility'},
+      {'imagePath': 'images/propertybuilding.jpg', 'label': 'Utility'},
     ];
 
     return GridView.builder(

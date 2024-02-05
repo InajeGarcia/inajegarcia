@@ -17,7 +17,7 @@ class _HomeState extends State<Home> {
     HomePage(),
     CollegesPage(),
     MapPage(),
-    NotificationPage(),
+    SpotPage(),
     InfoPage(),
   ];
 

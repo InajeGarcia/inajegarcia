@@ -1,19 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sharkspinpoint/colleges/carch.dart';
-import 'package:sharkspinpoint/colleges/cas.dart';
-import 'package:sharkspinpoint/colleges/cbaa.dart';
-import 'package:sharkspinpoint/colleges/ccje.dart';
-import 'package:sharkspinpoint/colleges/ccit.dart';
-import 'package:sharkspinpoint/colleges/cfad.dart';
-import 'package:sharkspinpoint/colleges/chs.dart';
-import 'package:sharkspinpoint/colleges/claw.dart';
-import 'package:sharkspinpoint/colleges/cmed.dart';
-import 'package:sharkspinpoint/colleges/cn.dart';
-import 'package:sharkspinpoint/colleges/cpad.dart';
-import 'package:sharkspinpoint/colleges/csw.dart';
-import 'package:sharkspinpoint/colleges/cte.dart';
-import 'package:sharkspinpoint/colleges/ctech.dart';
-import 'package:sharkspinpoint/colleges/ls.dart';
+import 'package:sharkspinpoint/colleges/college_details_screen.dart'; // Import the new file
 
 class College {
   final String name;
@@ -23,7 +9,6 @@ class College {
 }
 
 class CollegesPage extends StatelessWidget {
-  // List of colleges with names and image paths
   final List<College> colleges = [
     College('College of Architecture', 'images/carch.png'),
     College('College of Arts and Sciences', 'images/cas.jpg'),
@@ -48,106 +33,198 @@ class CollegesPage extends StatelessWidget {
   ];
 
   @override
-  Widget build(BuildContext context) => DefaultTabController(
-        length: 3,
-        child: Scaffold(
-          appBar: AppBar(
-            title: Center(
-              child: Image.asset(
-                'images/11.png',
-                height: 250,
-                width: 300,
-                fit: BoxFit.contain,
-              ),
+  Widget build(BuildContext context) => Scaffold(
+        appBar: AppBar(
+          title: Center(
+            child: Image.asset(
+              'images/11.png',
+              height: 250,
+              width: 300,
+              fit: BoxFit.contain,
             ),
-            centerTitle: true,
-            toolbarHeight: 100,
-            elevation: 0,
-            backgroundColor:
-                Color.fromARGB(255, 26, 99, 194), // Set the background color
-            automaticallyImplyLeading: false, // Remove the back button
-            shape: ContinuousRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(40.0),
-                bottomRight: Radius.circular(40.0),
-              ),
-            ), // Remove the back button
           ),
-          body: ListView.builder(
-            itemCount: colleges.length,
-            itemBuilder: (context, index) {
-              final college = colleges[index];
-              Color boxColor = Color(0xFFC1E1C1);
+          centerTitle: true,
+          toolbarHeight: 100,
+          elevation: 0,
+          backgroundColor: Color.fromARGB(255, 26, 99, 194),
+          automaticallyImplyLeading: false,
+          shape: ContinuousRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(40.0),
+              bottomRight: Radius.circular(40.0),
+            ),
+          ),
+        ),
+        body: ListView.builder(
+          itemCount: colleges.length,
+          itemBuilder: (context, index) {
+            final college = colleges[index];
+            Color boxColor = Color(0xFFC1E1C1);
 
-              return InkWell(
-                onTap: () {
-                  // Example: Navigate to a new screen when a college is tapped
-                  navigateToCollegeDetails(context, college);
-                },
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: boxColor,
-                    borderRadius: BorderRadius.circular(8.0),
+            return InkWell(
+              onTap: () {
+                navigateToCollegeDetails(context, college);
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  color: boxColor,
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                margin: EdgeInsets.all(8.0),
+                child: ListTile(
+                  title: Text(
+                    college.name,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 51, 51, 51),
+                    ),
                   ),
-                  margin: EdgeInsets.all(8.0),
-                  child: ListTile(
-                    title: Text(
-                      college.name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 51, 51, 51), // Text color
-                      ),
-                    ),
-                    subtitle: Text("• ${college.name}"),
-                    leading: Image.asset(
-                      college.imagePath,
-                      width: 56,
-                      height: 56,
-                      fit: BoxFit.cover,
-                    ),
+                  subtitle: Text("• ${college.name}"),
+                  leading: Image.asset(
+                    college.imagePath,
+                    width: 56,
+                    height: 56,
+                    fit: BoxFit.cover,
                   ),
                 ),
-              );
-            },
-          ),
+              ),
+            );
+          },
         ),
       );
+
   void navigateToCollegeDetails(BuildContext context, College college) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => CollegeDetailsScreen(college),
-      ),
-    );
-  }
-}
-
-class CollegeDetailsScreen extends StatelessWidget {
-  final College college;
-
-  CollegeDetailsScreen(this.college);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('College Details'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              college.imagePath,
-              width: 200,
-              height: 200,
-              fit: BoxFit.cover,
-            ),
-            SizedBox(height: 20),
-            Text('Details for ${college.name}'),
-          ],
-        ),
-      ),
-    );
+    // Use a switch statement to navigate to the appropriate college details screen
+    switch (college.name) {
+      case 'College of Architecture':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'carch.dart'),
+          ),
+        );
+        break;
+      case 'College of Arts and Sciences':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'cas.dart'),
+          ),
+        );
+        break;
+      case 'College of Business Administration and Accountancy':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'cbaa.dart'),
+          ),
+        );
+        break;
+      case 'College of Communication and Information Technology':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'ccit.dart'),
+          ),
+        );
+        break;
+      case 'College of Criminal Justice Education':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'ccje.dart'),
+          ),
+        );
+        break;
+      case 'College of Engineering':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'ce.dart'),
+          ),
+        );
+        break;
+      case 'College of Fine Arts and Design':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'cfad.dart'),
+          ),
+        );
+        break;
+      case 'College of Health and Science':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'chs.dart'),
+          ),
+        );
+        break;
+      case 'College of Law':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'claw.dart'),
+          ),
+        );
+        break;
+      case 'College of Medicine':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'cmed.dart'),
+          ),
+        );
+        break;
+      case 'College of Nursing':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'cn.dart'),
+          ),
+        );
+        break;
+      case 'College of Public Administration':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'cpad.dart'),
+          ),
+        );
+        break;
+      case 'College of Social Work':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'csw.dart'),
+          ),
+        );
+        break;
+      case 'College of Teacher Education':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'cte.dart'),
+          ),
+        );
+        break;
+      case 'College of Technology':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'ctech.dart'),
+          ),
+        );
+        break;
+      case 'Laboratory School':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CollegeDetailsScreen(college, 'ls.dart'),
+          ),
+        );
+      default:
+        break;
+    }
   }
 }

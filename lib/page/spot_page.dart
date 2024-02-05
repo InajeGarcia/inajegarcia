@@ -80,7 +80,7 @@ class SpotPage extends StatelessWidget {
 
   void navigateToSpotDetails(BuildContext context, Spot spots) {
     switch (spots.name) {
-      case 'College of Architecture':
+      case 'Library':
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -88,7 +88,7 @@ class SpotPage extends StatelessWidget {
           ),
         );
         break;
-      case 'College of Arts and Sciences':
+      case 'Church':
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -96,7 +96,7 @@ class SpotPage extends StatelessWidget {
           ),
         );
         break;
-      case 'College of Business Administration and Accountancy':
+      case 'Gymnasium':
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -104,19 +104,11 @@ class SpotPage extends StatelessWidget {
           ),
         );
         break;
-      case 'College of Communication and Information Technology':
+      case 'Ladies Dormitory':
         Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => SpotDetailsScreen(spots, 'ccit.dart'),
-          ),
-        );
-        break;
-      case 'College of Criminal Justice Education':
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SpotDetailsScreen(spots, 'ccje.dart'),
           ),
         );
         break;

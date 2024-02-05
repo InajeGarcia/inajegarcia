@@ -1342,15 +1342,14 @@ class _MapPageState extends State<MapPage> {
         centerTitle: true,
         toolbarHeight: 100,
         elevation: 0,
-        backgroundColor:
-            Color.fromARGB(255, 219, 184, 87), // Set the background color
-        automaticallyImplyLeading: false, // Remove the back button
+        backgroundColor: Color.fromARGB(255, 219, 184, 87),
+        automaticallyImplyLeading: false,
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(40.0),
             bottomRight: Radius.circular(40.0),
           ),
-        ), // Remove the back button
+        ),
       ),
       body: GoogleMap(
         mapType: MapType.satellite,
@@ -1385,8 +1384,7 @@ class _MapPageState extends State<MapPage> {
             top: 650.0,
             right: 1.0,
             child: FloatingActionButton(
-              backgroundColor: Color.fromARGB(
-                  255, 219, 184, 87), // Customize the color as needed
+              backgroundColor: Color.fromARGB(255, 219, 184, 87),
               foregroundColor: Colors.white,
               onPressed: () {
                 // reset ang map
@@ -1400,7 +1398,7 @@ class _MapPageState extends State<MapPage> {
             ),
           ),
           Positioned(
-            top: 580.0, // Adjust the top position for the second button
+            top: 580.0,
             right: 1.0,
             child: FloatingActionButton(
               backgroundColor: Color.fromARGB(255, 26, 99, 194),
@@ -1435,7 +1433,7 @@ class _MapPageState extends State<MapPage> {
             ),
           ),
           Positioned(
-            top: 510.0, // Adjust the top position for the second button
+            top: 510.0,
             right: 1.0,
             child: FloatingActionButton(
               backgroundColor: Color.fromARGB(255, 43, 163, 105),

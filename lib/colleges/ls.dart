@@ -15,7 +15,7 @@ class LsPage extends StatelessWidget {
           centerTitle: true,
           toolbarHeight: 60,
           elevation: 0,
-          backgroundColor: Color.fromARGB(255, 26, 99, 194),
+          backgroundColor: Color.fromARGB(255, 19, 131, 47),
           automaticallyImplyLeading: false,
           shape: ContinuousRectangleBorder(
             borderRadius: BorderRadius.only(
@@ -29,7 +29,7 @@ class LsPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Image.asset(
-                'images/ctebuilding.png', // Replace with the actual image path
+                'images/ctebuilding.jpg', // Replace with the actual image path
                 height: 200,
                 width: double.infinity,
                 fit: BoxFit.cover,

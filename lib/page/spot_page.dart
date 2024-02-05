@@ -16,9 +16,8 @@ class NotificationPage extends StatelessWidget {
         centerTitle: true,
         toolbarHeight: 100,
         elevation: 0,
-        backgroundColor:
-            Color.fromARGB(255, 43, 163, 105), // Set the background color
-        automaticallyImplyLeading: false, // Remove the back button
+        backgroundColor: Color.fromARGB(255, 43, 163, 105),
+        automaticallyImplyLeading: false,
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(40.0),

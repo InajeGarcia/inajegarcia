@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sharkspinpoint/page/colleges_page.dart';
 import 'package:sharkspinpoint/page/home_page.dart';
-import 'package:sharkspinpoint/page/notifications_page.dart';
+import 'package:sharkspinpoint/page/spot_page.dart';
 import 'package:sharkspinpoint/page/info_page.dart';
 import 'package:sharkspinpoint/page/map_page.dart';
 

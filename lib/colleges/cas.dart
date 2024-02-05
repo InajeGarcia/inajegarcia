@@ -15,12 +15,26 @@ class CasPage extends StatelessWidget {
           centerTitle: true,
           toolbarHeight: 60,
           elevation: 0,
-          backgroundColor: Color.fromARGB(255, 26, 99, 194),
+          backgroundColor: Color.fromARGB(255, 255, 255, 255),
           automaticallyImplyLeading: false,
           shape: ContinuousRectangleBorder(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(40.0),
               bottomRight: Radius.circular(40.0),
+            ),
+          ),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 180, 21, 21),
+                  Color.fromARGB(255, 180, 21, 21),
+                  Color.fromARGB(255, 255, 255, 255),
+                  // Add additional colors for the gradient
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
             ),
           ),
         ),

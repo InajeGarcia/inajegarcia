@@ -23,6 +23,20 @@ class CpadPage extends StatelessWidget {
               bottomRight: Radius.circular(40.0),
             ),
           ),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 46, 45, 45),
+                  Color.fromARGB(255, 128, 17, 17),
+                  Color.fromARGB(255, 46, 45, 45),
+                  // Add additional colors for the gradient
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
+          ),
         ),
         body: SingleChildScrollView(
           child: Column(

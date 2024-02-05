@@ -15,9 +15,8 @@ class HomePage extends StatelessWidget {
             centerTitle: true,
             toolbarHeight: 100,
             elevation: 0,
-            backgroundColor:
-                Color.fromARGB(255, 43, 163, 105), // Set the background color
-            automaticallyImplyLeading: false, // Remove the back button
+            backgroundColor: Color.fromARGB(255, 43, 163, 105),
+            automaticallyImplyLeading: false,
             shape: ContinuousRectangleBorder(
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(40.0),
@@ -33,9 +32,9 @@ class HomePage extends StatelessWidget {
                   decoration: InputDecoration(
                     labelText: "Find what you're looking for?",
                     prefixIcon: Image.asset(
-                      'images/reallogo.png', // Replace with the path to your PNG icon
-                      width: 24, // Adjust the width as needed
-                      height: 24, // Adjust the height as needed
+                      'images/reallogo.png',
+                      width: 24,
+                      height: 24,
                     ),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(40),
@@ -55,11 +54,11 @@ class HomePage extends StatelessWidget {
                 ],
                 indicator: UnderlineTabIndicator(
                   borderSide: BorderSide(
-                    color: Color(0xFF0045A0), // Set the desired underline color
-                    width: 2.0, // Adjust the thickness of the underline
+                    color: Color(0xFF0045A0),
+                    width: 2.0,
                   ),
                 ),
-                labelColor: Color(0xFF0045A0), // Set the desired font color
+                labelColor: Color(0xFF0045A0),
               ),
               Expanded(
                 child: TabBarView(
@@ -83,14 +82,13 @@ class HomePage extends StatelessWidget {
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 3'},
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 4'},
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 5'},
-      // add image pag may additional
     ];
 
     return GridView.builder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 1, // Two images per row
-        crossAxisSpacing: 8.0, // Spacing between columns
-        mainAxisSpacing: 8.0, // Spacing between rows
+        crossAxisCount: 1,
+        crossAxisSpacing: 8.0,
+        mainAxisSpacing: 8.0,
       ),
       itemCount: (officeRoomImages.length / 2).ceil(),
       itemBuilder: (context, index) {
@@ -171,14 +169,13 @@ class HomePage extends StatelessWidget {
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Canteen'},
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Canteen'},
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Canteen'},
-      // Add more image
     ];
 
     return GridView.builder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 1, // Two images per row
-        crossAxisSpacing: 8.0, // Spacing between columns
-        mainAxisSpacing: 8.0, // Spacing between rows
+        crossAxisCount: 1,
+        crossAxisSpacing: 8.0,
+        mainAxisSpacing: 8.0,
       ),
       itemCount: (foodOthersImages.length / 2).ceil(),
       itemBuilder: (context, index) {
@@ -259,14 +256,13 @@ class HomePage extends StatelessWidget {
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 3'},
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 4'},
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 5'},
-      // Add more image
     ];
 
     return GridView.builder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 1, // Two images per row
-        crossAxisSpacing: 8.0, // Spacing between columns
-        mainAxisSpacing: 8.0, // Spacing between rows
+        crossAxisCount: 1,
+        crossAxisSpacing: 8.0,
+        mainAxisSpacing: 8.0,
       ),
       itemCount: (restRoomImages.length / 2).ceil(),
       itemBuilder: (context, index) {
@@ -347,14 +343,13 @@ class HomePage extends StatelessWidget {
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 3'},
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 4'},
       {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 5'},
-      // Add more image
     ];
 
     return GridView.builder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 1, // Two images per row
-        crossAxisSpacing: 8.0, // Spacing between columns
-        mainAxisSpacing: 8.0, // Spacing between rows
+        crossAxisCount: 1,
+        crossAxisSpacing: 8.0,
+        mainAxisSpacing: 8.0,
       ),
       itemCount: (utilitiesImages.length / 2).ceil(),
       itemBuilder: (context, index) {

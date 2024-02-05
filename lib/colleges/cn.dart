@@ -15,7 +15,7 @@ class CnPage extends StatelessWidget {
           centerTitle: true,
           toolbarHeight: 60,
           elevation: 0,
-          backgroundColor: Color.fromARGB(255, 26, 99, 194),
+          backgroundColor: Color.fromARGB(255, 15, 199, 46),
           automaticallyImplyLeading: false,
           shape: ContinuousRectangleBorder(
             borderRadius: BorderRadius.only(

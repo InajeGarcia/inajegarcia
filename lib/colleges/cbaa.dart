@@ -23,6 +23,19 @@ class CbaaPage extends StatelessWidget {
               bottomRight: Radius.circular(40.0),
             ),
           ),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 255, 233, 34),
+                  Color.fromARGB(255, 27, 26, 26),
+                  // Add additional colors for the gradient
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
+          ),
         ),
         body: SingleChildScrollView(
           child: Column(

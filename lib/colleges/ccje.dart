@@ -15,7 +15,7 @@ class CcjePage extends StatelessWidget {
           centerTitle: true,
           toolbarHeight: 60,
           elevation: 0,
-          backgroundColor: Color.fromARGB(255, 26, 99, 194),
+          backgroundColor: Color.fromARGB(255, 109, 2, 77),
           automaticallyImplyLeading: false,
           shape: ContinuousRectangleBorder(
             borderRadius: BorderRadius.only(

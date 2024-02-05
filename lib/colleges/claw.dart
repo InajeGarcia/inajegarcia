@@ -23,6 +23,21 @@ class ClawPage extends StatelessWidget {
               bottomRight: Radius.circular(40.0),
             ),
           ),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 46, 45, 45),
+                  Color.fromARGB(255, 114, 14, 89),
+                  Color.fromARGB(255, 114, 14, 89),
+
+                  // Add additional colors for the gradient
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
+          ),
         ),
         body: SingleChildScrollView(
           child: Column(

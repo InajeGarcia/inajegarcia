@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sharkspinpoint/colleges/college_details_screen.dart'; // Import the new file
+import 'package:sharkspinpoint/colleges/college_details_screen.dart';
 
 class College {
   final String name;
@@ -19,7 +19,7 @@ class CollegesPage extends StatelessWidget {
     College('College of Criminal Justice Education', 'images/ccje.png'),
     College('College of Engineering', 'images/ce.jpg'),
     College('College of Fine Arts and Design', 'images/cfad.jpg'),
-    College('College of Health Science', 'images/cn.jpg'),
+    College('College of Health and Science', 'images/cn.jpg'),
     College('College of Hospitality and Tourism Management', 'images/chtm.jpg'),
     College('College of Law', 'images/claw.jpg'),
     College('College of Medicine', 'images/cmed.jpg'),
@@ -29,7 +29,6 @@ class CollegesPage extends StatelessWidget {
     College('College of Teacher Education', 'images/cte.jpg'),
     College('College of Technology', 'images/ctech.png'),
     College('Laboratory School', 'images/ls.png'),
-    // Add more colleges with respective image paths
   ];
 
   @override
@@ -159,7 +158,7 @@ class CollegesPage extends StatelessWidget {
           ),
         );
         break;
-      case 'College of Hospiltality and Tourism Management':
+      case 'College of Hospitality and Tourism Management':
         Navigator.push(
           context,
           MaterialPageRoute(

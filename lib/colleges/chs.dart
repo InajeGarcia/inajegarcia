@@ -15,12 +15,27 @@ class ChsPage extends StatelessWidget {
           centerTitle: true,
           toolbarHeight: 60,
           elevation: 0,
-          backgroundColor: Color.fromARGB(255, 26, 99, 194),
+          backgroundColor: Color.fromARGB(255, 10, 56, 116),
           automaticallyImplyLeading: false,
           shape: ContinuousRectangleBorder(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(40.0),
               bottomRight: Radius.circular(40.0),
+            ),
+          ),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 56, 25, 196),
+                  Color.fromARGB(255, 56, 25, 196),
+                  Color.fromARGB(255, 204, 204, 204),
+
+                  // Add additional colors for the gradient
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
             ),
           ),
         ),

@@ -1522,7 +1522,6 @@ class _MapPageState extends State<MapPage> {
     }
 
     Position position = await Geolocator.getCurrentPosition();
-
     return position;
   }
 

@@ -94,7 +94,6 @@ class CollegesPage extends StatelessWidget {
       );
 
   void navigateToCollegeDetails(BuildContext context, College college) {
-    // Use a switch statement to navigate to the appropriate college details screen
     switch (college.name) {
       case 'College of Architecture':
         Navigator.push(

@@ -50,12 +50,24 @@ class CcitPage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => MapPage(
-                            selectedVertexId:
-                                'College of Communication and Information Technology'),
+                          selectedVertexId:
+                              'College of Communication and Information Technology',
+                        ),
                       ),
                     );
                   },
-                  child: Text('Navigate'),
+                  style: ElevatedButton.styleFrom(
+                    primary: Color.fromARGB(255, 212, 15, 91),
+                    onPrimary: Colors.white,
+                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(40),
+                    ),
+                  ),
+                  child: Text(
+                    'Navigate',
+                    style: TextStyle(fontSize: 16),
+                  ),
                 ),
               ),
             ],

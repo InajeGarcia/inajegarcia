@@ -51,7 +51,7 @@ class CasPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  "The College of Arts and Sciences is the heart of academic exploration at our university. With a diverse range of programs, we empower students to pursue their passions and cultivate critical thinking skills. Our faculty is dedicated to providing a rich and interdisciplinary education.\n\nWhether you're interested in literature, mathematics, biology, or social sciences, the College of Arts and Sciences offers a supportive environment where students can thrive. Join us in fostering a love for learning, creativity, and intellectual curiosity.",
+                  'Undergraduate Programs\n\nBachelor of Arts in Communication\n\nBachelor of Arts in Political Science\n\nBachelor of Science in Psychology\n\nBachelor of Science in Biology\n\nBachelor of Science in Marine Biology\n\nBachelor of Science in Environmental Science\n\nBachelor of Science in Mathematics\n\nBachelor of Science in Physics',
                   style: TextStyle(fontSize: 16),
                 ),
               ),
@@ -67,7 +67,18 @@ class CasPage extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text('Navigate'),
+                  style: ElevatedButton.styleFrom(
+                    primary: Color.fromARGB(255, 180, 21, 21),
+                    onPrimary: Colors.white,
+                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(40),
+                    ),
+                  ),
+                  child: Text(
+                    'Navigate',
+                    style: TextStyle(fontSize: 16),
+                  ),
                 ),
               ),
             ],

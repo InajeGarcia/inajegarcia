@@ -38,7 +38,7 @@ class CarchPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  "The College of Architecture is dedicated to providing high-quality education and training in the field of architecture. Our programs emphasize creativity, innovation, and a strong foundation in design principles. Students have the opportunity to engage in hands-on projects, collaborate with professionals, and gain real-world experience.\n\nOur faculty members are experienced professionals in the field, committed to nurturing the next generation of architects. The college fosters a dynamic learning environment that encourages critical thinking, problem-solving, and a passion for architectural excellence.",
+                  'Undergraduate Programs\n\nBachelor of Science in Architecture\n(Ladder-type Program)\n\nBachelor of Science in Environmental Planning',
                   style: TextStyle(fontSize: 16),
                 ),
               ),
@@ -54,7 +54,18 @@ class CarchPage extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text('Navigate'),
+                  style: ElevatedButton.styleFrom(
+                    primary: Color.fromARGB(255, 117, 31, 74),
+                    onPrimary: Colors.white,
+                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(40),
+                    ),
+                  ),
+                  child: Text(
+                    'Navigate',
+                    style: TextStyle(fontSize: 16),
+                  ),
                 ),
               ),
             ],

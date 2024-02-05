@@ -1431,41 +1431,6 @@ class _MapPageState extends State<MapPage> {
               }
             },
           ),
-          Positioned(
-            top: 465.0,
-            right: 17.0,
-            child: FloatingActionButton(
-              backgroundColor: Color.fromARGB(255, 26, 99, 194),
-              foregroundColor: Colors.white,
-              onPressed: () async {
-                Position position = await _determinePosition();
-
-                _googleMapController.animateCamera(
-                  CameraUpdate.newCameraPosition(
-                    CameraPosition(
-                        target: LatLng(position.latitude, position.longitude),
-                        zoom: 14),
-                  ),
-                );
-
-                markers.clear();
-                polylines.clear();
-
-                markers.add(
-                  Marker(
-                    markerId: const MarkerId('currentLocation'),
-                    position: LatLng(position.latitude, position.longitude),
-                    infoWindow: const InfoWindow(title: 'My Current Location'),
-                  ),
-                );
-
-                markers.addAll(_createMarkersFromPaths(paths));
-
-                setState(() {});
-              },
-              child: const Icon(Icons.location_searching),
-            ),
-          ),
         ],
       ),
       floatingActionButton: Stack(
@@ -1498,6 +1463,41 @@ class _MapPageState extends State<MapPage> {
                 CameraUpdate.newCameraPosition(_initialCameraPosition),
               ),
               child: const Icon(Icons.navigation_rounded),
+            ),
+          ),
+          Positioned(
+            top: 580.0,
+            right: 1.0,
+            child: FloatingActionButton(
+              backgroundColor: Color.fromARGB(255, 26, 99, 194),
+              foregroundColor: Colors.white,
+              onPressed: () async {
+                Position position = await _determinePosition();
+
+                _googleMapController.animateCamera(
+                  CameraUpdate.newCameraPosition(
+                    CameraPosition(
+                        target: LatLng(position.latitude, position.longitude),
+                        zoom: 14),
+                  ),
+                );
+
+                markers.clear();
+                polylines.clear();
+
+                markers.add(
+                  Marker(
+                    markerId: const MarkerId('currentLocation'),
+                    position: LatLng(position.latitude, position.longitude),
+                    infoWindow: const InfoWindow(title: 'My Current Location'),
+                  ),
+                );
+
+                markers.addAll(_createMarkersFromPaths(paths));
+
+                setState(() {});
+              },
+              child: const Icon(Icons.location_searching),
             ),
           ),
         ],

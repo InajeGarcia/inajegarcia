@@ -54,7 +54,18 @@ class LsPage extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text('Navigate'),
+                  style: ElevatedButton.styleFrom(
+                    primary: Color.fromARGB(255, 19, 131, 47),
+                    onPrimary: Colors.white,
+                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(40),
+                    ),
+                  ),
+                  child: Text(
+                    'Navigate',
+                    style: TextStyle(fontSize: 16),
+                  ),
                 ),
               ),
             ],

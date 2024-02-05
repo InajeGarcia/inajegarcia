@@ -11,7 +11,7 @@ class College {
 class CollegesPage extends StatelessWidget {
   final List<College> colleges = [
     College('College of Architecture', 'images/carch.png'),
-    College('College of Arts and Sciences', 'images/cas.jpg'),
+    College('College of Arts and Sciences', 'images/cas.png'),
     College('College of Business Administration and Accountancy',
         'images/cbaa.jpg'),
     College('College of Communication and Information Technology',

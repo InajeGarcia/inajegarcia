@@ -82,10 +82,6 @@ class HomePage extends StatelessWidget {
       {'imagePath': 'images/ccjebuilding.jpg', 'label': 'College'},
       {'imagePath': 'images/ccitbuilding.jpg', 'label': 'College'},
       {'imagePath': 'images/ctebuilding.jpg', 'label': 'College'},
-      {'imagePath': 'images/ccjebuilding.jpg', 'label': 'College'},
-      {'imagePath': 'images/cswbuilding.jpg', 'label': 'College'},
-      {'imagePath': 'images/carchside.jpg', 'label': 'College'},
-      {'imagePath': 'images/chtmbuilding.jpg', 'label': 'College'},
     ];
 
     return GridView.builder(

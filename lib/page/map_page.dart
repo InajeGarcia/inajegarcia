@@ -1437,7 +1437,7 @@ class _MapPageState extends State<MapPage> {
         alignment: Alignment.topRight,
         children: [
           Positioned(
-            top: 650.0,
+            top: 700.0,
             right: 1.0,
             child: FloatingActionButton(
               backgroundColor: Color.fromARGB(255, 219, 184, 87),
@@ -1454,7 +1454,7 @@ class _MapPageState extends State<MapPage> {
             ),
           ),
           Positioned(
-            top: 510.0,
+            top: 600.0,
             right: 1.0,
             child: FloatingActionButton(
               backgroundColor: Color.fromARGB(255, 43, 163, 105),
@@ -1466,7 +1466,7 @@ class _MapPageState extends State<MapPage> {
             ),
           ),
           Positioned(
-            top: 580.0,
+            top: 650.0,
             right: 1.0,
             child: FloatingActionButton(
               backgroundColor: Color.fromARGB(255, 26, 99, 194),

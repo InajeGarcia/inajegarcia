@@ -82,6 +82,10 @@ class HomePage extends StatelessWidget {
       {'imagePath': 'images/ccjebuilding.jpg', 'label': 'College'},
       {'imagePath': 'images/ccitbuilding.jpg', 'label': 'College'},
       {'imagePath': 'images/ctebuilding.jpg', 'label': 'College'},
+      {'imagePath': 'images/ccjebuilding.jpg', 'label': 'College'},
+      {'imagePath': 'images/cswbuilding.jpg', 'label': 'College'},
+      {'imagePath': 'images/carchside.jpg', 'label': 'College'},
+      {'imagePath': 'images/chtmbuilding.jpg', 'label': 'College'},
     ];
 
     return GridView.builder(
@@ -165,9 +169,7 @@ class HomePage extends StatelessWidget {
   Widget buildFoodOthersTabContent() {
     List<Map<String, String>> foodOthersImages = [
       {'imagePath': 'images/canteen1.jpg', 'label': 'Canteen'},
-      {'imagePath': 'images/canteen2.jpg', 'label': 'Canteen'},
-      {'imagePath': 'images/canteen3.jpg', 'label': 'Canteen'},
-      {'imagePath': 'images/canteen4.jpg', 'label': 'Canteen'},
+      {'imagePath': 'images/groceria.jpg', 'label': 'Canteen'},
       {'imagePath': 'images/canteen5.jpg', 'label': 'Canteen'},
     ];
 

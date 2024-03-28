@@ -200,7 +200,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561242368642116, 120.3824072048987),
         ),
         Vertex(
-          id: 'College of Criminology and Justice Education',
+          id: 'College of Criminology and Justice Enforcement',
           coordinates: const LatLng(17.56117133202978, 120.38236712832612),
         ),
       ],
@@ -281,7 +281,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561318457660715, 120.38196283415982),
         ),
         Vertex(
-          id: 'College of Health and Science',
+          id: 'College of Health and Sciences',
           coordinates: const LatLng(17.561315560102365, 120.38184292743306),
         ),
       ],
@@ -1308,10 +1308,10 @@ class _MapPageState extends State<MapPage> {
             vertex.id == 'College of Arts and Sciences' ||
             vertex.id ==
                 'College of Communication and Information Technology' ||
-            vertex.id == 'College of Criminology and Justice Education' ||
+            vertex.id == 'College of Criminology and Justice Enforcement' ||
             vertex.id == 'College of Engineering' ||
             vertex.id == 'College of Fine Arts and Design' ||
-            vertex.id == 'College of Health and Science' ||
+            vertex.id == 'College of Health and Sciences' ||
             vertex.id == 'College of Hotel and Tourism Management' ||
             vertex.id == 'College of Law' ||
             vertex.id == 'College of Medicine' ||
@@ -1437,7 +1437,7 @@ class _MapPageState extends State<MapPage> {
         alignment: Alignment.topRight,
         children: [
           Positioned(
-            top: 700.0,
+            top: 550.0,
             right: 1.0,
             child: FloatingActionButton(
               backgroundColor: Color.fromARGB(255, 219, 184, 87),
@@ -1447,6 +1447,9 @@ class _MapPageState extends State<MapPage> {
                 markers.clear();
                 polylines.clear();
                 markers.addAll(_createMarkersFromPaths(paths));
+                _googleMapController.animateCamera(
+                  CameraUpdate.newCameraPosition(_initialCameraPosition),
+                );
 
                 setState(() {});
               },
@@ -1454,7 +1457,7 @@ class _MapPageState extends State<MapPage> {
             ),
           ),
           Positioned(
-            top: 600.0,
+            top: 400.0,
             right: 1.0,
             child: FloatingActionButton(
               backgroundColor: Color.fromARGB(255, 43, 163, 105),
@@ -1466,7 +1469,7 @@ class _MapPageState extends State<MapPage> {
             ),
           ),
           Positioned(
-            top: 650.0,
+            top: 473.0,
             right: 1.0,
             child: FloatingActionButton(
               backgroundColor: Color.fromARGB(255, 26, 99, 194),

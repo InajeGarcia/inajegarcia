@@ -51,7 +51,7 @@ class CfadPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  "The College of Arts and Sciences is the heart of academic exploration at our university. With a diverse range of programs, we empower students to pursue their passions and cultivate critical thinking skills. Our faculty is dedicated to providing a rich and interdisciplinary education.\n\nWhether you're interested in literature, mathematics, biology, or social sciences, the College of Arts and Sciences offers a supportive environment where students can thrive. Join us in fostering a love for learning, creativity, and intellectual curiosity.",
+                  "Welcome to the College of Fine Arts and Design (CFAD), where creativity knows no bounds and artistic expression flourishes. As a vibrant hub for aspiring artists, designers, and performers, CFAD offers a rich array of programs spanning visual arts, multimedia, theater, music, and more. Our faculty, comprised of accomplished practitioners and educators, provide students with the guidance, mentorship, and resources needed to hone their craft and unleash their creative potential. At CFAD, we embrace experimentation, collaboration, and innovation, empowering our graduates to make meaningful contributions to the cultural landscape and shape the future of the arts. Join us as we celebrate the power of imagination, ignite inspiration, and cultivate the next generation of visionary artists and designers. Welcome to CFAD, where every brushstroke, note, and performance tells a story.",
                   style: TextStyle(fontSize: 16),
                 ),
               ),

@@ -38,7 +38,7 @@ class ChtmPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  "The College of Arts and Sciences is the heart of academic exploration at our university. With a diverse range of programs, we empower students to pursue their passions and cultivate critical thinking skills. Our faculty is dedicated to providing a rich and interdisciplinary education.\n\nWhether you're interested in literature, mathematics, biology, or social sciences, the College of Arts and Sciences offers a supportive environment where students can thrive. Join us in fostering a love for learning, creativity, and intellectual curiosity.",
+                  "Welcome to the College of Hospitality and Tourism Management (CHTM), where hospitality is more than just a profession—it's a way of life. As a premier institution in hospitality education, CHTM offers dynamic programs that prepare students for dynamic careers in the vibrant hospitality and tourism industry. From hotel management and event planning to tourism development and culinary arts, our curriculum blends theory with hands-on experience, ensuring graduates are ready to excel in diverse roles around the world. At CHTM, we prioritize experiential learning, cultural immersion, and service excellence, empowering students to become leaders in hospitality innovation and customer satisfaction. Join us as we celebrate the art of hospitality, create unforgettable experiences, and shape the future of the industry. Welcome to CHTM, where your journey to a rewarding career in hospitality begins.",
                   style: TextStyle(fontSize: 16),
                 ),
               ),

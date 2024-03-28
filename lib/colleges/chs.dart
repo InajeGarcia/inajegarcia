@@ -51,7 +51,7 @@ class ChsPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  "The College of Arts and Sciences is the heart of academic exploration at our university. With a diverse range of programs, we empower students to pursue their passions and cultivate critical thinking skills. Our faculty is dedicated to providing a rich and interdisciplinary education.\n\nWhether you're interested in literature, mathematics, biology, or social sciences, the College of Arts and Sciences offers a supportive environment where students can thrive. Join us in fostering a love for learning, creativity, and intellectual curiosity.",
+                  "Welcome to the College of Health Sciences (CHS), where compassion meets expertise and wellness is the foundation of our mission. As a leading institution in healthcare education, CHS offers a comprehensive range of programs dedicated to preparing students for rewarding careers in the medical field. From nursing and public health to physical therapy and healthcare administration, our curriculum integrates cutting-edge research with hands-on clinical experience, ensuring that graduates are equipped to address the complex health needs of individuals and communities. At CHS, we prioritize interdisciplinary collaboration, cultural competency, and patient-centered care, empowering our students to become compassionate leaders and advocates for health equity. Join us as we work towards a healthier future, where every student's passion for healing becomes a catalyst for positive change. Welcome to CHS, where excellence in healthcare education begins.",
                   style: TextStyle(fontSize: 16),
                 ),
               ),
@@ -63,7 +63,7 @@ class ChsPage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => MapPage(
-                            selectedVertexId: 'College of Health and Science'),
+                            selectedVertexId: 'College of Health and Sciences'),
                       ),
                     );
                   },

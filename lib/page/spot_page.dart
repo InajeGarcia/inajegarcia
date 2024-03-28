@@ -10,10 +10,13 @@ class Spot {
 
 class SpotPage extends StatelessWidget {
   final List<Spot> spots = [
-    Spot('Library', 'images/carch.png'),
-    Spot('Church', 'images/cas.jpg'),
-    Spot('Gymnasium', 'images/gymnasium.jpg'),
+    Spot('Library', 'images/library.jpg'),
+    Spot('Church', 'images/gymnasium.jpg'),
+    Spot('Gymnasium', 'images/gym2.jpg'),
     Spot('Ladies Dormitory', 'images/ladiesdorm.jpg'),
+    Spot('Oval', 'images/oval.jpg'),
+    Spot('Canteen', 'images/canteen1.jpg'),
+    Spot('Admin', 'images/admin.jpg'),
   ];
 
 //class NotificationPage extends StatelessWidget {
@@ -109,6 +112,30 @@ class SpotPage extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (context) => SpotDetailsScreen(spots, 'ccit.dart'),
+          ),
+        );
+        break;
+      case 'Oval':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SpotDetailsScreen(spots, ''),
+          ),
+        );
+        break;
+      case 'Canteen':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SpotDetailsScreen(spots, ''),
+          ),
+        );
+        break;
+      case 'Admin':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SpotDetailsScreen(spots, ''),
           ),
         );
         break;

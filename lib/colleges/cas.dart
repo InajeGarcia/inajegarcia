@@ -51,7 +51,7 @@ class CasPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  'Undergraduate Programs\n\nBachelor of Arts in Communication\n\nBachelor of Arts in Political Science\n\nBachelor of Science in Psychology\n\nBachelor of Science in Biology\n\nBachelor of Science in Marine Biology\n\nBachelor of Science in Environmental Science\n\nBachelor of Science in Mathematics\n\nBachelor of Science in Physics',
+                  'Welcome to the College of Arts and Sciences, where curiosity knows no bounds and intellectual exploration thrives. As the heart of interdisciplinary learning, our college offers a diverse array of programs spanning the humanities, social sciences, and natural sciences. With a commitment to fostering critical thinking, creativity, and cultural understanding, we empower students to engage with the complexities of the world and contribute meaningfully to society. Here, students are encouraged to embrace their passions, challenge assumptions, and pursue knowledge across traditional boundaries. Join us on a journey of discovery, where every question leads to new insights and every discovery sparks further exploration. Welcome to a community dedicated to nurturing the mind, expanding perspectives, and inspiring lifelong learning.',
                   style: TextStyle(fontSize: 16),
                 ),
               ),

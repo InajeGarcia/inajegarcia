@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 child: TextField(
                   decoration: InputDecoration(
-                    labelText: "Find what you're looking for?",
+                    labelText: "Search what you're looking for?",
                     prefixIcon: Image.asset(
                       'images/reallogo.png',
                       width: 24,

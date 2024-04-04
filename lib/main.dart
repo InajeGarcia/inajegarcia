@@ -19,7 +19,13 @@ import 'package:sharkspinpoint/colleges/cte.dart';
 import 'package:sharkspinpoint/colleges/ctech.dart';
 import 'package:sharkspinpoint/colleges/ls.dart';
 
-void main() => runApp(MyApp());
+import 'package:firebase_core/firebase_core.dart'; // Import Firebase core
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(); // Initialize Firebase
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -50,8 +56,6 @@ class MyApp extends StatelessWidget {
         '/colleges/cte.dart': (context) => CtePage(),
         '/colleges/ctech.dart': (context) => CtechPage(),
         '/colleges/ls.dart': (context) => LsPage(),
-
-        // Add more routes for other colleges
       },
     );
   }

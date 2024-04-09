@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "842975919616",
-    "project_id": "sharkspinpoint-cf6a4",
-    "storage_bucket": "sharkspinpoint-cf6a4.appspot.com"
+    "project_number": "135029791251",
+    "project_id": "shak-88a98",
+    "storage_bucket": "shak-88a98.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:842975919616:android:e6df9c5ba86b9d122662e5",
+        "mobilesdk_app_id": "1:135029791251:android:9dddff4e59336ebe597de6",
         "android_client_info": {
           "package_name": "com.example.sharkspinpoint"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC1hnofq5gbHpVV8OM_6cH2rWuo5sGGXoQ"
+          "current_key": "AIzaSyBIyrwcOgg-Y6aTdvJejZm5DGNX9zVwCxo"
         }
       ],
       "services": {

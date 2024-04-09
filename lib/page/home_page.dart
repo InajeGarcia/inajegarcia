@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
                   decoration: InputDecoration(
                     labelText: "Search what you're looking for?",
                     prefixIcon: Image.asset(
-                      'images/reallogo.png',
+                      'images/pnglang.png',
                       width: 24,
                       height: 24,
                     ),

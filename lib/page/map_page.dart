@@ -304,7 +304,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56208485070044, 120.38303481249389),
         ),
         Vertex(
-          id: 'College of Hotel and Tourism Management',
+          id: 'College of Hospitality and Tourism Management',
           coordinates: const LatLng(17.562078977904275, 120.38304562132981),
         ), //edit pay for back route
       ],
@@ -1393,7 +1393,7 @@ class _MapPageState extends State<MapPage> {
         centerTitle: true,
         toolbarHeight: 100,
         elevation: 0,
-        backgroundColor: Color.fromARGB(255, 219, 184, 87),
+        backgroundColor: Color.fromARGB(255, 221, 154, 31),
         automaticallyImplyLeading: false,
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.only(
@@ -1512,20 +1512,59 @@ class _MapPageState extends State<MapPage> {
     bool serviceEnabled;
     LocationPermission permission;
 
+    // Check if location services are enabled
     serviceEnabled = await Geolocator.isLocationServiceEnabled();
-
     if (!serviceEnabled) {
+      // Location services are disabled
+      // Show an error message or prompt the user to enable location services
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Please enable location services.'),
+        ),
+      );
       return Future.error('Location services are disabled');
     }
 
+    // Check the location permission status
     permission = await Geolocator.checkPermission();
-
     if (permission == LocationPermission.denied) {
+      // Request permission
       permission = await Geolocator.requestPermission();
+      if (permission == LocationPermission.denied) {
+        // Permission denied
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Location permission denied.'),
+          ),
+        );
+        return Future.error('Location permission denied');
+      }
     }
 
-    Position position = await Geolocator.getCurrentPosition();
-    return position;
+    if (permission == LocationPermission.deniedForever) {
+      // Permission denied forever
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+              'Location permission permanently denied. Please enable it in the app settings.'),
+        ),
+      );
+      return Future.error('Location permission permanently denied');
+    }
+
+    // Get the current position
+    try {
+      Position position = await Geolocator.getCurrentPosition();
+      return position;
+    } catch (e) {
+      // Handle errors such as timeouts or unknown errors
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Failed to get current position: $e'),
+        ),
+      );
+      return Future.error('Failed to get current position: $e');
+    }
   }
 
   void _showShortestPath(int pathIndex) async {

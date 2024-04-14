@@ -16,7 +16,7 @@ class InfoPage extends StatelessWidget {
         centerTitle: true,
         toolbarHeight: 100,
         elevation: 0,
-        backgroundColor: Color.fromARGB(255, 26, 99, 194),
+        backgroundColor: Color.fromARGB(255, 17, 44, 163),
         automaticallyImplyLeading: false,
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.only(
@@ -87,7 +87,6 @@ class InfoPage extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(height: 16),
-              // Add lang pag may idadagdag
             ],
           ),
         ),

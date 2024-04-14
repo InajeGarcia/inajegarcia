@@ -1,146 +1,31 @@
 import 'package:flutter/material.dart';
-import 'package:sharkspinpoint/colleges/spot_details_screen.dart';
-
-class Spot {
-  final String name;
-  final String imagePath;
-
-  Spot(this.name, this.imagePath);
-}
 
 class SpotPage extends StatelessWidget {
-  final List<Spot> spots = [
-    Spot('Library', 'images/library.jpg'),
-    Spot('Church', 'images/gymnasium.jpg'),
-    Spot('Gymnasium', 'images/gym2.jpg'),
-    Spot('Ladies Dormitory', 'images/ladiesdorm.jpg'),
-    Spot('Oval', 'images/oval.jpg'),
-    Spot('Canteen', 'images/canteen1.jpg'),
-    Spot('Admin', 'images/admin.jpg'),
-  ];
-
-//class NotificationPage extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(
-          title: Center(
-            child: Image.asset(
-              'images/11.png',
-              height: 250,
-              width: 300,
-              fit: BoxFit.contain,
-            ),
-          ),
-          centerTitle: true,
-          toolbarHeight: 100,
-          elevation: 0,
-          backgroundColor: Color.fromARGB(255, 43, 163, 105),
-          automaticallyImplyLeading: false,
-          shape: ContinuousRectangleBorder(
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(40.0),
-              bottomRight: Radius.circular(40.0),
-            ),
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(
+          child: Image.asset(
+            'images/11.png',
+            height: 250,
+            width: 300,
+            fit: BoxFit.contain,
           ),
         ),
-        body: ListView.builder(
-          itemCount: spots.length,
-          itemBuilder: (context, index) {
-            final college = spots[index];
-            Color boxColor = Color(0xFFC1E1C1);
-
-            return InkWell(
-              onTap: () {
-                navigateToSpotDetails(context, college);
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  color: boxColor,
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-                margin: EdgeInsets.all(8.0),
-                child: ListTile(
-                  title: Text(
-                    college.name,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 51, 51, 51),
-                    ),
-                  ),
-                  subtitle: Text("• ${college.name}"),
-                  leading: Image.asset(
-                    college.imagePath,
-                    width: 56,
-                    height: 56,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            );
-          },
+        centerTitle: true,
+        toolbarHeight: 100,
+        elevation: 0,
+        backgroundColor: Color.fromARGB(255, 17, 44, 163),
+        automaticallyImplyLeading: false,
+        shape: ContinuousRectangleBorder(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(40.0),
+            bottomRight: Radius.circular(40.0),
+          ),
         ),
-      );
-
-  void navigateToSpotDetails(BuildContext context, Spot spots) {
-    switch (spots.name) {
-      case 'Library':
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SpotDetailsScreen(spots, 'carch.dart'),
-          ),
-        );
-        break;
-      case 'Church':
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SpotDetailsScreen(spots, 'cas.dart'),
-          ),
-        );
-        break;
-      case 'Gymnasium':
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SpotDetailsScreen(spots, 'cbaa.dart'),
-          ),
-        );
-        break;
-      case 'Ladies Dormitory':
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SpotDetailsScreen(spots, 'ccit.dart'),
-          ),
-        );
-        break;
-      case 'Oval':
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SpotDetailsScreen(spots, ''),
-          ),
-        );
-        break;
-      case 'Canteen':
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SpotDetailsScreen(spots, ''),
-          ),
-        );
-        break;
-      case 'Admin':
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SpotDetailsScreen(spots, ''),
-          ),
-        );
-        break;
-      default:
-        break;
-    }
+      ),
+      // Leave body blank to create a blank page
+    );
   }
 }

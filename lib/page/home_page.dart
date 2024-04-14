@@ -1,32 +1,91 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
+import 'package:sharkspinpoint/page/searchresult_page.dart';
+
 class HomePage extends StatelessWidget {
+  // Lists of image URLs for each category
+  final List<String> officeImages = [
+    'images/admin.jpg',
+    'images/registrar.jpg',
+    'images/budget.jpg',
+    'images/cashier.jpg',
+    'images/accounting.jpg',
+    'images/vpre.jpg',
+    'images/op.jpg',
+    'images/vpaa.jpg',
+    'images/vpfad.jpg',
+    'images/nstp.jpg',
+  ];
+
+  final List<String> foodImages = [
+    'images/canteen1.jpg',
+    'images/canteen2.jpg',
+    'images/canteen5.jpg',
+    'images/canteen5.jpg',
+    'images/canteen7.jpg',
+    'images/canteen1.jpg',
+    'images/canteen2.jpg',
+    'images/canteen5.jpg',
+    'images/canteen5.jpg',
+    'images/canteen7.jpg',
+  ];
+
+  final List<String> restroomImages = [
+    'images/admin.jpg',
+    'images/admin.jpg',
+    'images/admin.jpg',
+    'images/admin.jpg',
+    'images/admin.jpg',
+    'images/admin.jpg',
+    'images/admin.jpg',
+    'images/admin.jpg',
+    'images/admin.jpg',
+    'images/admin.jpg',
+  ];
+
+  final List<String> utilityImages = [
+    'images/property.jpg',
+    'images/property.jpg',
+    'images/property.jpg',
+    'images/property.jpg',
+    'images/property.jpg',
+    'images/property.jpg',
+    'images/property.jpg',
+    'images/property.jpg',
+    'images/property.jpg',
+    'images/property.jpg',
+  ];
+
   @override
-  Widget build(BuildContext context) => DefaultTabController(
-        length: 4,
-        child: Scaffold(
-          appBar: AppBar(
-            title: Image.asset(
-              'images/11.png',
-              height: 250,
-              width: 300,
-              fit: BoxFit.contain,
-            ),
-            centerTitle: true,
-            toolbarHeight: 100,
-            elevation: 0,
-            backgroundColor: Color.fromARGB(255, 43, 163, 105),
-            automaticallyImplyLeading: false,
-            shape: ContinuousRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(40.0),
-                bottomRight: Radius.circular(40.0),
-              ),
+  Widget build(BuildContext context) {
+    return DefaultTabController(
+      length: 4,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Image.asset(
+            'images/11.png',
+            height: 250,
+            width: 300,
+            fit: BoxFit.contain,
+          ),
+          centerTitle: true,
+          toolbarHeight: 100,
+          elevation: 0,
+          backgroundColor: Color.fromARGB(255, 5, 128, 36),
+          automaticallyImplyLeading: false,
+          shape: ContinuousRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(40.0),
+              bottomRight: Radius.circular(40.0),
             ),
           ),
-          body: Column(
-            children: [
-              Padding(
+        ),
+        body: NestedScrollView(
+          headerSliverBuilder: (context, innerBoxIsScrolled) => [
+            SliverToBoxAdapter(
+              child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: TextField(
                   decoration: InputDecoration(
@@ -40,14 +99,22 @@ class HomePage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(40),
                     ),
                   ),
-                  onChanged: (value) {
-                    // Implement your search logic here
+                  onSubmitted: (value) {
+                    // Navigate to SearchResultPage with the search input
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SearchResultPage(query: value),
+                      ),
+                    );
                   },
                 ),
               ),
-              TabBar(
+            ),
+            SliverToBoxAdapter(
+              child: TabBar(
                 tabs: [
-                  Tab(text: 'Offices & Rooms'),
+                  Tab(text: 'Offices'),
                   Tab(text: 'Food & Others'),
                   Tab(text: 'Rest Rooms'),
                   Tab(text: 'Utilities'),
@@ -60,364 +127,86 @@ class HomePage extends StatelessWidget {
                 ),
                 labelColor: Color(0xFF0045A0),
               ),
-              Expanded(
-                child: TabBarView(
-                  children: [
-                    buildOfficeRoomTabContent(),
-                    buildFoodOthersTabContent(),
-                    buildRestRoomsTabContent(),
-                    buildUtilitiesTabContent(),
-                  ],
-                ),
-              ),
+            ),
+          ],
+          body: TabBarView(
+            children: [
+              buildTabContent(randomlySelectImages(officeImages)),
+              buildTabContent(randomlySelectImages(foodImages)),
+              buildTabContent(randomlySelectImages(restroomImages)),
+              buildTabContent(randomlySelectImages(utilityImages)),
             ],
           ),
         ),
-      );
-
-  Widget buildOfficeRoomTabContent() {
-    List<Map<String, String>> officeRoomImages = [
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'College'},
-      {'imagePath': 'images/casbuilding.jpg', 'label': 'College'},
-      {'imagePath': 'images/ccjebuilding.jpg', 'label': 'College'},
-      {'imagePath': 'images/ccitbuilding.jpg', 'label': 'College'},
-      {'imagePath': 'images/ctebuilding.jpg', 'label': 'College'},
-    ];
-
-    return GridView.builder(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 1,
-        crossAxisSpacing: 8.0,
-        mainAxisSpacing: 8.0,
       ),
-      itemCount: (officeRoomImages.length / 2).ceil(),
+    );
+  }
+
+  // Function to build a vertical stack of images with rounded edges
+  Widget buildTabContent(List<String> imagePaths) {
+    return ListView.builder(
+      padding: EdgeInsets.all(10),
+      itemCount: imagePaths.length,
       itemBuilder: (context, index) {
-        int startIndex = index * 2;
-        int endIndex = startIndex + 2;
-
-        if (endIndex > officeRoomImages.length) {
-          endIndex = officeRoomImages.length;
-        }
-
-        List<Map<String, String>> currentImages =
-            officeRoomImages.sublist(startIndex, endIndex);
-
-        return Column(
-          children: currentImages.map((imageWithLabel) {
-            return Expanded(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Stack(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 2,
-                            blurRadius: 5,
-                            offset: Offset(0, 2),
-                          ),
-                        ],
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(10.0),
-                        child: Image.asset(
-                          imageWithLabel['imagePath']!,
-                          height: double.maxFinite,
-                          width: double.maxFinite,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      bottom: 8.0,
-                      left: 8.0,
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.star,
-                            color: Colors.amber,
-                            size: 16.0,
-                          ),
-                          SizedBox(width: 4.0),
-                          Text(
-                            imageWithLabel['label']!,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
+        // Use GestureDetector or InkWell to make the image clickable
+        return Padding(
+          padding: const EdgeInsets.symmetric(vertical: 5),
+          child: InkWell(
+            onTap: () {
+              // Handle the tap event here
+              // For example, navigate to a new screen or show a message
+              // You can also pass the image path to the new screen if needed
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      ImageDetailScreen(imagePath: imagePaths[index]),
                 ),
+              );
+            },
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(
+                  20), // Adjust the border radius as needed
+              child: Image.asset(
+                imagePaths[index],
+                fit: BoxFit.cover,
+                width: double.infinity,
+                height: 150, // Adjust height as needed
               ),
-            );
-          }).toList(),
+            ),
+          ),
         );
       },
     );
   }
 
-  Widget buildFoodOthersTabContent() {
-    List<Map<String, String>> foodOthersImages = [
-      {'imagePath': 'images/canteen1.jpg', 'label': 'Canteen'},
-      {'imagePath': 'images/groceria.jpg', 'label': 'Canteen'},
-      {'imagePath': 'images/canteen5.jpg', 'label': 'Canteen'},
-    ];
+  // Function to randomly select 5 images from a list
+  List<String> randomlySelectImages(List<String> imagePaths) {
+    Random random = Random();
+    // Create a copy of the list and shuffle it
+    List<String> shuffledList = List.from(imagePaths);
+    shuffledList.shuffle(random);
 
-    return GridView.builder(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 1,
-        crossAxisSpacing: 8.0,
-        mainAxisSpacing: 8.0,
-      ),
-      itemCount: (foodOthersImages.length / 2).ceil(),
-      itemBuilder: (context, index) {
-        int startIndex = index * 2;
-        int endIndex = startIndex + 2;
-
-        if (endIndex > foodOthersImages.length) {
-          endIndex = foodOthersImages.length;
-        }
-
-        List<Map<String, String>> currentImages =
-            foodOthersImages.sublist(startIndex, endIndex);
-
-        return Column(
-          children: currentImages.map((imageWithLabel) {
-            return Expanded(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Stack(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 2,
-                            blurRadius: 5,
-                            offset: Offset(0, 2),
-                          ),
-                        ],
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(10.0),
-                        child: Image.asset(
-                          imageWithLabel['imagePath']!,
-                          height: double.maxFinite,
-                          width: double.maxFinite,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      bottom: 8.0,
-                      left: 8.0,
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.star,
-                            color: Colors.amber,
-                            size: 16.0,
-                          ),
-                          SizedBox(width: 4.0),
-                          Text(
-                            imageWithLabel['label']!,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            );
-          }).toList(),
-        );
-      },
-    );
+    // Return the first 5 images from the shuffled list
+    return shuffledList.take(5).toList();
   }
+}
 
-  Widget buildRestRoomsTabContent() {
-    List<Map<String, String>> restRoomImages = [
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 1'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 2'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 3'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 4'},
-      {'imagePath': 'images/cbaabuilding.jpg', 'label': 'Office 5'},
-    ];
+// Define ImageDetailScreen to display the full-size image
+class ImageDetailScreen extends StatelessWidget {
+  final String imagePath;
 
-    return GridView.builder(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 1,
-        crossAxisSpacing: 8.0,
-        mainAxisSpacing: 8.0,
+  ImageDetailScreen({required this.imagePath});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Image Detail'),
       ),
-      itemCount: (restRoomImages.length / 2).ceil(),
-      itemBuilder: (context, index) {
-        int startIndex = index * 2;
-        int endIndex = startIndex + 2;
-
-        if (endIndex > restRoomImages.length) {
-          endIndex = restRoomImages.length;
-        }
-
-        List<Map<String, String>> currentImages =
-            restRoomImages.sublist(startIndex, endIndex);
-
-        return Column(
-          children: currentImages.map((imageWithLabel) {
-            return Expanded(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Stack(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 2,
-                            blurRadius: 5,
-                            offset: Offset(0, 2),
-                          ),
-                        ],
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(10.0),
-                        child: Image.asset(
-                          imageWithLabel['imagePath']!,
-                          height: double.maxFinite,
-                          width: double.maxFinite,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      bottom: 8.0,
-                      left: 8.0,
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.star,
-                            color: Colors.amber,
-                            size: 16.0,
-                          ),
-                          SizedBox(width: 4.0),
-                          Text(
-                            imageWithLabel['label']!,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            );
-          }).toList(),
-        );
-      },
-    );
-  }
-
-  Widget buildUtilitiesTabContent() {
-    List<Map<String, String>> utilitiesImages = [
-      {'imagePath': 'images/propertybuilding.jpg', 'label': 'Utility'},
-      {'imagePath': 'images/propertybuilding.jpg', 'label': 'Utility'},
-      {'imagePath': 'images/propertybuilding.jpg', 'label': 'Utility'},
-      {'imagePath': 'images/propertybuilding.jpg', 'label': 'Utility'},
-      {'imagePath': 'images/propertybuilding.jpg', 'label': 'Utility'},
-    ];
-
-    return GridView.builder(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 1,
-        crossAxisSpacing: 8.0,
-        mainAxisSpacing: 8.0,
+      body: Center(
+        child: Image.asset(imagePath),
       ),
-      itemCount: (utilitiesImages.length / 2).ceil(),
-      itemBuilder: (context, index) {
-        int startIndex = index * 2;
-        int endIndex = startIndex + 2;
-
-        if (endIndex > utilitiesImages.length) {
-          endIndex = utilitiesImages.length;
-        }
-
-        List<Map<String, String>> currentImages =
-            utilitiesImages.sublist(startIndex, endIndex);
-
-        return Column(
-          children: currentImages.map((imageWithLabel) {
-            return Expanded(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Stack(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 2,
-                            blurRadius: 5,
-                            offset: Offset(0, 2),
-                          ),
-                        ],
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(10.0),
-                        child: Image.asset(
-                          imageWithLabel['imagePath']!,
-                          height: double.maxFinite,
-                          width: double.maxFinite,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      bottom: 8.0,
-                      left: 8.0,
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.star,
-                            color: Colors.amber,
-                            size: 16.0,
-                          ),
-                          SizedBox(width: 4.0),
-                          Text(
-                            imageWithLabel['label']!,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            );
-          }).toList(),
-        );
-      },
     );
   }
 }

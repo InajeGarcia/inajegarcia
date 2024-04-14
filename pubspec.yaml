@@ -43,6 +43,11 @@ dependencies:
   firebase_core: ^2.12.0
   cloud_firestore: ^4.15.8
   firebase_auth: ^4.16.0
+  http: ^1.0.0
+  cached_network_image: ^3.1.0
+  shared_preferences: ^2.2.2
+  tutorial_coach_mark: ^1.2.11
+  smooth_page_indicator: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -52,7 +57,7 @@ dev_dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "images/reallogo.png"
+  image_path: "images/unplogov3.png"
 
   #flutter_launcher_icons:
   #  android: "launcher_icon"

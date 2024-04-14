@@ -4,6 +4,7 @@ import 'package:sharkspinpoint/page/home_page.dart';
 import 'package:sharkspinpoint/page/spot_page.dart';
 import 'package:sharkspinpoint/page/info_page.dart';
 import 'package:sharkspinpoint/page/map_page.dart';
+import 'package:sharkspinpoint/page/profile_page.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -13,12 +14,14 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int currentIndex = 0;
   double _borderRadius = 20.0; // Initial border radius value
+
   final screens = [
     HomePage(),
-    CollegesPage(),
+    CollegePage(),
     MapPage(),
     SpotPage(),
     InfoPage(),
+    ProfilePage(), // Add the ProfilePage to the screens list
   ];
 
   void setBorderRadius(double radius) {
@@ -43,27 +46,34 @@ class _HomeState extends State<Home> {
             BottomNavigationBarItem(
               icon: Icon(Icons.home_rounded),
               label: "Home",
-              backgroundColor: Color.fromARGB(255, 43, 163, 105),
+              backgroundColor: Color.fromARGB(255, 5, 128, 36),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.book_rounded),
               label: "Colleges",
-              backgroundColor: Color.fromARGB(255, 26, 99, 194),
+              backgroundColor: Color.fromARGB(255, 17, 44, 163),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.map_rounded),
               label: "Map",
-              backgroundColor: Color.fromARGB(255, 219, 184, 87),
+              backgroundColor: Color.fromARGB(255, 221, 154, 31),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.place_rounded),
               label: "Spot",
-              backgroundColor: Color.fromARGB(255, 43, 163, 105),
+              backgroundColor: Color.fromARGB(255, 5, 128, 36),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.info_rounded),
               label: "About",
-              backgroundColor: Color.fromARGB(255, 26, 99, 194),
+              backgroundColor: Color.fromARGB(255, 17, 44, 163),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                  Icons.person_rounded), // Use an appropriate icon for profile
+              label: "Profile",
+              backgroundColor: Color.fromARGB(
+                  255, 221, 154, 31), // Choose an appropriate color
             ),
           ],
         ),

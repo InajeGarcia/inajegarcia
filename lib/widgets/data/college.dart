@@ -21,14 +21,6 @@ class College {
 List<College> colleges = [
   College(
     id: 1,
-    name: 'UNP Administration Building',
-    imageUrl: 'images/admin.jpg',
-    imageUrl2: 'images/admin.jpg',
-    description: 'admin ro',
-    color: Color.fromARGB(255, 10, 76, 197),
-  ),
-  College(
-    id: 2,
     name: 'College of Architecture',
     imageUrl: 'images/carch.png',
     imageUrl2: 'images/carchfront.jpg',
@@ -37,7 +29,7 @@ List<College> colleges = [
     color: Color.fromARGB(255, 122, 7, 55),
   ),
   College(
-    id: 3,
+    id: 2,
     name: 'College of Arts and Sciences',
     imageUrl: 'images/cas.jpg',
     imageUrl2: 'images/casbuilding.jpg',
@@ -46,7 +38,7 @@ List<College> colleges = [
     color: Color.fromARGB(255, 180, 21, 21),
   ),
   College(
-    id: 4,
+    id: 3,
     name: 'College of Bussiness Administration and Accountancy',
     imageUrl: 'images/cbaa.jpg',
     imageUrl2: 'images/cbaabuilding.jpg',
@@ -55,7 +47,7 @@ List<College> colleges = [
     color: Color.fromARGB(255, 255, 233, 34),
   ),
   College(
-    id: 5,
+    id: 4,
     name: 'College of Communication and Information Technology',
     imageUrl: 'images/ccit.jpg',
     imageUrl2: 'images/ccitbuilding.jpg',
@@ -64,7 +56,7 @@ List<College> colleges = [
     color: Color.fromARGB(255, 212, 15, 91),
   ),
   College(
-    id: 6,
+    id: 5,
     name: 'College of Criminology and Justice Enforcement',
     imageUrl: 'images/ccje.png',
     imageUrl2: 'images/ccjebuilding.jpg',
@@ -73,12 +65,21 @@ List<College> colleges = [
     color: Color.fromARGB(255, 109, 2, 77),
   ),
   College(
-    id: 7,
+    id: 6,
     name: 'College of Engineering',
     imageUrl: 'images/ce.jpg',
     imageUrl2: 'images/cebuilding.jpg',
     description:
         "Welcome to the College of Engineering (CE), where innovation fuels progress and imagination transforms into reality. As a leading institution in engineering education, CE offers a diverse range of programs designed to equip students with the knowledge and skills needed to tackle the world's most pressing challenges. From civil and mechanical engineering to electrical and computer engineering, our curriculum blends theory with hands-on experience, preparing graduates to excel in their chosen fields. At CE, we foster a culture of collaboration, creativity, and ethical responsibility, empowering our students to become visionary leaders and problem solvers in a rapidly changing world. Join us as we engineer solutions that shape the future and make a lasting impact on society. Welcome to CE, where your journey to engineering excellence begins.",
+    color: Color.fromARGB(255, 201, 68, 15),
+  ),
+  College(
+    id: 7,
+    name: 'College of Fine Arts and Design',
+    imageUrl: 'images/cfad.jpg',
+    imageUrl2: 'images/cfadbuilding.jpg',
+    description:
+        "Welcome to the College of Fine Arts and Designs (CFad), where innovation fuels progress and imagination transforms into reality. As a leading institution in engineering education, CE offers a diverse range of programs designed to equip students with the knowledge and skills needed to tackle the world's most pressing challenges. From civil and mechanical engineering to electrical and computer engineering, our curriculum blends theory with hands-on experience, preparing graduates to excel in their chosen fields. At CE, we foster a culture of collaboration, creativity, and ethical responsibility, empowering our students to become visionary leaders and problem solvers in a rapidly changing world. Join us as we engineer solutions that shape the future and make a lasting impact on society. Welcome to CE, where your journey to engineering excellence begins.",
     color: Color.fromARGB(255, 201, 68, 15),
   ),
   College(
@@ -189,24 +190,37 @@ class MyApp extends StatelessWidget {
         body: ListView.builder(
           itemCount: colleges.length,
           itemBuilder: (context, index) {
+            // Retrieve the current College object from the list
             final college = colleges[index];
-            // Create a Container widget for each college item
+            // Return a container for each college
             return Container(
               padding: EdgeInsets.all(10.0),
-              color: college.color, // Set the background color to college.color
+              color: college
+                  .color, // Set the background color to the college's color
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Display the college name in the Container
+                  // Display the name of the college
                   Text(
                     college.name,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
-                      color: Colors.white, // Use a contrasting text color
+                      color: Colors.white,
                     ),
                   ),
-                  // Display other information as needed
+                  // Add a button for each college
+                  ElevatedButton(
+                    onPressed: () {
+                      // Action when the button is clicked: show a Snackbar with the college name
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('You clicked on ${college.name}'),
+                        ),
+                      );
+                    },
+                    child: Text('More Info'),
+                  ),
                 ],
               ),
             );

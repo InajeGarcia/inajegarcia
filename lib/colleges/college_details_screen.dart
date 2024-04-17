@@ -1,7 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:sharkspinpoint/widgets/data/college.dart';
+import 'package:sharkspinpoint/collge/cas.dart';
+import 'package:sharkspinpoint/collge/cbaa.dart';
+import 'package:sharkspinpoint/collge/carch.dart';
+import 'package:sharkspinpoint/collge/ccit.dart';
+import 'package:sharkspinpoint/collge/ccje.dart';
+import 'package:sharkspinpoint/collge/ce.dart';
+import 'package:sharkspinpoint/collge/cfad.dart';
+import 'package:sharkspinpoint/collge/chs.dart';
+import 'package:sharkspinpoint/collge/chtm.dart';
+import 'package:sharkspinpoint/collge/claw.dart';
+import 'package:sharkspinpoint/collge/cmed.dart';
+import 'package:sharkspinpoint/collge/cn.dart';
+import 'package:sharkspinpoint/collge/cpad.dart';
+import 'package:sharkspinpoint/collge/csw.dart';
+import 'package:sharkspinpoint/collge/cte.dart';
+import 'package:sharkspinpoint/collge/ls.dart';
 import 'package:sharkspinpoint/page/map_page.dart';
-import 'package:sharkspinpoint/colleges/admin_offices.dart';
+import 'package:sharkspinpoint/widgets/data/college.dart';
 
 class CollegeDetailPage extends StatelessWidget {
   final College college;
@@ -78,17 +93,140 @@ class CollegeDetailPage extends StatelessWidget {
                   child: Text('View on Map'),
                 ),
                 SizedBox(width: 10), // Add some space between the buttons
-                // Additional button
+                // Additional button based on college name
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => AdminOfficesPage(),
-                      ),
-                    );
+                    // Define navigation based on college name
+                    if (college.name == 'College of Architecture') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CArch(),
+                        ),
+                      );
+                    } else if (college.name == 'College of Arts and Sciences') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CAs(),
+                        ),
+                      );
+                    } else if (college.name ==
+                        'College of Bussiness Administration and Accountancy') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CBaa(),
+                        ),
+                      );
+                    } else if (college.name ==
+                        'College of Communication and Information Technology') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CCit(),
+                        ),
+                      );
+                    } else if (college.name ==
+                        'College of Criminalogy Justice and Enforcement') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CBaa(),
+                        ),
+                      );
+                    } else if (college.name == 'College of Engineering') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CE(),
+                        ),
+                      );
+                    } else if (college.name ==
+                        'College of Fine Arts and Designs') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CFad(),
+                        ),
+                      );
+                    } else if (college.name ==
+                        'College of Health and Sciences') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CHs(),
+                        ),
+                      );
+                    } else if (college.name ==
+                        'College of Hospitality and Tourism Management') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CHtm(),
+                        ),
+                      );
+                    } else if (college.name == 'College of Law') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CLaw(),
+                        ),
+                      );
+                    } else if (college.name == 'College of Medicine') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CMed(),
+                        ),
+                      );
+                    } else if (college.name == 'College of Nursing') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CN(),
+                        ),
+                      );
+                    } else if (college.name ==
+                        'College of Public Administration') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CPad(),
+                        ),
+                      );
+                    } else if (college.name == 'College of Socialwork') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CSw(),
+                        ),
+                      );
+                    } else if (college.name == 'College of Teacher Education') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CTe(),
+                        ),
+                      );
+                    } else if (college.name == 'College of Technology') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CTe(),
+                        ),
+                      );
+                    } else if (college.name == 'Laboratory School') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LabSchool(),
+                        ),
+                      );
+                    }
+                    // Add more conditions for other colleges as needed
                   },
-                  child: Text('View Rooms'), // Change the text as needed
+                  child: Text('View Rooms'),
                 ),
               ],
             ),

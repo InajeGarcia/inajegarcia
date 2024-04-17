@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sharkspinpoint/colleges/spot_details_screen.dart';
+import 'package:sharkspinpoint/widgets/data/spot_screen.dart';
+// Import the detail page
 
 class SpotPage extends StatelessWidget {
   @override
@@ -16,7 +19,7 @@ class SpotPage extends StatelessWidget {
         centerTitle: true,
         toolbarHeight: 100,
         elevation: 0,
-        backgroundColor: Color.fromARGB(255, 17, 44, 163),
+        backgroundColor: Color.fromARGB(255, 5, 128, 36),
         automaticallyImplyLeading: false,
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.only(
@@ -25,7 +28,34 @@ class SpotPage extends StatelessWidget {
           ),
         ),
       ),
-      // Leave body blank to create a blank page
+      body: ListView.builder(
+        itemCount: spots.length,
+        itemBuilder: (BuildContext context, int index) {
+          Spot spot = spots[index];
+          return GestureDetector(
+            onTap: () {
+              // Navigate to detail page when a spot item is tapped
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SpotDetailPage(spot: spot),
+                ),
+              );
+            },
+            child: Card(
+              child: ListTile(
+                leading: Image.asset(
+                  spot.imageUrl,
+                  width: 80,
+                  height: 80,
+                  fit: BoxFit.cover,
+                ),
+                title: Text(spot.name),
+              ),
+            ),
+          );
+        },
+      ),
     );
   }
 }

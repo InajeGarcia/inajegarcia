@@ -33,10 +33,10 @@ class HomePage extends StatelessWidget {
   ];
 
   final List<String> restroomImages = [
-    'images/admin.jpg',
-    'images/admin.jpg',
-    'images/admin.jpg',
-    'images/admin.jpg',
+    'images/ccje/cr1stm.jpg',
+    'images/ccje/cr1stf.jpg',
+    'images/ccje/cr2ndm.jpg',
+    'images/ccje/cr2ndf.jpg',
     'images/admin.jpg',
     'images/admin.jpg',
     'images/admin.jpg',

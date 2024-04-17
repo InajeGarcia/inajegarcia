@@ -1348,8 +1348,7 @@ class _MapPageState extends State<MapPage> {
             vertex.id == 'Motor Parking(Back)' ||
             vertex.id == 'Motor Parking(Front)' ||
             vertex.id == 'UNP Canteen(Beside CCIT)' ||
-            vertex.id == 'UNP Canteen(Front of Mens Dormitory)' ||
-            vertex.id == 'UNP Canteen(Back of CPAD/CLaw/CFAd/CCJE)' ||
+            vertex.id == 'UNP Canteen(Back)' ||
             vertex.id == 'UNP Property Office' ||
             vertex.id == 'UNP Ceramic Center' ||
             vertex.id == 'UNP Elementary' ||

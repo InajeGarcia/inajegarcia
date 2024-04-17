@@ -132,7 +132,7 @@ class CollegeDetailPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => CBaa(),
+                          builder: (context) => CCje(),
                         ),
                       );
                     } else if (college.name == 'College of Engineering') {

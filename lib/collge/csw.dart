@@ -14,7 +14,7 @@ class CSw extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Third Floor'),
+        title: Text('Third Floor Crim Building'),
       ),
       body: ListView.builder(
         itemCount: firstFloorImages.length,

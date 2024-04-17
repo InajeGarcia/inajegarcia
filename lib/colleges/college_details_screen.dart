@@ -128,7 +128,7 @@ class CollegeDetailPage extends StatelessWidget {
                         ),
                       );
                     } else if (college.name ==
-                        'College of Criminalogy Justice and Enforcement') {
+                        'College of Criminology Justice and Enforcement') {
                       Navigator.push(
                         context,
                         MaterialPageRoute(

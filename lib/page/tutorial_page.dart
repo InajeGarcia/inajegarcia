@@ -5,14 +5,14 @@ class TutorialPage extends StatelessWidget {
   // Define a list of image asset paths
   final List<String> imagePaths = [
     'images/home.jpg', // Update these paths with your image assets
-    'images/college.jpg',
+    'images/colleges.jpg',
     'images/map.jpg',
     'images/spot.jpg',
-    'images/info.jpg',
+    'images/about.jpg',
     'images/profile.jpg',
-    'images/food.jpg',
+    'images/canteen.jpg',
     'images/restroom.jpg',
-    'images/storage.jpg',
+    'images/utilities.jpg',
   ];
 
   // Define the base picture asset path

@@ -36,7 +36,7 @@ class Admin extends StatelessWidget {
     [
       'Records Office',
       'Registrar Office',
-      'Cashier Office',
+      'Cashiering Unit',
       // Add more nicknames as needed for the first floor
     ],
     // Second Floor

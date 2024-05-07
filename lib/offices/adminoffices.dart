@@ -8,7 +8,33 @@ class RegistrarOffice extends StatelessWidget {
         title: Text('Registrar Office'),
       ),
       body: Center(
-        child: Text('Registrar Office Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/registrar.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Registrar Office is located at the ground floor of the Administration Building. Upon entering, you will find it on the first office to your left.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -22,7 +48,33 @@ class BudgetOffice extends StatelessWidget {
         title: Text('Budget Office'),
       ),
       body: Center(
-        child: Text('Budget Office Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/budget.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Budget Office is located at the third floor of the Administration Building. Upon reaching the third floor, you will find it on the second office to your left.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -36,7 +88,33 @@ class CashieringUnit extends StatelessWidget {
         title: Text('Cashiering Unit'),
       ),
       body: Center(
-        child: Text('Cashiering Unit Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/cashier.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Cashiering Unit is located at the ground floor of the Administration Building. Upon entering, you will find it on the second office to your right.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -50,7 +128,33 @@ class AccountingOffice extends StatelessWidget {
         title: Text('Accounting Office'),
       ),
       body: Center(
-        child: Text('Accounting Office Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/accounting.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Accounting Office is located at the second floor of the Administration Building. Upon reaching the second floor, you will find it on the last office to your left.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -64,7 +168,33 @@ class VpreOffice extends StatelessWidget {
         title: Text('Vice President for Research and Extension'),
       ),
       body: Center(
-        child: Text('Vice President for Research and Extension Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/vpre.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Vice President for Research and Extension Office is located at the third floor of the Administration Building. Upon reaching the third floor, you will find it on the second office to your left.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -78,7 +208,33 @@ class OpOffice extends StatelessWidget {
         title: Text('Office of the President'),
       ),
       body: Center(
-        child: Text('Office of the President Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/op.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Office of the President is located at the third floor of the Administration Building. Upon reaching the third floor, you will find it on the first office to your right.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -92,7 +248,33 @@ class VpaaOffice extends StatelessWidget {
         title: Text('Vice President for Academic Affairs'),
       ),
       body: Center(
-        child: Text('Vice President for Academic Affairs Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/vpaa.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Vice President for Academic Affairs Office is located at the third floor of the Administration Building. Upon reaching the third floor, you will find it on the third office to your right.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -106,7 +288,33 @@ class VpfadOffice extends StatelessWidget {
         title: Text('Vice President for Finance and Administration'),
       ),
       body: Center(
-        child: Text('Vice President for Finance and Administration Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/vpfad.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Vice President for Finance and Administration Office is located at the third floor of the Administration Building. Upon reaching the third floor, you will find it on the fourth office to your right.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -120,7 +328,33 @@ class NstpOffice extends StatelessWidget {
         title: Text('National Service Training Program'),
       ),
       body: Center(
-        child: Text('National Service Training Program Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/nstp.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The National Service Training Program Office is located at the third floor of the Administration Building. Upon reaching the third floor, you will find it on the first office to your left.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -134,7 +368,33 @@ class PasucOffice extends StatelessWidget {
         title: Text('PASUC Office'),
       ),
       body: Center(
-        child: Text('PASUC Office Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/pasuc.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The PASUC Office is located at the third floor of the Administration Building. Upon reaching the third floor, you will find it on the third office to your right.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -148,7 +408,33 @@ class RecordsOffice extends StatelessWidget {
         title: Text('Records Office'),
       ),
       body: Center(
-        child: Text('Records Office Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/records.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Records Office is located at the ground floor of the Administration Building. Upon entering, you will find it on the second office to your left.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -162,7 +448,33 @@ class AdmissionOffice extends StatelessWidget {
         title: Text('Admission Office'),
       ),
       body: Center(
-        child: Text('Admission Office Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/admission.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Admission Office is located at the ground floor of the Administration Building. Upon entering, you will find it on the first office to your right.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -176,7 +488,33 @@ class CoaOffice extends StatelessWidget {
         title: Text('Commission on Audit'),
       ),
       body: Center(
-        child: Text('Commission on Audit Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/coa.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Commission on Audit Office is located at the third floor of the Administration Building. Upon reaching the third floor, you will find it on the fifth office to your left.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -190,7 +528,33 @@ class NetworksSystemOffice extends StatelessWidget {
         title: Text('Networks System Office'),
       ),
       body: Center(
-        child: Text('Networks System Office Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/networks.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Networks System Office is located at the second floor of the Administration Building. Upon reaching the second floor, you will find it on the last office to your right.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -204,7 +568,33 @@ class UniversityResearchOffice extends StatelessWidget {
         title: Text('University Research Office'),
       ),
       body: Center(
-        child: Text('University Research Office Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/research.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The University Research Office is located at the second floor of the Administration Building. Upon reaching the second floor, you will find it on the second office to your left.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -218,7 +608,33 @@ class HrmoOffice extends StatelessWidget {
         title: Text('Human Resource Management Office'),
       ),
       body: Center(
-        child: Text('Human Resource Management Office Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/hrmo.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Human Resource Management Office is located at the ground floor of the Administration Building. Upon entering, you will find it on the last office to your right.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -232,7 +648,33 @@ class UniversityExtensionOffice extends StatelessWidget {
         title: Text('University Extension Office'),
       ),
       body: Center(
-        child: Text('University Extension Office Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/extension.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The University Extension Office is located at the ground floor of the Administration Building. Upon entering, you will find it on the first office to your left.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -246,7 +688,33 @@ class UpimOffice extends StatelessWidget {
         title: Text('University Planning and Information Management'),
       ),
       body: Center(
-        child: Text('University Planning and Information Management Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/upim.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The University Planning and Information Management Office is located at the ground floor of the Administration Building. Upon entering, you will find it on the third office to your left.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -260,7 +728,33 @@ class CenterGenderOffice extends StatelessWidget {
         title: Text('Center for Gender and Development'),
       ),
       body: Center(
-        child: Text('Center for Gender and Development Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset(
+              'images/gender.jpg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 300,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                'The Center for Gender and Development is located at the second floor of the Administration Building. Upon reaching the second floor, you will find it on the second office to your right.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

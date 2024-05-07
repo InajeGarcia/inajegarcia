@@ -41,7 +41,7 @@ class Admin extends StatelessWidget {
     ],
     // Second Floor
     [
-      'UP-IM Office',
+      'UPIM Office',
       'VPAA Office',
       'PASUC Office',
       // Add more nicknames as needed for the second floor

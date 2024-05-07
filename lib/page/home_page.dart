@@ -1,10 +1,9 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:sharkspinpoint/offices/adminbuilding.dart';
+
 import 'package:sharkspinpoint/offices/adminoffices.dart';
 import 'package:sharkspinpoint/page/searchresult_page.dart';
-import 'package:sharkspinpoint/page/map_page.dart';
 
 class HomePage extends StatefulWidget {
   @override

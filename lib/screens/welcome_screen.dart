@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart'; // Import FirebaseAuth
 import 'package:sharkspinpoint/page/login_page.dart';
 import 'package:sharkspinpoint/screens/home_screen.dart';
 
@@ -18,9 +19,6 @@ class WelcomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            //SizedBox(
-            //  height: 400,
-            //),
             Column(
               children: [
                 SizedBox(height: 500),
@@ -28,18 +26,27 @@ class WelcomeScreen extends StatelessWidget {
                   color: Color.fromARGB(255, 0, 158, 82),
                   borderRadius: BorderRadius.circular(40),
                   child: InkWell(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => LoginPage(title: 'Login UI'),
-                        ),
-                      );
+                    onTap: () async {
+                      User? user = FirebaseAuth.instance.currentUser;
+                      if (user != null) {
+                        // If user is authenticated, navigate to HomeScreen
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomeScreen()),
+                        );
+                      } else {
+                        // If user is not authenticated, navigate to LoginPage
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginPage(title: 'Login UI'),
+                          ),
+                        );
+                      }
                     },
                     child: Container(
                       padding:
                           EdgeInsets.symmetric(vertical: 12, horizontal: 100),
-                      // adjust para sa button
                       child: Text(
                         "Explore",
                         style: TextStyle(

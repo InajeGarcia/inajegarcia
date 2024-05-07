@@ -19,6 +19,7 @@ class _RegisterPageState extends State<RegisterPage> {
   final TextEditingController _lastNameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  bool _passwordVisible = false;
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +57,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           hintText: 'First Name',
                           prefixIcon: const Icon(Icons.person),
                           filled: true,
-                          fillColor: Colors.white.withOpacity(0.8),
+                          fillColor: Colors.white.withOpacity(1),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(40),
                             borderSide: BorderSide.none,
@@ -80,7 +81,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           hintText: 'Last Name',
                           prefixIcon: const Icon(Icons.person),
                           filled: true,
-                          fillColor: Colors.white.withOpacity(0.8),
+                          fillColor: Colors.white.withOpacity(1),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(40),
                             borderSide: BorderSide.none,
@@ -104,7 +105,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           hintText: 'Enter your email',
                           prefixIcon: const Icon(Icons.email),
                           filled: true,
-                          fillColor: Colors.white.withOpacity(0.8),
+                          fillColor: Colors.white.withOpacity(1),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(40),
                             borderSide: BorderSide.none,
@@ -127,8 +128,20 @@ class _RegisterPageState extends State<RegisterPage> {
                         decoration: InputDecoration(
                           hintText: 'Enter your password',
                           prefixIcon: const Icon(Icons.lock),
+                          suffixIcon: IconButton(
+                            icon: Icon(
+                              _passwordVisible
+                                  ? Icons.visibility
+                                  : Icons.visibility_off,
+                            ),
+                            onPressed: () {
+                              setState(() {
+                                _passwordVisible = !_passwordVisible;
+                              });
+                            },
+                          ),
                           filled: true,
-                          fillColor: Colors.white.withOpacity(0.8),
+                          fillColor: Colors.white.withOpacity(1),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(40),
                             borderSide: BorderSide.none,
@@ -138,7 +151,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             horizontal: 20,
                           ),
                         ),
-                        obscureText: true,
+                        obscureText: !_passwordVisible,
                         validator: (value) {
                           if (value == null || value.isEmpty) {
                             return 'Please enter your password';

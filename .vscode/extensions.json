@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "vinicioslc.adb-interface-vscode"
+        "vinicioslc.adb-interface-vscode",
+        "tonybaloney.vscode-pets"
     ]
 }

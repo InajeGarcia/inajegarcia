@@ -39,7 +39,7 @@ List<College> colleges = [
   ),
   College(
     id: 3,
-    name: 'College of Bussiness Administration and Accountancy',
+    name: 'College of Business Administration and Accountancy',
     imageUrl: 'images/cbaa.jpg',
     imageUrl2: 'images/cbaabuilding.jpg',
     description:
@@ -50,7 +50,7 @@ List<College> colleges = [
     id: 4,
     name: 'College of Communication and Information Technology',
     imageUrl: 'images/ccit.jpg',
-    imageUrl2: 'images/ccitbuilding.jpg',
+    imageUrl2: 'images/ccitbuilding.png',
     description:
         "Welcome to the College of Communication and Information Technology (CCIT), where innovation meets technology and creativity drives digital transformation. As a pioneering institution in the realm of computing and information sciences, CCIT offers a dynamic learning environment that prepares students for the rapidly evolving tech industry. Our comprehensive programs cover a wide range of cutting-edge fields including computer science, information systems, cybersecurity, and digital media, empowering students to become versatile professionals equipped to tackle the challenges of the digital age. At CCIT, we prioritize hands-on learning, industry-relevant projects, and collaboration with leading tech companies, ensuring that our graduates are ready to make an impact from day one. Join us as we explore the frontiers of technology, push the boundaries of innovation, and shape the future of the digital world. Welcome to CCIT, where your journey towards a tech-driven future begins.",
     color: Color.fromARGB(255, 212, 15, 91),
@@ -158,75 +158,143 @@ List<College> colleges = [
     imageUrl: 'images/ctech.png',
     imageUrl2: 'images/ctechbuilding.jpg',
     description:
-        "Welcome to the College of Technology (CTech), where innovation drives progress and technology transforms the world. As a leading institution in technology education, CTech offers dynamic programs that prepare students for success in the rapidly evolving tech industry. From computer science and engineering to information technology and cybersecurity, our curriculum combines theoretical knowledge with hands-on experience, ensuring graduates are equipped with the skills and expertise needed to thrive in their chosen fields. Our faculty, comprised of experienced professionals and scholars, mentor students to become creative problem solvers and leaders in technology innovation. At CTech, we emphasize collaboration, critical thinking, and cutting-edge research, empowering our graduates to make meaningful contributions to society through the application of technology. Join us as we explore the frontiers of technology, unleash innovation, and shape the future of the digital age. Welcome to CTech, where your journey to becoming a tech trailblazer begins.",
-    color: const Color.fromARGB(255, 75, 75, 75),
+        "Welcome to the College of Technology (CTech), where innovation drives progress and technology transforms the world. As a leading institution in technology education, CTech offers dynamic programs that prepare students for success in the rapidly evolving tech industry. From computer science and engineering to information technology and cybersecurity, our curriculum combines theoretical knowledge with hands-on experience, ensuring graduates are equipped with the skills and expertise needed to thrive in their chosen fields. Our faculty, comprised of experienced professionals and scholars, mentor students to become creative problem solvers and leaders in technology innovation. At CTech, we emphasize collaboration, critical thinking, and cutting-edge research, empowering our graduates to make meaningful contributions to society through the application of technology. Join us as we explore the frontiers of technology, push the boundaries of innovation, and shape the future of the digital world. Welcome to CTech, where your journey to a tech-driven future begins.",
+    color: Color.fromARGB(255, 18, 97, 67),
   ),
   College(
     id: 17,
     name: 'Laboratory School',
     imageUrl: 'images/ls.png',
-    imageUrl2: 'images/ctebuilding.jpg',
+    imageUrl2: 'images/ctechite.jpg',
     description:
-        "The Laboratory School, often referred to as a lab school, is an educational institution typically affiliated with a university or college. Lab schools serve as sites for innovative teaching practices, educational research, and professional development for educators. They often prioritize hands-on, experiential learning and may focus on specific educational philosophies or approaches, such as progressive education or inquiry-based learning.\n\nLab schools often provide a unique environment for students, where they can engage in interdisciplinary learning, explore their interests through project-based activities, and collaborate with educators in conducting educational research. These schools are also valuable resources for the broader educational community, as they often share their findings and best practices with other schools and educators.\nOverall, laboratory schools play a significant role in shaping the future of education by experimenting with new teaching methods, contributing to educational research, and preparing students for success in a rapidly changing world.",
-    color: Color.fromARGB(255, 6, 156, 43),
+        "Welcome to the Laboratory School (LS), where innovation drives progress and technology transforms the world. As a leading institution in technology education, CTech offers dynamic programs that prepare students for success in the rapidly evolving tech industry. From computer science and engineering to information technology and cybersecurity, our curriculum combines theoretical knowledge with hands-on experience, ensuring graduates are equipped with the skills and expertise needed to thrive in their chosen fields. Our faculty, comprised of experienced professionals and scholars, mentor students to become creative problem solvers and leaders in technology innovation. At CTech, we emphasize collaboration, critical thinking, and cutting-edge research, empowering our graduates to make meaningful contributions to society through the application of technology. Join us as we explore the frontiers of technology, push the boundaries of innovation, and shape the future of the digital world. Welcome to CTech, where your journey to a tech-driven future begins.",
+    color: Color.fromARGB(255, 18, 97, 67),
   ),
-
-  // Add more colleges as needed
 ];
 
-void main() {
-  runApp(MyApp());
-}
+class CollegeDetails extends StatelessWidget {
+  final College college;
 
-class MyApp extends StatelessWidget {
+  CollegeDetails({required this.college});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'College List',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Colleges'),
-        ),
-        body: ListView.builder(
-          itemCount: colleges.length,
-          itemBuilder: (context, index) {
-            // Retrieve the current College object from the list
-            final college = colleges[index];
-            // Return a container for each college
-            return Container(
-              padding: EdgeInsets.all(10.0),
-              color: college
-                  .color, // Set the background color to the college's color
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // Display the name of the college
-                  Text(
-                    college.name,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                      color: Colors.white,
-                    ),
-                  ),
-                  // Add a button for each college
-                  ElevatedButton(
-                    onPressed: () {
-                      // Action when the button is clicked: show a Snackbar with the college name
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text('You clicked on ${college.name}'),
-                        ),
-                      );
-                    },
-                    child: Text('More Info'),
-                  ),
-                ],
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(college.name),
+        backgroundColor: college.color,
+      ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(10.0),
+          child: Column(
+            children: [
+              Container(
+                child: Image.asset(
+                  college.imageUrl,
+                  width: 400,
+                  height: 200,
+                  fit: BoxFit.cover,
+                ),
               ),
-            );
-          },
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 10.0),
+                child: Text(
+                  college.description,
+                  style: TextStyle(fontSize: 16.0, height: 1.5),
+                  textAlign: TextAlign.justify,
+                ),
+              ),
+              Container(
+                child: Image.asset(
+                  college.imageUrl2,
+                  width: 400,
+                  height: 200,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
+}
+
+class CollegeCard extends StatelessWidget {
+  final College college;
+
+  CollegeCard({required this.college});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: EdgeInsets.all(10.0),
+      child: InkWell(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => CollegeDetails(college: college),
+            ),
+          );
+        },
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(4.0),
+                topRight: Radius.circular(4.0),
+              ),
+              child: Image.asset(
+                college.imageUrl,
+                height: 150,
+                fit: BoxFit.cover,
+              ),
+            ),
+            SizedBox(height: 10.0),
+            Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Text(
+                college.name,
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class CollegeCardList extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      itemCount: colleges.length,
+      itemBuilder: (context, index) {
+        return CollegeCard(college: colleges[index]);
+      },
+    );
+  }
+}
+
+void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Universities'),
+          backgroundColor: Colors.teal,
+        ),
+        body: CollegeCardList(),
+      ),
+    ),
+  );
 }

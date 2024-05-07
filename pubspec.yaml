@@ -48,6 +48,9 @@ dependencies:
   shared_preferences: ^2.2.2
   tutorial_coach_mark: ^1.2.11
   smooth_page_indicator: ^1.1.0
+  image_picker: ^1.0.8
+  permission_handler: ^11.3.1
+  marquee: ^2.2.3
 
 dev_dependencies:
   flutter_test:

@@ -1,62 +1,323 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-
+import 'package:sharkspinpoint/offices/adminbuilding.dart';
+import 'package:sharkspinpoint/offices/adminoffices.dart';
 import 'package:sharkspinpoint/page/searchresult_page.dart';
+import 'package:sharkspinpoint/page/map_page.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  TextEditingController _searchController = TextEditingController();
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
   // Lists of image URLs for each category
-  final List<String> officeImages = [
-    'images/admin.jpg',
-    'images/registrar.jpg',
-    'images/budget.jpg',
-    'images/cashier.jpg',
-    'images/accounting.jpg',
-    'images/vpre.jpg',
-    'images/op.jpg',
-    'images/vpaa.jpg',
-    'images/vpfad.jpg',
-    'images/nstp.jpg',
+  final List<Map<String, dynamic>> officeImages = [
+    {
+      'imagePath': 'images/registrar.jpg',
+      'name': 'Registrar Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+      'floor': 'FirstFloorPage',
+      'class': RegistrarOffice(),
+    },
+    {
+      'imagePath': 'images/budget.jpg',
+      'name': 'Budget Office',
+      'details':
+          'The Budget office is located at the first floor of the Administration building at the very last office, you should see the budget office.',
+      'floor': 'FirstFloorPage',
+      'class': BudgetOffice(),
+    },
+    {
+      'imagePath': 'images/cashier.jpg',
+      'name': 'Cashiering Unit',
+      'details':
+          'Upon entering the Administration Building, You will see the Cashiering Unit, the second office to the left part.',
+      'floor': 'FirstFloorPage',
+      'class': CashieringUnit(),
+    },
+    {
+      'imagePath': 'images/accounting.jpg',
+      'name': 'Accounting Office',
+      'details':
+          'The Accounting Office is located at first floor of the Administration building, just enter the admin building and walk straight until you pass the second stairs, you are now in the Accounting Office.',
+      'floor': 'FirstFloorPage',
+      'class': AccountingOffice(),
+    },
+    {
+      'imagePath': 'images/vpre.jpg',
+      'name': 'Vice President for Research and Extension',
+      'details':
+          'The VPRE is located at the second floor of the university admininstration building. Upon walking upstairs, just walk straight until you see the VPRE office located at the last part of the second floor.',
+      'floor': 'SecondFloorPage',
+      'class': VpreOffice(),
+    },
+    {
+      'imagePath': 'images/op.jpg',
+      'name': 'Office of the President',
+      'details':
+          'The Office of the President is located at the Third floor of the Administration Building. You should see it already upon reaching Third Floor.',
+      'floor': 'ThirdFloorPage',
+      'class': OpOffice(),
+    },
+    {
+      'imagePath': 'images/vpaa.jpg',
+      'name': 'Vice President for Academic Affairs',
+      'details':
+          'The office of the VPAA is Located at second floor of the Administration building. You should be able to see it upon reaching second floor.',
+      'floor': 'SecondFloorPage',
+      'class': VpaaOffice(),
+    },
+    {
+      'imagePath': 'images/vpfad.jpg',
+      'name': 'Vice President for Finance and Administration',
+      'details':
+          'The VPFAd is located at first floor of the Administration building. Just walk straight ahead until you reach the office, the Budget office is there also.',
+      'floor': 'FirstFloorPage',
+      'class': VpfadOffice(),
+    },
+    {
+      'imagePath': 'images/nstp.jpg',
+      'name': 'National Service Training Program',
+      'details':
+          'The NSTP is located at the second floor of the Administration building. So, you need to walk upstairs.',
+      'floor': 'SecondFloorPage',
+      'class': NstpOffice(),
+    },
+    {
+      'imagePath': 'images/pasuc.jpg',
+      'name': 'PASUC Office',
+      'details':
+          'The PASUC is located at the second floor of the Adminitration building. So, you need to walk upstairs.',
+      'floor': 'SecondFloorPage',
+      'class': PasucOffice(),
+    },
+    {
+      'imagePath': 'images/records.jpg',
+      'name': 'Records Office',
+      'details':
+          'The Records office is located at the very front part of the Admininistration building, you should be able to see it when entering.',
+      'floor': 'FirstFloorPage',
+      'class': RecordsOffice(),
+    },
+    {
+      'imagePath': 'images/admission.jpg',
+      'name': 'Admission Office',
+      'details':
+          'The Admission office is located at the very front part of the Admininistration building, you should be able to see it when entering.',
+      'floor': 'FirstFloorPage',
+      'class': AdmissionOffice(),
+    },
+    {
+      'imagePath': 'images/coa.jpg',
+      'name': 'Commssion on Audit',
+      'details':
+          'The Commission on Audit office is located at first floor of Administration building, just pass through the cashier office.',
+      'floor': 'FirstFloorPage',
+      'class': CoaOffice(),
+    },
+    /*{
+      'imagePath': 'images/guidance.jpg',
+      'name': 'Guidance Office',
+      'details': 'Details about Guidance',
+      'floor': 'FirstFloorPage',
+    },*/
+    /*{
+      'imagePath': 'images/img.jpg',
+      'name': 'IMG Office',
+      'details': 'Details about IMG Office',
+      'floor': 'FirstFloorPage',
+    },*/
+    {
+      'imagePath': 'images/networksystem.jpg',
+      'name': 'Networks System Office',
+      'details':
+          'The Networks System office is located at the second floor of the Administration building, you should be able to see it upon walking upstairs.',
+      'floor': 'SecondFloorPage',
+      'class': NetworksSystemOffice(),
+    },
+    {
+      'imagePath': 'images/researchoffice.jpg',
+      'name': ' University Research Office',
+      'details':
+          'The Unviversity Research Office is located at second floor of the Administration building, Just walk upstairs and walk until you pass the HRMO.',
+      'floor': 'SecondFloorPage',
+      'class': UniversityResearchOffice(),
+    },
+    {
+      'imagePath': 'images/hrmo.jpg',
+      'name': 'Human Resource Management Office',
+      'details':
+          'The HRMO is located at the second floor of the Administration building. It is located at the right part of the building.',
+      'floor': 'SecondFloorPage',
+      'class': HrmoOffice(),
+    },
+    {
+      'imagePath': 'images/extensionoffice.jpg',
+      'name': 'University Extension Office',
+      'details':
+          'The Extension office is located at the second floor of the Administration building, you can see it upon passing the HRMO.',
+      'floor': 'SecondFloorPage',
+      'class': UniversityExtensionOffice(),
+    },
+    {
+      'imagePath': 'images/upim.jpg',
+      'name': 'University Planning and Information Management',
+      'details':
+          'The UPIM is located at Second floor of the Administration building, if you walk upstairs on the right stairs, you will see it on your left part facing north.',
+      'floor': 'SecondFloorPage',
+      'class': UpimOffice(),
+    },
+    {
+      'imagePath': 'images/centergender.jpg',
+      'name': 'Center for Gender and Development',
+      'details':
+          'The CGAD is located at second floor of the Administration building. When you walk upstairs, you should be able too see it together with UPIM when facing north.',
+      'floor': 'SecondFloorPage',
+      'class': CenterGenderOffice(),
+    },
   ];
 
-  final List<String> foodImages = [
-    'images/canteen1.jpg',
-    'images/canteen2.jpg',
-    'images/canteen5.jpg',
-    'images/canteen5.jpg',
-    'images/canteen7.jpg',
-    'images/canteen1.jpg',
-    'images/canteen2.jpg',
-    'images/canteen5.jpg',
-    'images/canteen5.jpg',
-    'images/canteen7.jpg',
+  final List<Map<String, dynamic>> foodImages = [
+    {
+      'imagePath': 'images/canteen1.jpg',
+      'name': 'Canteen 1',
+      'details': 'Located in front of Ceramic Center',
+    },
+    {
+      'imagePath': 'images/canteen2.jpg',
+      'name': 'Canteen 2',
+      'details': 'Canteen 2',
+    },
+    {
+      'imagePath': 'images/canteen5.jpg',
+      'name': 'Canteen 5',
+      'details': 'Canteen 5',
+    },
+    {
+      'imagePath': 'images/canteen7.jpg',
+      'name': 'Canteen 7',
+      'details': 'Canteen 7',
+    },
+    {
+      'imagePath': 'images/canteen3.jpg',
+      'name': 'Canteen 3',
+      'details': 'Canteen 3',
+    },
   ];
 
-  final List<String> restroomImages = [
-    'images/ccje/cr1stm.jpg',
-    'images/ccje/cr1stf.jpg',
-    'images/ccje/cr2ndm.jpg',
-    'images/ccje/cr2ndf.jpg',
-    'images/admin.jpg',
-    'images/admin.jpg',
-    'images/admin.jpg',
-    'images/admin.jpg',
-    'images/admin.jpg',
-    'images/admin.jpg',
+  final List<Map<String, dynamic>> restroomImages = [
+    {
+      'imagePath': 'images/ccjecr1stm.jpg',
+      'name': 'CCJE CR 1st Floor Male',
+      'details': 'CCJE CR 1st Floor Male',
+    },
+    {
+      'imagePath': 'images/ccjecr1stf.jpg',
+      'name': 'CCJE CR 1st Floor Female',
+      'details': 'CCJE CR 1st Floor Female',
+    },
+    {
+      'imagePath': 'images/ccjecr2ndm.jpg',
+      'name': 'CCJE CR 2nd Floor Male',
+      'details': 'CCJE CR 2nd Floor Male',
+    },
+    {
+      'imagePath': 'images/ccjecr2ndf.jpg',
+      'name': 'CCJE CR 2nd Floor Female',
+      'details': 'CCJE CR 2nd Floor Female',
+    },
+    {
+      'imagePath': 'images/cbaacr.jpg',
+      'name': 'CBAA CR',
+      'details': 'CBAA CR',
+    },
+    {
+      'imagePath': 'images/cbaacr3.jpg',
+      'name': 'CBAA CR',
+      'details': 'CBAA CR',
+    },
   ];
 
-  final List<String> utilityImages = [
-    'images/property.jpg',
-    'images/property.jpg',
-    'images/property.jpg',
-    'images/property.jpg',
-    'images/property.jpg',
-    'images/property.jpg',
-    'images/property.jpg',
-    'images/property.jpg',
-    'images/property.jpg',
-    'images/property.jpg',
+  final List<Map<String, dynamic>> utilityImages = [
+    {
+      'imagePath': 'images/property.jpg',
+      'name': 'Property',
+      'details': 'Property Office/Storage',
+    },
+    {
+      'imagePath': 'images/stockroom1st.jpg',
+      'name': 'Stockroom 1st',
+      'details': 'Stockroom 1st',
+    },
+    {
+      'imagePath': 'images/stockroomcmed.jpg',
+      'name': 'Stockroom CMED',
+      'details': 'Stockroom CMED',
+    },
+    {
+      'imagePath': 'images/stockroomcmed2.jpg',
+      'name': 'Stockroom CMED 2nd Floor',
+      'details': 'Stockroom CMED 2nd Floor',
+    },
+    {
+      'imagePath': 'images/stockroomcmed3.jpg',
+      'name': 'Stockroom CMED 3rd Floor',
+      'details': 'Stockroom CMED 3rd Floor',
+    },
   ];
+
+  // Map codenames to image paths
+  final Map<String, String> codenames = {
+    'admin': 'Administration Building',
+    'registrar': 'Registrar Office',
+    'budget': 'Budget Office',
+    'cashier': 'Cashiering Unit',
+    'accounting': 'Accounting Office',
+    'vpre': 'Vice President for Research and Extension',
+    'op': 'Office of the President',
+    'vpaa': 'Vice President for Academic Affairs',
+    'vpfad': 'Vice President for Finance and Administration',
+    'nstp': 'National Service Training Program',
+    'pasuc': 'PASUC Office',
+    'records': 'Records Office',
+    'admission': 'Admission Office',
+    'coa': 'Commission on Audit',
+    //'guidance': 'Guidance Office',
+    //'img': 'IMG Office',
+    'networksystem': 'Networks System Office',
+    'researchoffice': 'University Research Office',
+    'hrmo': 'Human Resource Management Office',
+    'extensionoffice': 'University Extension Office',
+    'upim': 'University Planning and Information Management',
+    'centergender': 'Center for Gender and Development',
+    'canteen1': 'Canteen 1',
+    'canteen3': 'Canteen3',
+    'canteen2': 'Canteen 2',
+    'canteen5': 'Canteen 5',
+    'canteen7': 'Canteen 7',
+    'ccjecr1stm': 'CCJE CR 1st Floor Male',
+    'ccjecr1stf': 'CCJE CR 1st Floor Female',
+    'ccjecr2ndm': 'CCJE CR 2nd Floor Male',
+    'ccjecr2ndf': 'CCJE CR 2nd Floor Female',
+    'cbaacr': 'CBAA CR',
+    'cbaacr3': 'CBAA CR2',
+    'stockroomcmed': 'Stockroom CMED',
+    'stockroomcmed2': 'Stockroom CMED 2nd Floor',
+    'stockroomcmed3': 'Stockroom CMED 3rd Floor',
+    'property': 'Property',
+    'stockroom1st': 'Stockroom 1st',
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -87,27 +348,56 @@ class HomePage extends StatelessWidget {
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: TextField(
-                  decoration: InputDecoration(
-                    labelText: "Search what you're looking for?",
-                    prefixIcon: Image.asset(
-                      'images/pnglang.png',
-                      width: 24,
-                      height: 24,
-                    ),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(40),
+                child: Card(
+                  elevation: 5,
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: TextField(
+                            controller: _searchController,
+                            decoration: InputDecoration(
+                              hintText: "Search what you're looking for?",
+                              border: InputBorder.none,
+                              prefixIcon: Image.asset(
+                                'images/pnglang.png',
+                                width: 24,
+                                height: 24,
+                              ),
+                            ),
+                            onSubmitted: (value) {
+                              // Navigate to SearchResultPage with the search input
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      SearchResultPage(query: value),
+                                ),
+                              );
+                            },
+                            onChanged: (value) {
+                              setState(() {});
+                              // Rebuild the widget to show/hide the clear button
+                            },
+                          ),
+                        ),
+                        if (_searchController.text.isNotEmpty)
+                          IconButton(
+                            icon: Icon(Icons.clear_rounded),
+                            onPressed: () {
+                              _searchController.clear();
+                              setState(() {});
+                              // Rebuild the widget to hide the clear button
+                            },
+                          ),
+                      ],
                     ),
                   ),
-                  onSubmitted: (value) {
-                    // Navigate to SearchResultPage with the search input
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => SearchResultPage(query: value),
-                      ),
-                    );
-                  },
                 ),
               ),
             ),
@@ -115,7 +405,7 @@ class HomePage extends StatelessWidget {
               child: TabBar(
                 tabs: [
                   Tab(text: 'Offices'),
-                  Tab(text: 'Food & Others'),
+                  Tab(text: 'Canteens'),
                   Tab(text: 'Rest Rooms'),
                   Tab(text: 'Utilities'),
                 ],
@@ -131,10 +421,14 @@ class HomePage extends StatelessWidget {
           ],
           body: TabBarView(
             children: [
-              buildTabContent(randomlySelectImages(officeImages)),
-              buildTabContent(randomlySelectImages(foodImages)),
-              buildTabContent(randomlySelectImages(restroomImages)),
-              buildTabContent(randomlySelectImages(utilityImages)),
+              buildTabContent(
+                  randomlySelectImages(officeImages), codenames, officeImages),
+              buildTabContent(
+                  randomlySelectImages(foodImages), codenames, foodImages),
+              buildTabContent(randomlySelectImages(restroomImages), codenames,
+                  restroomImages),
+              buildTabContent(randomlySelectImages(utilityImages), codenames,
+                  utilityImages),
             ],
           ),
         ),
@@ -143,7 +437,8 @@ class HomePage extends StatelessWidget {
   }
 
   // Function to build a vertical stack of images with rounded edges
-  Widget buildTabContent(List<String> imagePaths) {
+  Widget buildTabContent(List<String> imagePaths, Map<String, String> codenames,
+      List<Map<String, dynamic>> category) {
     return ListView.builder(
       padding: EdgeInsets.all(10),
       itemCount: imagePaths.length,
@@ -154,25 +449,91 @@ class HomePage extends StatelessWidget {
           child: InkWell(
             onTap: () {
               // Handle the tap event here
-              // For example, navigate to a new screen or show a message
-              // You can also pass the image path to the new screen if needed
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) =>
-                      ImageDetailScreen(imagePath: imagePaths[index]),
+              // For example, show a dialog with the office details
+              showDialog(
+                context: context,
+                builder: (context) => AlertDialog(
+                  title: Text(
+                    codenames[getImageName(imagePaths[index])] ?? '',
+                    textAlign: TextAlign.left,
+                  ),
+                  content: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset(
+                          imagePaths[index],
+                          fit: BoxFit.contain,
+                          width: double.infinity,
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          category.firstWhere((element) =>
+                                  element['imagePath'] ==
+                                  imagePaths[index])['details'] ??
+                              '',
+                          textAlign: TextAlign.left,
+                        ),
+                      ],
+                    ),
+                  ),
+                  actions: <Widget>[
+                    TextButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      child: Text('Close'),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => category[index]['class'],
+                          ),
+                        );
+                      },
+                      child: Text('Navigate'),
+                    ),
+                  ],
                 ),
               );
             },
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(
-                  20), // Adjust the border radius as needed
-              child: Image.asset(
-                imagePaths[index],
-                fit: BoxFit.cover,
-                width: double.infinity,
-                height: 150, // Adjust height as needed
-              ),
+            child: Stack(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(
+                      20), // Adjust the border radius as needed
+                  child: Image.asset(
+                    imagePaths[index],
+                    fit: BoxFit.cover,
+                    width: double.infinity,
+                    height: 200, // Adjust height as needed
+                  ),
+                ),
+                Positioned(
+                  bottom: 5,
+                  left: 5,
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    decoration: BoxDecoration(
+                      color: Colors.black54,
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(20),
+                        bottomLeft: Radius.circular(10),
+                      ),
+                    ),
+                    child: Text(
+                      getImageName(imagePaths[index]),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         );
@@ -180,33 +541,17 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  // Function to randomly select 5 images from a list
-  List<String> randomlySelectImages(List<String> imagePaths) {
-    Random random = Random();
-    // Create a copy of the list and shuffle it
-    List<String> shuffledList = List.from(imagePaths);
-    shuffledList.shuffle(random);
-
-    // Return the first 5 images from the shuffled list
-    return shuffledList.take(5).toList();
+  // Function to randomly select some images from the provided list
+  List<String> randomlySelectImages(List<Map<String, dynamic>> imageList) {
+    final random = Random();
+    final selectedIndex =
+        List.generate(5, (index) => random.nextInt(imageList.length));
+    return List.generate(
+        5, (index) => imageList[selectedIndex[index]]['imagePath']);
   }
-}
 
-// Define ImageDetailScreen to display the full-size image
-class ImageDetailScreen extends StatelessWidget {
-  final String imagePath;
-
-  ImageDetailScreen({required this.imagePath});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Image Detail'),
-      ),
-      body: Center(
-        child: Image.asset(imagePath),
-      ),
-    );
+  String getImageName(String imagePath) {
+    final imageName = imagePath.split('/').last.split('.').first;
+    return codenames[imageName] ?? 'Image Name';
   }
 }

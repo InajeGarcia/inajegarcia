@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 
 class CLaw extends StatelessWidget {
-  final List<String> firstFloorImages = [
-    'images/records.jpg',
-    'images/admission.jpg',
-    'images/cashier.jpg',
-    'images/registrar.jpg',
-    'images/coa.jpg',
-    'images/guidance.jpg',
-    'images/accounting.jpg',
-    'images/img.jpg',
-    'images/budget.jpg',
-    'images/vpfad.jpg',
+  final List<Map<String, String>> firstFloorImages = [
+    {'imagePath': 'images/clawlibrary.jpg', 'label': 'Law Library'},
+    {'imagePath': 'images/guijo.jpg', 'label': 'Guijo Room'},
+    {'imagePath': 'images/ipil.jpg', 'label': 'Ipil Room'},
+    {'imagePath': 'images/molave.jpg', 'label': 'Molave Room'},
+    {
+      'imagePath': 'images/cpadaccreditationroom.jpg',
+      'label': 'Accreditation Room'
+    },
+    {'imagePath': 'images/graduatestudies.jpg', 'label': 'Graduate Studies'},
     // Add more image URLs as needed for the first floor
   ];
 
@@ -19,21 +18,44 @@ class CLaw extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('First Floor'),
+        title: Text('Available Rooms'),
       ),
       body: ListView.builder(
         itemCount: firstFloorImages.length,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.all(8.0),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(12.0),
-              child: Image.asset(
-                firstFloorImages[index],
-                width: double.infinity,
-                height: 200,
-                fit: BoxFit.cover,
-              ),
+            child: Stack(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(12.0),
+                  child: Image.asset(
+                    firstFloorImages[index]['imagePath']!,
+                    width: double.infinity,
+                    height: 200,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                Positioned(
+                  bottom: 8,
+                  left: 8,
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.5),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      firstFloorImages[index]['label']!,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           );
         },

@@ -1,8 +1,11 @@
+// profile_page.dart
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'dart:math'; // For random image selection
-import 'login_page.dart'; // Import the LoginPage
+import 'package:sharkspinpoint/page/login_page.dart';
+import 'package:sharkspinpoint/widgets/data/help_center.dart';
+import 'package:sharkspinpoint/widgets/data/invite_friend.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -12,20 +15,25 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   String userName = '';
   String userEmail = '';
-  String userImage = 'images/pfp1.jpg'; // Set a default random image path
+  String? _storedUserImage;
   final List<String> images = [
-    'images/pfp1.jpg',
-    'images/pfp2.jpg',
-    'images/pfp3.jpg',
+    'images/Mash.png',
+    'images/Gojo.png',
+    'images/Cid.png',
+    'images/Aang.png',
+    'images/Itadori.png',
+    'images/rudy.png',
+    'images/Tohsaka.png',
+    'images/Utena.png',
+    'images/Saber.png',
+    'images/Sailor.png',
+    'images/Korra.png',
     // Add more image paths as needed
   ];
 
   @override
   void initState() {
     super.initState();
-    // Select a random image from the list
-    userImage = images[Random().nextInt(images.length)];
-    // Load user information
     _loadUserInfo();
   }
 
@@ -48,6 +56,8 @@ class _ProfilePageState extends State<ProfilePage> {
           userName = '$firstName $lastName';
           // Retrieve user's email (optional)
           userEmail = userDoc['email'];
+          // Retrieve user's profile picture
+          _storedUserImage = userDoc['profilePicture'] ?? 'images/pikachu.gif';
         });
       }
     }
@@ -65,22 +75,50 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 
+  // Function to change the profile picture
+  void _changeProfilePicture(String imagePath) {
+    if (_storedUserImage != imagePath) {
+      setState(() {
+        _storedUserImage = imagePath;
+      });
+      // Save the selected profile picture to Firestore
+      User? currentUser = FirebaseAuth.instance.currentUser;
+      if (currentUser != null) {
+        FirebaseFirestore.instance
+            .collection('users')
+            .doc(currentUser.uid)
+            .update({'profilePicture': imagePath});
+      }
+    }
+    Navigator.of(context).pop();
+  }
+
+  // Function to navigate to the Help Center
+  void _goToHelpCenter() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context) =>
+              HelpCenterPage()), // Navigate to HelpCenter page
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-          child: Image.asset(
-            'images/11.png',
-            height: 250,
-            width: 300,
-            fit: BoxFit.contain,
+        title: Text(
+          'Profile',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 30,
+            color: Colors.white,
           ),
         ),
-        centerTitle: true,
-        toolbarHeight: 100,
-        elevation: 0,
         backgroundColor: Color.fromARGB(255, 221, 154, 31),
+        elevation: 0,
+        toolbarHeight: 100,
+        centerTitle: true,
         automaticallyImplyLeading: false,
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.only(
@@ -89,70 +127,129 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
         ),
       ),
-      body: Center(
-        // Wrap the content in a Center widget
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Display the random image and name
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
+            Row(
               children: [
-                // Display the profile image at the center
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 20),
+                GestureDetector(
+                  onTap: () {
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: Text('Change Profile Picture'),
+                          content: SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: List.generate(
+                                (images.length / 3).ceil(),
+                                (index) {
+                                  int start = index * 3;
+                                  int end = (index + 1) * 3;
+                                  if (end > images.length) {
+                                    end = images.length;
+                                  }
+                                  return Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: List.generate(
+                                      end - start,
+                                      (index) {
+                                        int i = start + index;
+                                        return GestureDetector(
+                                          onTap: () =>
+                                              _changeProfilePicture(images[i]),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: CircleAvatar(
+                                              radius: 30,
+                                              backgroundImage:
+                                                  AssetImage(images[i]),
+                                            ),
+                                          ),
+                                        );
+                                      },
+                                    ),
+                                  );
+                                },
+                              ).toList(),
+                            ),
+                          ),
+                        );
+                      },
+                    );
+                  },
                   child: CircleAvatar(
-                    radius: 75, // Adjust the radius as needed
-                    backgroundImage: AssetImage(userImage),
+                    radius: 40,
+                    backgroundImage:
+                        AssetImage(_storedUserImage ?? 'images/pikachu.gif'),
                   ),
                 ),
-                // Display the user's name right below the image
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: Text(
-                    userName,
-                    style: const TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                SizedBox(width: 10),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      userName,
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                    textAlign: TextAlign.center,
-                  ),
+                    SizedBox(height: 5),
+                    Text(
+                      userEmail,
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 10),
               ],
             ),
-            // Display user's email
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Text(
-                userEmail,
-                style: const TextStyle(
-                  fontSize: 16,
-                  color: Colors.grey,
-                ),
-                textAlign: TextAlign.center,
-              ),
+            SizedBox(height: 20),
+            Container(
+              height: 1,
+              color: Colors.grey.shade300,
+              margin: EdgeInsets.symmetric(vertical: 10),
             ),
-            const SizedBox(height: 20),
-            // Logout button
-            ElevatedButton(
-              onPressed: _logout,
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
-                backgroundColor: Colors.green,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(40),
-                ),
-              ),
-              child: const Text(
-                'Logout',
-                style: TextStyle(
-                  fontWeight: FontWeight.w900,
-                  fontSize: 18,
-                  fontStyle: FontStyle.italic,
-                  color: Colors.white,
-                ),
-              ),
+            ListTile(
+              leading:
+                  Icon(Icons.person_add_alt_1_rounded, color: Colors.black),
+              title: Text('Share to Friends',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          InviteFriend()), // Navigate to InviteFriend page
+                );
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.help_rounded, color: Colors.black),
+              title: Text('Help Center',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              onTap: _goToHelpCenter, // Call the Help Center function
+            ),
+            ListTile(
+              leading: Icon(Icons.info, color: Colors.black),
+              title: Text('Version 1.0.0',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              onTap: () {
+                // Handle Version
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.logout_rounded, color: Colors.red),
+              title: Text('Logout',
+                  style: TextStyle(
+                      color: Colors.red, fontWeight: FontWeight.bold)),
+              onTap: _logout,
             ),
           ],
         ),

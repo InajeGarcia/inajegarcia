@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart'; // Import Firebase Core
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart'; // Import FirebaseAuth
 import 'package:sharkspinpoint/screens/welcome_screen.dart';
-import 'package:sharkspinpoint/page/colleges_page.dart';
-import 'package:sharkspinpoint/page/tutorial_page.dart'; // Import TutorialPage
 import 'package:sharkspinpoint/screens/home_screen.dart';
-//import 'package:sharkspinpoint/page/home_page.dart';
+import 'package:sharkspinpoint/page/colleges_page.dart';
+import 'package:sharkspinpoint/page/tutorial_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,13 +20,24 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Color(0xFFFFFFFF),
       ),
-      // Set the initial route to the TutorialPage if you want the app to start there
+      // Set the initial route to '/' and use onGenerateRoute for custom routing
       initialRoute: '/',
+      onGenerateRoute: (RouteSettings settings) {
+        // Check if the user is authenticated
+        User? user = FirebaseAuth.instance.currentUser;
+
+        // Determine which screen to navigate to based on authentication status
+        if (user != null) {
+          // If user is authenticated, navigate to HomeScreen
+          return MaterialPageRoute(builder: (context) => HomeScreen());
+        } else {
+          // If user is not authenticated, navigate to WelcomeScreen
+          return MaterialPageRoute(builder: (context) => WelcomeScreen());
+        }
+      },
       routes: {
-        '/': (context) => WelcomeScreen(),
         '/colleges': (context) => CollegePage(),
-        '/tutorial': (context) => TutorialPage(), // Add the TutorialPage route
-        '/home': (context) => HomeScreen(), // Add the HomeScreen route
+        '/tutorial': (context) => TutorialPage(),
       },
     );
   }

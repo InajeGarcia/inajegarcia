@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class LabSchool extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/hostel.jpg', 'label': 'Elementary'},
-    {'imagePath': 'images/ctechite.jpg', 'label': 'C-TECH/ITE'},
-    {'imagePath': 'images/ctebuilding.jpg', 'label': 'CTE'},
+    {'imagePath': 'images/hostel.webp', 'label': 'Elementary'},
+    {'imagePath': 'images/ctechite.webp', 'label': 'C-TECH/ITE'},
+    {'imagePath': 'images/ctebuilding.webp', 'label': 'CTE'},
     // Add more image URLs as needed for the first floor
   ];
 

@@ -15,7 +15,7 @@ class RegistrarOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/registrar.jpg',
+              'images/registrar.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -55,7 +55,7 @@ class BudgetOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/budget.jpg',
+              'images/budget.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -95,7 +95,7 @@ class CashieringUnit extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/cashier.jpg',
+              'images/cashier.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -135,7 +135,7 @@ class AccountingOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/accounting.jpg',
+              'images/accounting.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -175,7 +175,7 @@ class VpreOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/vpre.jpg',
+              'images/vpre.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -215,7 +215,7 @@ class OpOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/op.jpg',
+              'images/op.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -255,7 +255,7 @@ class VpaaOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/vpaa.jpg',
+              'images/vpaa.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -295,7 +295,7 @@ class VpfadOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/vpfad.jpg',
+              'images/vpfad.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -335,7 +335,7 @@ class NstpOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/nstp.jpg',
+              'images/nstp.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -375,7 +375,7 @@ class PasucOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/pasuc.jpg',
+              'images/pasuc.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -415,7 +415,7 @@ class RecordsOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/records.jpg',
+              'images/records.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -455,7 +455,7 @@ class AdmissionOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/admission.jpg',
+              'images/admission.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -495,7 +495,7 @@ class CoaOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/coa.jpg',
+              'images/coa.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -535,7 +535,7 @@ class NetworksSystemOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/networks.jpg',
+              'images/networks.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -575,7 +575,7 @@ class UniversityResearchOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/research.jpg',
+              'images/research.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -615,7 +615,7 @@ class HrmoOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/hrmo.jpg',
+              'images/hrmo.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -655,7 +655,7 @@ class UniversityExtensionOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/extension.jpg',
+              'images/extension.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -695,7 +695,7 @@ class UpimOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/upim.jpg',
+              'images/upim.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
@@ -735,7 +735,7 @@ class CenterGenderOffice extends StatelessWidget {
               height: 20,
             ),
             Image.asset(
-              'images/gender.jpg',
+              'images/gender.webp',
               width: 200,
               height: 200,
               fit: BoxFit.contain,

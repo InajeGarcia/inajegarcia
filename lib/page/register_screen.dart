@@ -27,7 +27,7 @@ class _RegisterPageState extends State<RegisterPage> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/welcome7.jpg'),
+            image: AssetImage('images/welcome7.webp'),
             fit: BoxFit.cover,
           ),
         ),

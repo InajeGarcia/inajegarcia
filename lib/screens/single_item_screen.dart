@@ -29,7 +29,7 @@ class SingleItemScreen extends StatelessWidget {
                 SizedBox(height: 50),
                 Center(
                   child: Image.asset(
-                    "images/$img.jpg",
+                    "images/$img.webp",
                   ),
                 ),
                 SizedBox(height: 50),

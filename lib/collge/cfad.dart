@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 
 class CFad extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/records.jpg', 'label': 'Records Office'},
-    {'imagePath': 'images/admission.jpg', 'label': 'Admission Office'},
-    {'imagePath': 'images/cashier.jpg', 'label': 'Cashier Office'},
-    {'imagePath': 'images/registrar.jpg', 'label': 'Registrar Office'},
-    {'imagePath': 'images/coa.jpg', 'label': 'COA Office'},
-    {'imagePath': 'images/guidance.jpg', 'label': 'Guidance Office'},
-    {'imagePath': 'images/accounting.jpg', 'label': 'Accounting Office'},
-    {'imagePath': 'images/img.jpg', 'label': 'IMG Office'},
-    {'imagePath': 'images/budget.jpg', 'label': 'Budget Office'},
-    {'imagePath': 'images/vpfad.jpg', 'label': 'VPFAD Office'},
+    {'imagePath': 'images/records.webp', 'label': 'Records Office'},
+    {'imagePath': 'images/admission.webp', 'label': 'Admission Office'},
+    {'imagePath': 'images/cashier.webp', 'label': 'Cashier Office'},
+    {'imagePath': 'images/registrar.webp', 'label': 'Registrar Office'},
+    {'imagePath': 'images/coa.webp', 'label': 'COA Office'},
+    {'imagePath': 'images/guidance.webp', 'label': 'Guidance Office'},
+    {'imagePath': 'images/accounting.webp', 'label': 'Accounting Office'},
+    {'imagePath': 'images/img.webp', 'label': 'IMG Office'},
+    {'imagePath': 'images/budget.webp', 'label': 'Budget Office'},
+    {'imagePath': 'images/vpfad.webp', 'label': 'VPFAD Office'},
     // Add more image URLs as needed for the first floor
   ];
 

@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 
 class CPad extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/ipil.jpg', 'label': 'Ipil Room'},
-    {'imagePath': 'images/guijo.jpg', 'label': 'Guijo Room'},
-    {'imagePath': 'images/narra.jpg', 'label': 'Narra Room'},
+    {'imagePath': 'images/ipil.webp', 'label': 'Ipil Room'},
+    {'imagePath': 'images/guijo.webp', 'label': 'Guijo Room'},
+    {'imagePath': 'images/narra.webp', 'label': 'Narra Room'},
     {
-      'imagePath': 'images/cpadaccreditationroom.jpg',
+      'imagePath': 'images/cpadaccreditationroom.webp',
       'label': 'Accreditation Room'
     },
-    {'imagePath': 'images/cpadresourcecenter.jpg', 'label': 'Resource Center'},
-    {'imagePath': 'images/passoffice.jpg', 'label': 'Pass Office'},
-    {'imagePath': 'images/cpadstoreroom.jpg', 'label': 'Store Room'},
-    {'imagePath': 'images/cpadcr.jpg', 'label': 'Comfort Room'},
+    {'imagePath': 'images/cpadresourcecenter.webp', 'label': 'Resource Center'},
+    {'imagePath': 'images/passoffice.webp', 'label': 'Pass Office'},
+    {'imagePath': 'images/cpadstoreroom.webp', 'label': 'Store Room'},
+    {'imagePath': 'images/cpadcr.webp', 'label': 'Comfort Room'},
     // Add more image URLs as needed for the first floor
   ];
 

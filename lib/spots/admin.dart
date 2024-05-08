@@ -2,31 +2,31 @@ import 'package:flutter/material.dart';
 
 class Admin extends StatelessWidget {
   final List<String> floorImages = [
-    'images/admin.jpg',
-    'images/admin.jpg',
-    'images/admin.jpg',
+    'images/admin.webp',
+    'images/admin.webp',
+    'images/admin.webp',
   ];
 
   final List<List<String>> roomImages = [
     // First Floor
     [
-      'images/records.jpg',
-      'images/registrar.jpg',
-      'images/cashier.jpg',
+      'images/records.webp',
+      'images/registrar.webp',
+      'images/cashier.webp',
       // Add more image URLs as needed for the first floor
     ],
     // Second Floor
     [
-      'images/upim.jpg',
-      'images/vpaa.jpg',
-      'images/pasuc.jpg',
+      'images/upim.webp',
+      'images/vpaa.webp',
+      'images/pasuc.webp',
       // Add more image URLs as needed for the second floor
     ],
     // Third Floor
     [
-      'images/tadena.jpg',
-      'images/oandasan.jpg',
-      'images/op.jpg',
+      'images/tadena.webp',
+      'images/oandasan.webp',
+      'images/op.webp',
       // Add more image URLs as needed for the third floor
     ],
   ];

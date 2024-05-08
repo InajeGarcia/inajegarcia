@@ -4,20 +4,20 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 class TutorialPage extends StatelessWidget {
   // Define a list of image asset paths
   final List<String> imagePaths = [
-    'images/home.jpg', // Update these paths with your image assets
-    'images/colleges.jpg',
-    'images/map.jpg',
-    'images/spot.jpg',
-    'images/about.jpg',
-    'images/profile.jpg',
-    'images/canteen.jpg',
-    'images/restroom.jpg',
-    'images/utilities.jpg',
+    'images/home.webp', // Update these paths with your image assets
+    'images/colleges.webp',
+    'images/map.webp',
+    'images/spot.webp',
+    'images/about.webp',
+    'images/profile.webp',
+    'images/canteen.webp',
+    'images/restroom.webp',
+    'images/utilities.webp',
   ];
 
   // Define the base picture asset path
   final String basePicturePath =
-      'images/welcome4.jpg'; // Update this path with your base picture asset
+      'images/welcome4.webp'; // Update this path with your base picture asset
 
   @override
   Widget build(BuildContext context) {

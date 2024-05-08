@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 
 class CLaw extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/clawlibrary.jpg', 'label': 'Law Library'},
-    {'imagePath': 'images/guijo.jpg', 'label': 'Guijo Room'},
-    {'imagePath': 'images/ipil.jpg', 'label': 'Ipil Room'},
-    {'imagePath': 'images/molave.jpg', 'label': 'Molave Room'},
+    {'imagePath': 'images/clawlibrary.webp', 'label': 'Law Library'},
+    {'imagePath': 'images/guijo.webp', 'label': 'Guijo Room'},
+    {'imagePath': 'images/ipil.webp', 'label': 'Ipil Room'},
+    {'imagePath': 'images/molave.webp', 'label': 'Molave Room'},
     {
-      'imagePath': 'images/cpadaccreditationroom.jpg',
+      'imagePath': 'images/cpadaccreditationroom.webp',
       'label': 'Accreditation Room'
     },
-    {'imagePath': 'images/graduatestudies.jpg', 'label': 'Graduate Studies'},
+    {'imagePath': 'images/graduatestudies.webp', 'label': 'Graduate Studies'},
     // Add more image URLs as needed for the first floor
   ];
 

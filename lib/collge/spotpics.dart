@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 
 class Gym extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/records.jpg',
-    'images/admission.jpg',
-    'images/cashier.jpg',
-    'images/registrar.jpg',
-    'images/coa.jpg',
-    'images/guidance.jpg',
-    'images/accounting.jpg',
-    'images/img.jpg',
-    'images/budget.jpg',
-    'images/vpfad.jpg',
+    'images/records.webp',
+    'images/admission.webp',
+    'images/cashier.webp',
+    'images/registrar.webp',
+    'images/coa.webp',
+    'images/guidance.webp',
+    'images/accounting.webp',
+    'images/img.webp',
+    'images/budget.webp',
+    'images/vpfad.webp',
     // Add more image URLs as needed for the first floor
   ];
 
@@ -44,16 +44,16 @@ class Gym extends StatelessWidget {
 
 class CPad extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/records.jpg',
-    'images/admission.jpg',
-    'images/cashier.jpg',
-    'images/registrar.jpg',
-    'images/coa.jpg',
-    'images/guidance.jpg',
-    'images/accounting.jpg',
-    'images/img.jpg',
-    'images/budget.jpg',
-    'images/vpfad.jpg',
+    'images/records.webp',
+    'images/admission.webp',
+    'images/cashier.webp',
+    'images/registrar.webp',
+    'images/coa.webp',
+    'images/guidance.webp',
+    'images/accounting.webp',
+    'images/img.webp',
+    'images/budget.webp',
+    'images/vpfad.webp',
     // Add more image URLs as needed for the first floor
   ];
 

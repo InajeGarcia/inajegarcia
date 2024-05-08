@@ -56,7 +56,7 @@ class AdminOfficesPage extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12.0),
                         child: Image.asset(
-                          'images/admin.jpg',
+                          'images/admin.webp',
                           width: 300,
                           height: 150,
                           fit: BoxFit.cover,
@@ -99,7 +99,7 @@ class AdminOfficesPage extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12.0),
                         child: Image.asset(
-                          'images/admin.jpg',
+                          'images/admin.webp',
                           width: 300,
                           height: 150,
                           fit: BoxFit.cover,
@@ -142,7 +142,7 @@ class AdminOfficesPage extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12.0),
                         child: Image.asset(
-                          'images/admin.jpg',
+                          'images/admin.webp',
                           width: 300,
                           height: 150,
                           fit: BoxFit.cover,

@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   // Lists of image URLs for each category
   final List<Map<String, dynamic>> officeImages = [
     {
-      'imagePath': 'images/registrar.jpg',
+      'imagePath': 'images/registrar.webp',
       'name': 'Registrar Office',
       'details':
           'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
       'class': RegistrarOffice(),
     },
     {
-      'imagePath': 'images/budget.jpg',
+      'imagePath': 'images/budget.webp',
       'name': 'Budget Office',
       'details':
           'The Budget office is located at the first floor of the Administration building at the very last office, you should see the budget office.',
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
       'class': BudgetOffice(),
     },
     {
-      'imagePath': 'images/cashier.jpg',
+      'imagePath': 'images/cashier.webp',
       'name': 'Cashiering Unit',
       'details':
           'Upon entering the Administration Building, You will see the Cashiering Unit, the second office to the left part.',
@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
       'class': CashieringUnit(),
     },
     {
-      'imagePath': 'images/accounting.jpg',
+      'imagePath': 'images/accounting.webp',
       'name': 'Accounting Office',
       'details':
           'The Accounting Office is located at first floor of the Administration building, just enter the admin building and walk straight until you pass the second stairs, you are now in the Accounting Office.',
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
       'class': AccountingOffice(),
     },
     {
-      'imagePath': 'images/vpre.jpg',
+      'imagePath': 'images/vpre.webp',
       'name': 'Vice President for Research and Extension',
       'details':
           'The VPRE is located at the second floor of the university admininstration building. Upon walking upstairs, just walk straight until you see the VPRE office located at the last part of the second floor.',
@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
       'class': VpreOffice(),
     },
     {
-      'imagePath': 'images/op.jpg',
+      'imagePath': 'images/op.webp',
       'name': 'Office of the President',
       'details':
           'The Office of the President is located at the Third floor of the Administration Building. You should see it already upon reaching Third Floor.',
@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
       'class': OpOffice(),
     },
     {
-      'imagePath': 'images/vpaa.jpg',
+      'imagePath': 'images/vpaa.webp',
       'name': 'Vice President for Academic Affairs',
       'details':
           'The office of the VPAA is Located at second floor of the Administration building. You should be able to see it upon reaching second floor.',
@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
       'class': VpaaOffice(),
     },
     {
-      'imagePath': 'images/vpfad.jpg',
+      'imagePath': 'images/vpfad.webp',
       'name': 'Vice President for Finance and Administration',
       'details':
           'The VPFAd is located at first floor of the Administration building. Just walk straight ahead until you reach the office, the Budget office is there also.',
@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
       'class': VpfadOffice(),
     },
     {
-      'imagePath': 'images/nstp.jpg',
+      'imagePath': 'images/nstp.webp',
       'name': 'National Service Training Program',
       'details':
           'The NSTP is located at the second floor of the Administration building. So, you need to walk upstairs.',
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
       'class': NstpOffice(),
     },
     {
-      'imagePath': 'images/pasuc.jpg',
+      'imagePath': 'images/pasuc.webp',
       'name': 'PASUC Office',
       'details':
           'The PASUC is located at the second floor of the Adminitration building. So, you need to walk upstairs.',
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
       'class': PasucOffice(),
     },
     {
-      'imagePath': 'images/records.jpg',
+      'imagePath': 'images/records.webp',
       'name': 'Records Office',
       'details':
           'The Records office is located at the very front part of the Admininistration building, you should be able to see it when entering.',
@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
       'class': RecordsOffice(),
     },
     {
-      'imagePath': 'images/admission.jpg',
+      'imagePath': 'images/admission.webp',
       'name': 'Admission Office',
       'details':
           'The Admission office is located at the very front part of the Admininistration building, you should be able to see it when entering.',
@@ -118,7 +118,7 @@ class _HomePageState extends State<HomePage> {
       'class': AdmissionOffice(),
     },
     {
-      'imagePath': 'images/coa.jpg',
+      'imagePath': 'images/coa.webp',
       'name': 'Commssion on Audit',
       'details':
           'The Commission on Audit office is located at first floor of Administration building, just pass through the cashier office.',
@@ -126,19 +126,19 @@ class _HomePageState extends State<HomePage> {
       'class': CoaOffice(),
     },
     /*{
-      'imagePath': 'images/guidance.jpg',
+      'imagePath': 'images/guidance.webp',
       'name': 'Guidance Office',
       'details': 'Details about Guidance',
       'floor': 'FirstFloorPage',
     },*/
     /*{
-      'imagePath': 'images/img.jpg',
+      'imagePath': 'images/img.webp',
       'name': 'IMG Office',
       'details': 'Details about IMG Office',
       'floor': 'FirstFloorPage',
     },*/
     {
-      'imagePath': 'images/networksystem.jpg',
+      'imagePath': 'images/networksystem.webp',
       'name': 'Networks System Office',
       'details':
           'The Networks System office is located at the second floor of the Administration building, you should be able to see it upon walking upstairs.',
@@ -146,7 +146,7 @@ class _HomePageState extends State<HomePage> {
       'class': NetworksSystemOffice(),
     },
     {
-      'imagePath': 'images/researchoffice.jpg',
+      'imagePath': 'images/researchoffice.webp',
       'name': ' University Research Office',
       'details':
           'The Unviversity Research Office is located at second floor of the Administration building, Just walk upstairs and walk until you pass the HRMO.',
@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
       'class': UniversityResearchOffice(),
     },
     {
-      'imagePath': 'images/hrmo.jpg',
+      'imagePath': 'images/hrmo.webp',
       'name': 'Human Resource Management Office',
       'details':
           'The HRMO is located at the second floor of the Administration building. It is located at the right part of the building.',
@@ -162,7 +162,7 @@ class _HomePageState extends State<HomePage> {
       'class': HrmoOffice(),
     },
     {
-      'imagePath': 'images/extensionoffice.jpg',
+      'imagePath': 'images/extensionoffice.webp',
       'name': 'University Extension Office',
       'details':
           'The Extension office is located at the second floor of the Administration building, you can see it upon passing the HRMO.',
@@ -170,7 +170,7 @@ class _HomePageState extends State<HomePage> {
       'class': UniversityExtensionOffice(),
     },
     {
-      'imagePath': 'images/upim.jpg',
+      'imagePath': 'images/upim.webp',
       'name': 'University Planning and Information Management',
       'details':
           'The UPIM is located at Second floor of the Administration building, if you walk upstairs on the right stairs, you will see it on your left part facing north.',
@@ -178,7 +178,7 @@ class _HomePageState extends State<HomePage> {
       'class': UpimOffice(),
     },
     {
-      'imagePath': 'images/centergender.jpg',
+      'imagePath': 'images/centergender.webp',
       'name': 'Center for Gender and Development',
       'details':
           'The CGAD is located at second floor of the Administration building. When you walk upstairs, you should be able too see it together with UPIM when facing north.',
@@ -189,27 +189,27 @@ class _HomePageState extends State<HomePage> {
 
   final List<Map<String, dynamic>> foodImages = [
     {
-      'imagePath': 'images/canteen1.jpg',
+      'imagePath': 'images/canteen1.webp',
       'name': 'Canteen 1',
       'details': 'Located in front of Ceramic Center',
     },
     {
-      'imagePath': 'images/canteen2.jpg',
+      'imagePath': 'images/canteen2.webp',
       'name': 'Canteen 2',
       'details': 'Canteen 2',
     },
     {
-      'imagePath': 'images/canteen5.jpg',
+      'imagePath': 'images/canteen5.webp',
       'name': 'Canteen 5',
       'details': 'Canteen 5',
     },
     {
-      'imagePath': 'images/canteen7.jpg',
+      'imagePath': 'images/canteen7.webp',
       'name': 'Canteen 7',
       'details': 'Canteen 7',
     },
     {
-      'imagePath': 'images/canteen3.jpg',
+      'imagePath': 'images/canteen3.webp',
       'name': 'Canteen 3',
       'details': 'Canteen 3',
     },
@@ -217,32 +217,32 @@ class _HomePageState extends State<HomePage> {
 
   final List<Map<String, dynamic>> restroomImages = [
     {
-      'imagePath': 'images/ccjecr1stm.jpg',
+      'imagePath': 'images/ccjecr1stm.webp',
       'name': 'CCJE CR 1st Floor Male',
       'details': 'CCJE CR 1st Floor Male',
     },
     {
-      'imagePath': 'images/ccjecr1stf.jpg',
+      'imagePath': 'images/ccjecr1stf.webp',
       'name': 'CCJE CR 1st Floor Female',
       'details': 'CCJE CR 1st Floor Female',
     },
     {
-      'imagePath': 'images/ccjecr2ndm.jpg',
+      'imagePath': 'images/ccjecr2ndm.webp',
       'name': 'CCJE CR 2nd Floor Male',
       'details': 'CCJE CR 2nd Floor Male',
     },
     {
-      'imagePath': 'images/ccjecr2ndf.jpg',
+      'imagePath': 'images/ccjecr2ndf.webp',
       'name': 'CCJE CR 2nd Floor Female',
       'details': 'CCJE CR 2nd Floor Female',
     },
     {
-      'imagePath': 'images/cbaacr.jpg',
+      'imagePath': 'images/cbaacr.webp',
       'name': 'CBAA CR',
       'details': 'CBAA CR',
     },
     {
-      'imagePath': 'images/cbaacr3.jpg',
+      'imagePath': 'images/cbaacr3.webp',
       'name': 'CBAA CR',
       'details': 'CBAA CR',
     },
@@ -250,27 +250,27 @@ class _HomePageState extends State<HomePage> {
 
   final List<Map<String, dynamic>> utilityImages = [
     {
-      'imagePath': 'images/property.jpg',
+      'imagePath': 'images/property.webp',
       'name': 'Property',
       'details': 'Property Office/Storage',
     },
     {
-      'imagePath': 'images/stockroom1st.jpg',
+      'imagePath': 'images/stockroom1st.webp',
       'name': 'Stockroom 1st',
       'details': 'Stockroom 1st',
     },
     {
-      'imagePath': 'images/stockroomcmed.jpg',
+      'imagePath': 'images/stockroomcmed.webp',
       'name': 'Stockroom CMED',
       'details': 'Stockroom CMED',
     },
     {
-      'imagePath': 'images/stockroomcmed2.jpg',
+      'imagePath': 'images/stockroomcmed2.webp',
       'name': 'Stockroom CMED 2nd Floor',
       'details': 'Stockroom CMED 2nd Floor',
     },
     {
-      'imagePath': 'images/stockroomcmed3.jpg',
+      'imagePath': 'images/stockroomcmed3.webp',
       'name': 'Stockroom CMED 3rd Floor',
       'details': 'Stockroom CMED 3rd Floor',
     },
@@ -325,7 +325,7 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: AppBar(
           title: Image.asset(
-            'images/11.png',
+            'images/11.webp',
             height: 250,
             width: 300,
             fit: BoxFit.contain,
@@ -364,7 +364,7 @@ class _HomePageState extends State<HomePage> {
                               hintText: "Search what you're looking for?",
                               border: InputBorder.none,
                               prefixIcon: Image.asset(
-                                'images/pnglang.png',
+                                'images/pnglang.webp',
                                 width: 24,
                                 height: 24,
                               ),

@@ -17,17 +17,17 @@ class _ProfilePageState extends State<ProfilePage> {
   String userEmail = '';
   String? _storedUserImage;
   final List<String> images = [
-    'images/Mash.png',
-    'images/Gojo.png',
-    'images/Cid.png',
-    'images/Aang.png',
-    'images/Itadori.png',
-    'images/rudy.png',
-    'images/Tohsaka.png',
-    'images/Utena.png',
-    'images/Saber.png',
-    'images/Sailor.png',
-    'images/Korra.png',
+    'images/Mash.webp',
+    'images/Gojo.webp',
+    'images/Cid.webp',
+    'images/Aang.webp',
+    'images/Itadori.webp',
+    'images/rudy.webp',
+    'images/Tohsaka.webp',
+    'images/Utena.webp',
+    'images/Saber.webp',
+    'images/Sailor.webp',
+    'images/Korra.webp',
     // Add more image paths as needed
   ];
 

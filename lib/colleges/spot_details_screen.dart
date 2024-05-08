@@ -137,7 +137,7 @@ class SpotDetailPage extends StatelessWidget {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.white,
+                            backgroundColor: Colors.white,
                           ),
                           child: Text(
                             'View on Map',
@@ -354,7 +354,7 @@ class SpotDetailPage extends StatelessWidget {
                             // Add more conditions for other colleges as needed
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.white,
+                            backgroundColor: Colors.white,
                           ),
                           child: Text(
                             'View Rooms',

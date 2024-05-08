@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 
 class CE extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/cedean.jpg', 'label': 'Dean\'s Office'},
-    {'imagePath': 'images/cefacultyroom.jpg', 'label': 'Faculty Room'},
+    {'imagePath': 'images/cedean.webp', 'label': 'Dean\'s Office'},
+    {'imagePath': 'images/cefacultyroom.webp', 'label': 'Faculty Room'},
     {
-      'imagePath': 'images/cehydraulicslaboratory.jpg',
+      'imagePath': 'images/cehydraulicslaboratory.webp',
       'label': 'Hydraulics Laboratory'
     },
-    {'imagePath': 'images/celaboratory.jpg', 'label': 'CE Laboratory'},
-    {'imagePath': 'images/celibrary.jpg', 'label': 'CE Library'},
-    {'imagePath': 'images/cematerials.jpg', 'label': 'Materials Room'},
-    {'imagePath': 'images/ce101.jpg', 'label': 'Room 101'},
-    {'imagePath': 'images/ce102.jpg', 'label': 'Room 102'},
-    {'imagePath': 'images/ce103.jpg', 'label': 'Room 103'},
-    {'imagePath': 'images/ce201.jpg', 'label': 'Room 201'},
+    {'imagePath': 'images/celaboratory.webp', 'label': 'CE Laboratory'},
+    {'imagePath': 'images/celibrary.webp', 'label': 'CE Library'},
+    {'imagePath': 'images/cematerials.webp', 'label': 'Materials Room'},
+    {'imagePath': 'images/ce101.webp', 'label': 'Room 101'},
+    {'imagePath': 'images/ce102.webp', 'label': 'Room 102'},
+    {'imagePath': 'images/ce103.webp', 'label': 'Room 103'},
+    {'imagePath': 'images/ce201.webp', 'label': 'Room 201'},
     // Add more image URLs as needed for the first floor
   ];
 

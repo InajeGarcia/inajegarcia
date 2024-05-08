@@ -42,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                'images/welcome7.jpg'), // Use the asset image as background
+                'images/welcome7.webp'), // Use the asset image as background
             fit: BoxFit.cover, // Cover the entire screen
           ),
         ),

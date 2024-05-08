@@ -7,7 +7,7 @@ class InfoPage extends StatelessWidget {
       appBar: AppBar(
         title: Center(
           child: Image.asset(
-            'images/11.png',
+            'images/11.webp',
             height: 250,
             width: 300,
             fit: BoxFit.contain,

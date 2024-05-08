@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class Pio extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/tcb101.jpg',
-    'images/tcb102.jpg',
-    'images/tech1.jpg',
-    'images/ctechdean.jpg',
-    'images/innovationhub.jpg',
+    'images/tcb101.webp',
+    'images/tcb102.webp',
+    'images/tech1.webp',
+    'images/ctechdean.webp',
+    'images/innovationhub.webp',
     // Add more image URLs as needed for the first floor
   ];
 

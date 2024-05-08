@@ -45,7 +45,7 @@ class ItemsWidget extends StatelessWidget {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "images/${img[i]}.jpg",
+                      "images/${img[i]}.webp",
                       width: 120,
                       height: 120,
                       fit: BoxFit.contain,

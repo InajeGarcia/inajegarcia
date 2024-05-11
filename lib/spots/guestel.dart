@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 
 class Guestel extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/tcb101.webp',
-    'images/tcb102.webp',
-    'images/tech1.webp',
-    'images/ctechdean.webp',
-    'images/innovationhub.webp',
+    'images/spot/guestel.webp',
+
     // Add more image URLs as needed for the first floor
   ];
 

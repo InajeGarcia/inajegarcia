@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class CAs extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/mml.webp', 'label': 'MML'},
-    {'imagePath': 'images/bha101.webp', 'label': 'Room BHA 101'},
-    {'imagePath': 'images/bha202.webp', 'label': 'Room BHA 202'},
-    {'imagePath': 'images/caselibrary.webp', 'label': 'Case Library'},
-    {'imagePath': 'images/caslearning.webp', 'label': 'Learning Room'},
+    {'imagePath': 'images/cas/mml.webp', 'label': 'MML'},
+    {'imagePath': 'images/cas/bha101.webp', 'label': 'Room BHA 101'},
+    {'imagePath': 'images/cas/bha202.webp', 'label': 'Room BHA 202'},
+    {'imagePath': 'images/cas/caselibrary.webp', 'label': 'Case Library'},
+    {'imagePath': 'images/cas/caslearning.webp', 'label': 'Learning Room'},
     // Add more image URLs as needed for the first floor
   ];
 

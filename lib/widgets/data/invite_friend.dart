@@ -7,7 +7,7 @@ class InviteFriend extends StatelessWidget {
       appBar: AppBar(
         title: Center(
           child: Image.asset(
-            'images/11.webp',
+            'images/bglogo/11.webp',
             height: 250,
             width: 300,
             fit: BoxFit.contain,
@@ -29,7 +29,7 @@ class InviteFriend extends StatelessWidget {
         color: Color.fromARGB(255, 255, 255, 255),
         child: Center(
           child: Image.asset(
-            'images/Sharks Pinpoint.webp',
+            'images/bglogo/Sharks Pinpoint.webp',
             height: 300,
             width: 300,
             fit: BoxFit.contain,

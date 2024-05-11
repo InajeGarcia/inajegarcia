@@ -42,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                'images/welcome7.webp'), // Use the asset image as background
+                'images/bglogo/welcome7.webp'), // Use the asset image as background
             fit: BoxFit.cover, // Cover the entire screen
           ),
         ),
@@ -134,7 +134,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                   ),
-                  CheckboxListTile(
+                  /*CheckboxListTile(
                     title: const Text(
                       "Remember me",
                       style: TextStyle(color: Colors.white),
@@ -148,7 +148,7 @@ class _LoginPageState extends State<LoginPage> {
                       });
                     },
                     controlAffinity: ListTileControlAffinity.leading,
-                  ),
+                  ),*/
                   const SizedBox(
                     height: 20,
                   ),

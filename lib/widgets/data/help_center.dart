@@ -65,7 +65,7 @@ class HelpCenterPage extends StatelessWidget {
       appBar: AppBar(
         title: Center(
           child: Image.asset(
-            'images/11.png',
+            'images/bglogo/11.png',
             height: 250,
             width: 300,
             fit: BoxFit.contain,

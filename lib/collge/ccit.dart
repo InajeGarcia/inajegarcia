@@ -2,15 +2,18 @@ import 'package:flutter/material.dart';
 
 class CCit extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/cc104.webp', 'label': 'Room cc104'},
-    {'imagePath': 'images/cc106.webp', 'label': 'Room cc106'},
-    {'imagePath': 'images/cc201.webp', 'label': 'Room cc201'},
-    {'imagePath': 'images/cc202.webp', 'label': 'Room cc202'},
-    {'imagePath': 'images/cc203.webp', 'label': 'Room cc203'},
-    {'imagePath': 'images/cc204.webp', 'label': 'Room cc204'},
-    {'imagePath': 'images/cc205.webp', 'label': 'Room cc205'},
-    {'imagePath': 'images/cc206.webp', 'label': 'Room cc206'},
-    {'imagePath': 'images/ccittechnicianroom.webp', 'label': 'Technician Room'},
+    {'imagePath': 'images/ccit/cc104.webp', 'label': 'Room cc104'},
+    {'imagePath': 'images/ccit/cc106.webp', 'label': 'Room cc106'},
+    {'imagePath': 'images/ccit/cc201.webp', 'label': 'Room cc201'},
+    {'imagePath': 'images/ccit/cc202.webp', 'label': 'Room cc202'},
+    {'imagePath': 'images/ccit/cc203.webp', 'label': 'Room cc203'},
+    {'imagePath': 'images/ccit/cc204.webp', 'label': 'Room cc204'},
+    {'imagePath': 'images/ccit/cc205.webp', 'label': 'Room cc205'},
+    {'imagePath': 'images/ccit/cc206.webp', 'label': 'Room cc206'},
+    {
+      'imagePath': 'images/ccit/ccittechnicianroom.webp',
+      'label': 'Technician Room'
+    },
     // Add more image URLs as needed for the first floor
   ];
 

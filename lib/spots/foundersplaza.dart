@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 
 class Founders extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/tcb101.webp',
-    'images/tcb102.webp',
-    'images/tech1.webp',
-    'images/ctechdean.webp',
-    'images/innovationhub.webp',
+    'images/spot/founders.webp',
+    'images/spot/foundersplaza.webp',
+
     // Add more image URLs as needed for the first floor
   ];
 

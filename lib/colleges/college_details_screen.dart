@@ -279,6 +279,7 @@ class CollegeDetailPage extends StatelessWidget {
                             'View Rooms',
                             style: TextStyle(
                               color: Colors.black,
+                              //fontFamily: 'InterTight',
                               fontWeight: FontWeight.bold,
                             ),
                           ),

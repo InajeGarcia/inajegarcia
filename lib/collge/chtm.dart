@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 class CHtm extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/chtm201.webp', 'label': 'Room 201'},
-    {'imagePath': 'images/chtm202.webp', 'label': 'Room 202'},
-    {'imagePath': 'images/chtm301.webp', 'label': 'Room 301'},
-    {'imagePath': 'images/chtmcr.webp', 'label': 'CR'},
-    {'imagePath': 'images/chtmcr2.webp', 'label': 'CR 2'},
-    {'imagePath': 'images/chtmfacultyroom.webp', 'label': 'Faculty Room'},
-    {'imagePath': 'images/shatsoffice.webp', 'label': 'SHATs Office'},
+    {'imagePath': 'images/chtm/chtm201.webp', 'label': 'Room 201'},
+    {'imagePath': 'images/chtm/chtm202.webp', 'label': 'Room 202'},
+    {'imagePath': 'images/chtm/chtm301.webp', 'label': 'Room 301'},
+    {'imagePath': 'images/chtm/chtmcr.webp', 'label': 'CR'},
+    {'imagePath': 'images/chtm/chtmcr2.webp', 'label': 'CR 2'},
+    {'imagePath': 'images/chtm/chtmfacultyroom.webp', 'label': 'Faculty Room'},
+    {'imagePath': 'images/chtm/shatsoffice.webp', 'label': 'SHATs Office'},
     // Add more image URLs as needed for the first floor
   ];
 

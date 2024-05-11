@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class CN extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/cnoffice.webp', 'label': 'CN Office'},
+    {'imagePath': 'images/cn/cnoffice.webp', 'label': 'CN Office'},
     {
-      'imagePath': 'images/cnresearchandextension.jpg',
+      'imagePath': 'images/cn/cnresearchandextension.jpg',
       'label': 'CN Research and Extension'
     },
     // Add more image URLs as needed for the first floor

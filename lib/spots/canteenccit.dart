@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class CanteenCcit extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/tcb101.webp',
-    'images/tcb102.webp',
-    'images/tech1.webp',
-    'images/ctechdean.webp',
-    'images/innovationhub.webp',
+    'images/canteen/canteen1.webp',
+    'images/canteen/canteen1.webp',
+    'images/canteen/canteen1.webp',
+    'images/canteen/canteen1.webp',
+    'images/canteen/canteen1.webp',
     // Add more image URLs as needed for the first floor
   ];
 

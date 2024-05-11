@@ -2,25 +2,31 @@ import 'package:flutter/material.dart';
 
 class CMed extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/centralsupply.webp', 'label': 'Central Supply'},
-    {'imagePath': 'images/dentalclinic.webp', 'label': 'Dental Clinic'},
-    {'imagePath': 'images/lab1.webp', 'label': 'Lab 1'},
-    {'imagePath': 'images/lab2.webp', 'label': 'Lab 2'},
-    {'imagePath': 'images/laboratory.webp', 'label': 'Laboratory'},
-    {'imagePath': 'images/medicineoffice.webp', 'label': 'Medicine Office'},
-    {'imagePath': 'images/operatingroom.webp', 'label': 'Operating Room'},
-    {'imagePath': 'images/pediaward.webp', 'label': 'Pediatric Ward'},
-    {'imagePath': 'images/pharmacy.webp', 'label': 'Pharmacy'},
-    {'imagePath': 'images/philhealthoffice.webp', 'label': 'PhilHealth Office'},
-    {'imagePath': 'images/plenary1.webp', 'label': 'Plenary 1'},
-    {'imagePath': 'images/plenary2.webp', 'label': 'Plenary 2'},
-    {'imagePath': 'images/plenary3.webp', 'label': 'Plenary 3'},
-    {'imagePath': 'images/plenary4.webp', 'label': 'Plenary 4'},
-    {'imagePath': 'images/plenary5.webp', 'label': 'Plenary 5'},
-    {'imagePath': 'images/privateroom.webp', 'label': 'Private Room'},
-    {'imagePath': 'images/skillslab.webp', 'label': 'Skills Lab'},
-    {'imagePath': 'images/ultrasound.webp', 'label': 'Ultrasound Room'},
-    {'imagePath': 'images/xray.webp', 'label': 'X-Ray Room'},
+    {'imagePath': 'images/cmed/centralsupply.webp', 'label': 'Central Supply'},
+    {'imagePath': 'images/cmed/dentalclinic.webp', 'label': 'Dental Clinic'},
+    {'imagePath': 'images/cmed/lab1.webp', 'label': 'Lab 1'},
+    {'imagePath': 'images/cmed/lab2.webp', 'label': 'Lab 2'},
+    {'imagePath': 'images/cmed/laboratory.webp', 'label': 'Laboratory'},
+    {
+      'imagePath': 'images/cmed/medicineoffice.webp',
+      'label': 'Medicine Office'
+    },
+    {'imagePath': 'images/cmed/operatingroom.webp', 'label': 'Operating Room'},
+    {'imagePath': 'images/cmed/pediaward.webp', 'label': 'Pediatric Ward'},
+    {'imagePath': 'images/cmed/pharmacy.webp', 'label': 'Pharmacy'},
+    {
+      'imagePath': 'images/cmed/philhealthoffice.webp',
+      'label': 'PhilHealth Office'
+    },
+    {'imagePath': 'images/cmed/plenary1.webp', 'label': 'Plenary 1'},
+    {'imagePath': 'images/cmed/plenary2.webp', 'label': 'Plenary 2'},
+    {'imagePath': 'images/cmed/plenary3.webp', 'label': 'Plenary 3'},
+    {'imagePath': 'images/cmed/plenary4.webp', 'label': 'Plenary 4'},
+    {'imagePath': 'images/cmed/plenary5.webp', 'label': 'Plenary 5'},
+    {'imagePath': 'images/cmed/privateroom.webp', 'label': 'Private Room'},
+    {'imagePath': 'images/cmed/skillslab.webp', 'label': 'Skills Lab'},
+    {'imagePath': 'images/cmed/ultrasound.webp', 'label': 'Ultrasound Room'},
+    {'imagePath': 'images/cmed/xray.webp', 'label': 'X-Ray Room'},
     // Add more image URLs as needed for the first floor
   ];
 

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class CSw extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/functionhall2.webp', 'label': 'Function Hall'},
-    {'imagePath': 'images/c-301.webp', 'label': 'Room C-301'},
-    {'imagePath': 'images/c-302.webp', 'label': 'Room C-302'},
-    {'imagePath': 'images/c-303.webp', 'label': 'Room C-303'},
-    {'imagePath': 'images/c-304.webp', 'label': 'Room C-304'},
+    {'imagePath': 'images/csw/functionhall2.webp', 'label': 'Function Hall'},
+    {'imagePath': 'images/csw/c-301.webp', 'label': 'Room C-301'},
+    {'imagePath': 'images/csw/c-302.webp', 'label': 'Room C-302'},
+    {'imagePath': 'images/csw/c-303.webp', 'label': 'Room C-303'},
+    {'imagePath': 'images/csw/c-304.webp', 'label': 'Room C-304'},
     // Add more image URLs as needed for the first floor
   ];
 

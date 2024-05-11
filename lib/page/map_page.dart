@@ -1632,7 +1632,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.560131328555965, 120.38443869384842),
         ),
         Vertex(
-          id: 'UNP Iconic Eifiel Tower',
+          id: 'UNP Iconic Tower',
           coordinates: const LatLng(17.55991652192564, 120.38427776131822),
         ),
         Vertex(
@@ -1725,7 +1725,7 @@ class _MapPageState extends State<MapPage> {
             vertex.id == 'UNP Food Court(Event)' ||
             //vertex.id == 'UNP High School' ||
             //vertex.id == 'UNP Cybershark' ||
-            vertex.id == 'UNP Iconic Eifiel Tower' ||
+            vertex.id == 'UNP Iconic Tower' ||
             vertex.id == 'UNP Front Gate' ||
             vertex.id == 'UNP Back Gate') {
           markerSet.add(

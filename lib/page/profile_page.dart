@@ -17,17 +17,17 @@ class _ProfilePageState extends State<ProfilePage> {
   String userEmail = '';
   String? _storedUserImage;
   final List<String> images = [
-    'images/Mash.webp',
-    'images/Gojo.webp',
-    'images/Cid.webp',
-    'images/Aang.webp',
-    'images/Itadori.webp',
-    'images/rudy.webp',
-    'images/Tohsaka.webp',
-    'images/Utena.webp',
-    'images/Saber.webp',
-    'images/Sailor.webp',
-    'images/Korra.webp',
+    'images/pfp/Mash.webp',
+    'images/pfp/Gojo.webp',
+    'images/pfp/Cid.webp',
+    'images/pfp/Aang.webp',
+    'images/pfp/Itadori.webp',
+    'images/pfp/rudy.webp',
+    'images/pfp/Tohsaka.webp',
+    'images/pfp/Utena.webp',
+    'images/pfp/Saber.webp',
+    'images/pfp/Sailor.webp',
+    'images/pfp/Korra.webp',
     // Add more image paths as needed
   ];
 
@@ -57,7 +57,8 @@ class _ProfilePageState extends State<ProfilePage> {
           // Retrieve user's email (optional)
           userEmail = userDoc['email'];
           // Retrieve user's profile picture
-          _storedUserImage = userDoc['profilePicture'] ?? 'images/pikachu.gif';
+          _storedUserImage =
+              userDoc['profilePicture'] ?? 'images/pfp/pikachu.gif';
         });
       }
     }
@@ -183,8 +184,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   },
                   child: CircleAvatar(
                     radius: 40,
-                    backgroundImage:
-                        AssetImage(_storedUserImage ?? 'images/pikachu.gif'),
+                    backgroundImage: AssetImage(
+                        _storedUserImage ?? 'images/pfp/pikachu.gif'),
                   ),
                 ),
                 SizedBox(width: 10),

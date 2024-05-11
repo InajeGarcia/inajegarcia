@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 
 class Gym extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/records.webp',
-    'images/admission.webp',
-    'images/cashier.webp',
-    'images/registrar.webp',
-    'images/coa.webp',
-    'images/guidance.webp',
-    'images/accounting.webp',
-    'images/img.webp',
-    'images/budget.webp',
-    'images/vpfad.webp',
+    'images/adminoffices/records.webp',
+    'images/adminofficesadmission.webp',
+    'images/adminofficescashier.webp',
+    'images/adminofficesregistrar.webp',
+    'images/adminofficescoa.webp',
+    'images/adminofficesguidance.webp',
+    'images/adminofficesaccounting.webp',
+    'images/adminofficesimg.webp',
+    'images/adminofficesbudget.webp',
+    'images/adminofficesvpfad.webp',
     // Add more image URLs as needed for the first floor
   ];
 
@@ -44,16 +44,16 @@ class Gym extends StatelessWidget {
 
 class CPad extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/records.webp',
-    'images/admission.webp',
-    'images/cashier.webp',
-    'images/registrar.webp',
-    'images/coa.webp',
-    'images/guidance.webp',
-    'images/accounting.webp',
-    'images/img.webp',
-    'images/budget.webp',
-    'images/vpfad.webp',
+    'images/adminofficesrecords.webp',
+    'images/adminofficesadmission.webp',
+    'images/adminofficescashier.webp',
+    'images/adminofficesregistrar.webp',
+    'images/adminofficescoa.webp',
+    'images/adminofficesguidance.webp',
+    'images/adminofficesaccounting.webp',
+    'images/adminofficesimg.webp',
+    'images/adminofficesbudget.webp',
+    'images/adminofficesvpfad.webp',
     // Add more image URLs as needed for the first floor
   ];
 

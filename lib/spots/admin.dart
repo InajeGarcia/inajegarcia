@@ -2,31 +2,31 @@ import 'package:flutter/material.dart';
 
 class Admin extends StatelessWidget {
   final List<String> floorImages = [
-    'images/admin.webp',
-    'images/admin.webp',
-    'images/admin.webp',
+    'images/spot/admin.webp',
+    'images/spot/admin.webp',
+    'images/spot/admin.webp',
   ];
 
   final List<List<String>> roomImages = [
     // First Floor
     [
-      'images/records.webp',
-      'images/registrar.webp',
-      'images/cashier.webp',
+      'images/newadmin/records.webp',
+      'images/newadmin/registrar.webp',
+      'images/newadmin/cashier.webp',
       // Add more image URLs as needed for the first floor
     ],
     // Second Floor
     [
-      'images/upim.webp',
-      'images/vpaa.webp',
-      'images/pasuc.webp',
+      'images/newadmin/upim.webp',
+      'images/newadmin/vpaa.webp',
+      'images/newadmin/pasuc.webp',
       // Add more image URLs as needed for the second floor
     ],
     // Third Floor
     [
-      'images/tadena.webp',
-      'images/oandasan.webp',
-      'images/op.webp',
+      'images/newadmin/tadena.webp',
+      'images/newadmin/oandasan.webp',
+      'images/newadmin/op.webp',
       // Add more image URLs as needed for the third floor
     ],
   ];
@@ -60,19 +60,19 @@ class Admin extends StatelessWidget {
     [
       // Room 1
       [
-        'Room 101 Details',
+        'Records Office',
         'Records Office',
         // Add more details as needed for room 1
       ],
       // Room 2
       [
-        'Room 102 Details',
+        'Registrar',
         'Registrar Office',
         // Add more details as needed for room 2
       ],
       // Room 3
       [
-        'Room 103 Details',
+        'Cashiering Unit',
         'Cashier Office',
         // Add more details as needed for room 3
       ],
@@ -81,20 +81,20 @@ class Admin extends StatelessWidget {
     [
       // Room 1
       [
-        'Room 201 Details',
-        'UP-IM Office',
+        'University Planning and Information System Management',
+        'UPIM Office',
         // Add more details as needed for room 1
       ],
       // Room 2
       [
-        'Room 202 Details',
         'VPAA Office',
+        'VPAA OfficeVice President for Academic Affairs',
         // Add more details as needed for room 2
       ],
       // Room 3
       [
-        'Room 203 Details',
         'PASUC Office',
+        'PASUC Zonal Faculty Evaluation Center',
         // Add more details as needed for room 3
       ],
     ],
@@ -102,19 +102,19 @@ class Admin extends StatelessWidget {
     [
       // Room 1
       [
-        'Room 301 Details',
+        'Tadena Hall',
         'Tadena Office',
         // Add more details as needed for room 1
       ],
       // Room 2
       [
-        'Room 302 Details',
+        'Oandasan Room',
         'Oandasan Office',
         // Add more details as needed for room 2
       ],
       // Room 3
       [
-        'Room 303 Details',
+        'Office of the President',
         'Office of the President',
         // Add more details as needed for room 3
       ],

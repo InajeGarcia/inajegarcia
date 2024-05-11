@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 
 class Gymn extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/tcb101.jpg',
-    'images/tcb102.jpg',
-    'images/tech1.jpg',
-    'images/ctechdean.jpg',
-    'images/innovationhub.jpg',
+    'images/spot/gym.jpg',
+
     // Add more image URLs as needed for the first floor
   ];
 

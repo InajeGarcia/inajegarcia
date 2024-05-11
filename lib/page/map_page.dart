@@ -284,7 +284,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.5612621192339, 120.38241665111586),
         ),
         Vertex(
-          id: 'College of Criminology and Justice Enforcement',
+          id: 'College of Criminal Justice and Enforcement',
           coordinates: const LatLng(17.56117133202978, 120.38236712832612),
         ),
         //******************************************************************* */
@@ -1678,7 +1678,7 @@ class _MapPageState extends State<MapPage> {
             vertex.id == 'College of Arts and Sciences' ||
             vertex.id ==
                 'College of Communication and Information Technology' ||
-            vertex.id == 'College of Criminology and Justice Enforcement' ||
+            vertex.id == 'College of Criminal Justice and Enforcement' ||
             vertex.id == 'College of Engineering' ||
             vertex.id == 'College of Fine Arts and Design' ||
             vertex.id == 'College of Health and Sciences' ||

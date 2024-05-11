@@ -103,8 +103,8 @@ List<Spot> spots = [
   Spot(
     id: 10,
     name: 'UNP Parking Area(Heavy Vehicles)',
-    imageUrl: 'images/ce/cefront.webp',
-    imageUrl2: 'images/ce/cefront.webp',
+    imageUrl: 'images/ce/cebuilding.webp',
+    imageUrl2: 'images/ce/cebuildingt.webp',
     description:
         "The university parking area is designed to provide convenient and safe parking options for students, faculty, staff, and visitors. With designated parking zones, ample parking spaces, and clear signage, we strive to ensure a smooth and organized parking experience for everyone on campus. Our parking facilities are equipped with security measures to ensure the safety of vehicles and individuals. Additionally, we offer various parking permit options to accommodate the diverse needs of our university community. Whether you're a student rushing to class or a visitor attending an event, our goal is to provide accessible and hassle-free parking solutions for all.",
     color: Color.fromARGB(255, 255, 99, 17),

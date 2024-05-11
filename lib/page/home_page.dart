@@ -21,15 +21,9 @@ class _HomePageState extends State<HomePage> {
   final List<Map<String, dynamic>> officeImages = [
     {
       'imagePath': 'images/newadmin/registrar.webp',
-      'name': 'Registrar Office',
+      'name': 'Office of the Registrar',
       'details':
           'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
-    },
-    {
-      'imagePath': 'images/newadmin/budget.webp',
-      'name': 'Budget Office',
-      'details':
-          'The Budget office is located at the first floor of the Administration building at the very last office, you should see the budget office.',
     },
     {
       'imagePath': 'images/newadmin/cashier.webp',
@@ -43,18 +37,168 @@ class _HomePageState extends State<HomePage> {
       'details':
           'The Accounting Office is located at first floor of the Administration building, just enter the admin building and walk straight until you pass the second stairs, you are now in the Accounting Office.',
     },
+    {
+      'imagePath': 'images/newadmin/agribusiness.webp',
+      'name': 'Agribusiness Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/boardsec.webp',
+      'name': 'Board Secretary Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/budget.webp',
+      'name': 'Budget Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/cgad.webp',
+      'name': 'Center for Gender and Development Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/coa.webp',
+      'name': 'Comission on Audit Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/extension.webp',
+      'name': 'University Extension Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/facultyunion.webp',
+      'name': 'Faculty Union Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/fedalumni.webp',
+      'name': 'Federal Alumni Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/finance.webp',
+      'name': 'Director Financial Services Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/hrmo.webp',
+      'name': 'Human Resource Management Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/ico.webp',
+      'name': 'Internal Control Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/infotech.webp',
+      'name': 'InfoTech Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/instruction.webp',
+      'name': 'Instruction & Faculty Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/maintenance.webp',
+      'name': 'University Computer Maintenance',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/networks.webp',
+      'name': 'Networks System Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/nstp.webp',
+      'name': 'NSTP',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/oandasan.webp',
+      'name': 'Oandasan Room',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/op.webp',
+      'name': 'Office of the President',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/pia.webp',
+      'name': 'Public & Iinternational Affairs Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/records.webp',
+      'name': 'Records Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/research.webp',
+      'name': 'University Research Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/tadena.webp',
+      'name': 'Dr. Romualdo B. Tadena Hall',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/upim.webp',
+      'name': 'UPIM Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/vpfad.webp',
+      'name': 'VPFad Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
+    {
+      'imagePath': 'images/newadmin/vpre.webp',
+      'name': 'VPRE Office',
+      'details':
+          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    },
   ];
 
   final List<Map<String, dynamic>> foodImages = [
     {
-      'imagePath': 'images/canteen/canteen1.webp',
-      'name': 'Canteen 1',
-      'details': 'Located in front of Ceramic Center',
+      'imagePath': 'images/spot/groceria.webp',
+      'name': 'Groceria',
+      'details': 'Beside Founders Plaza',
     },
     {
-      'imagePath': 'images/canteen/canteen2.webp',
-      'name': 'Canteen 2',
-      'details': 'Canteen 2',
+      'imagePath': 'images/spot/guestelcanteen.webp',
+      'name': 'Guestel Canteen',
+      'details': 'Beside Groceria',
     },
     {
       'imagePath': 'images/canteen/canteen5.webp',
@@ -63,8 +207,8 @@ class _HomePageState extends State<HomePage> {
     },
     {
       'imagePath': 'images/canteen/canteen7.webp',
-      'name': 'Canteen 7',
-      'details': 'Canteen 7',
+      'name': 'Canteen Near CCIT',
+      'details': 'Beside CCIT/CAS/CBAA',
     },
     {
       'imagePath': 'images/canteen/canteen3.webp',
@@ -75,62 +219,105 @@ class _HomePageState extends State<HomePage> {
 
   final List<Map<String, dynamic>> restroomImages = [
     {
-      'imagePath': 'images/ccje/ccjecr1stm.webp',
-      'name': 'CCJE CR 1st Floor Male',
-      'details': 'CCJE CR 1st Floor Male',
+      'imagePath': 'images/ccje/cr/ccjecr1stm.webp',
+      'name': 'CCJE CR 1st Floor',
+      'details':
+          'Upon entering the College, just walk until you reach the end part where you can see the Restroom.',
     },
     {
-      'imagePath': 'images/ccje/ccjecr1stf.webp',
+      'imagePath': 'images/ccje/cr/ccjecr1stf.webp',
       'name': 'CCJE CR 1st Floor Female',
-      'details': 'CCJE CR 1st Floor Female',
+      'details':
+          'Upon entering the College, just walk until you reach the end part where you can see the Restroom.',
     },
     {
-      'imagePath': 'images/ccje/ccjecr2ndm.webp',
+      'imagePath': 'images/ccje/cr/ccjecr2ndm.webp',
       'name': 'CCJE CR 2nd Floor Male',
       'details': 'CCJE CR 2nd Floor Male',
     },
     {
-      'imagePath': 'images/ccje/ccjecr2ndf.webp',
+      'imagePath': 'images/ccje/cr/ccjecr2ndf.webp',
       'name': 'CCJE CR 2nd Floor Female',
       'details': 'CCJE CR 2nd Floor Female',
     },
     {
-      'imagePath': 'images/cbaa/cbaacr.webp',
+      'imagePath': 'images/cbaa/cr/cbaacr.webp',
       'name': 'CBAA CR',
       'details': 'CBAA CR',
     },
     {
-      'imagePath': 'images/cbaa/cbaacr3.webp',
+      'imagePath': 'images/cbaa/cr/cbaacr3.webp',
       'name': 'CBAA CR',
       'details': 'CBAA CR',
+    },
+    {
+      'imagePath': 'images/chtm/chtmcr.webp',
+      'name': 'CHTM CR',
+      'details': 'CHTM',
+    },
+    {
+      'imagePath': 'images/chtm/chtmcr2.webp',
+      'name': 'CHTM CR',
+      'details': 'CHTM',
+    },
+    {
+      'imagePath': 'images/cpad/cpadcr.webp',
+      'name': 'CPAD CR',
+      'details': 'CPAD',
+    },
+    {
+      'imagePath': 'images/cmed/stockroom1st.webp',
+      'name': 'CMED CR',
+      'details': 'CMED',
+    },
+    {
+      'imagePath': 'images/cmed/stockroomcmed.webp',
+      'name': 'CMED CR',
+      'details': 'CMED',
+    },
+    {
+      'imagePath': 'images/cmed/stockroomcmed3.webp',
+      'name': 'CMED CR',
+      'details': 'CMED',
     },
   ];
 
   final List<Map<String, dynamic>> utilityImages = [
     {
       'imagePath': 'images/utilities/property.webp',
-      'name': 'Property',
-      'details': 'Property Office/Storage',
+      'name': 'Property Office',
+      'details':
+          'Located beside the College of Hospitality and Tourism Management. Left part if facing the CHTM building.',
     },
     {
       'imagePath': 'images/cmed/stockroom1st.webp',
-      'name': 'Stockroom 1st',
-      'details': 'Stockroom 1st',
+      'name': 'Stockroom CMED 1st Floor',
+      'details':
+          'Located at the west part of the College of Medicine building.',
     },
     {
       'imagePath': 'images/cmed/stockroomcmed.webp',
       'name': 'Stockroom CMED',
-      'details': 'Stockroom CMED',
+      'details':
+          'Located at 3rd floor west part of the College of Medicine building.',
     },
     {
-      'imagePath': 'images/cme/stockroomcmed2.webp',
+      'imagePath': 'images/cmed/stockroomcmed2.webp',
       'name': 'Stockroom CMED 2nd Floor',
-      'details': 'Stockroom CMED 2nd Floor',
+      'details':
+          'Located at the middle part second floor of College of Medicine building.',
     },
     {
       'imagePath': 'images/cmed/stockroomcmed3.webp',
       'name': 'Stockroom CMED 3rd Floor',
-      'details': 'Stockroom CMED 3rd Floor',
+      'details':
+          'Located at the west part of the College of Medicine building.',
+    },
+    {
+      'imagePath': 'images/cpad/cpadcr3.webp',
+      'name': 'Stockroom CPAD 2nd Floor',
+      'details':
+          'Located at the west part of the College of Medicine building.',
     },
   ];
 

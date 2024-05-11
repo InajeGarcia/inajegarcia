@@ -93,9 +93,13 @@ flutter:
     - images/carch/
     - images/cas/
     - images/cbaa/
+    - images/cbaa/old/
+    - images/cbaa/new/
     - images/ccit/
     - images/ccje/
+    - images/ccje/cr/
     - images/ce/
+    - images/ce/cr/
     - images/cfad/
     - images/chs/
     - images/chtm/

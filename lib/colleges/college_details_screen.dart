@@ -154,7 +154,7 @@ class CollegeDetailPage extends StatelessWidget {
                                 ),
                               );
                             } else if (college.name ==
-                                'College of Bussiness Administration and Accountancy') {
+                                'College of Business Administration and Accountancy') {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -170,7 +170,7 @@ class CollegeDetailPage extends StatelessWidget {
                                 ),
                               );
                             } else if (college.name ==
-                                'College of Criminology Justice and Enforcement') {
+                                'College of Criminal Justice and Enforcement') {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(

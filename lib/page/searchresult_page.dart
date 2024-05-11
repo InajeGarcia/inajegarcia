@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sharkspinpoint/colleges/college_details_screen.dart';
+import 'package:sharkspinpoint/colleges/spot_details_screen.dart';
 import 'package:sharkspinpoint/widgets/data/college.dart';
 import 'package:sharkspinpoint/widgets/data/spot_screen.dart';
 
@@ -94,9 +95,14 @@ class SearchResultPage extends StatelessWidget {
                     leading: Image.asset(spot.imageUrl),
                     title: Text(spot.name),
                     tileColor: spot.color.withOpacity(.5),
-                    // Define your own detail page and navigation for spots
                     onTap: () {
-                      // Define your own navigation for spot detail page
+                      // Navigate to the SpotDetailPage when the list item is clicked
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SpotDetailPage(spot: spot),
+                        ),
+                      );
                     },
                   ),
                 );

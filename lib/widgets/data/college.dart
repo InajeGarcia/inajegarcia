@@ -57,7 +57,7 @@ List<College> colleges = [
   ),
   College(
     id: 5,
-    name: 'College of Criminology and Justice Enforcement',
+    name: 'College of Criminal Justice and Enforcement',
     imageUrl: 'images/clogo/ccje.webp',
     imageUrl2: 'images/ccje/ccjebuilding.webp',
     description:

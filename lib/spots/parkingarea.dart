@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Parking extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/ce/cefront.webp',
+    'images/ce/cebuilding.webp',
 
     // Add more image URLs as needed for the first floor
   ];

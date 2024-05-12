@@ -19,41 +19,54 @@ class _HomePageState extends State<HomePage> {
 
   // Lists of image URLs for each officeImages
   final List<Map<String, dynamic>> officeImages = [
+    //registrar
     {
       'imagePath': 'images/registrarcashier.gif',
       'name': 'Office of the Registrar',
       'details':
           'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
     },
+    //cashier
     {
       'imagePath': 'images/registrarcashier.gif',
       'name': 'Cashiering Unit',
       'details':
           'Upon entering the Administration Building, You will see the Cashiering Unit, the second office to the left part.',
     },
+    //accounting
     {
       'imagePath': 'images/accounting.gif',
       'name': 'Accounting Office',
       'details':
-          'The Accounting Office is located at first floor of the Administration building, just enter the admin building and walk straight until you pass the second stairs, you are now in the Accounting Office.',
+          'The Accounting Office is located at first floor of the Administration building, just enter the admin building and walk straight until you pass the COA office, you will see the  Accounting Office.',
     },
+    //admission
+    {
+      'imagePath': 'images/newadmin/admission.webp',
+      'name': 'Admission Services',
+      'details':
+          'The Admission Office is located at the ground floor of the Administration Building. Upon entering, you will find it on the first office to your right.',
+    },
+    //agribusiness
     {
       'imagePath': 'images/newadmin/agribusiness.webp',
       'name': 'Agribusiness Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The Agribusiness Office is located at second floor of the UNP Administration Building, You will see the office upon reaching the end part of the second floor to the left part.',
     },
+    //boardsec
     {
       'imagePath': 'images/newadmin/boardsec.webp',
       'name': 'Board Secretary Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'Upon entering the Administration Building, You need to walk upstairs until you reach third floor. You need to reach the last office on the left part before Tadena Hall. The University Board Secretary Office is located on that point.',
     },
+    //budget
     {
-      'imagePath': 'images/newadmin/budgetvpfad.gif',
+      'imagePath': 'images/budgetvpfad.gif',
       'name': 'Budget Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'Upon entering the Administration building. Just walk straight until you reach the very end part of the first floor. The Budget office is Located in the left part.',
     },
     {
       'imagePath': 'images/newadmin/cgad.webp',
@@ -61,17 +74,19 @@ class _HomePageState extends State<HomePage> {
       'details':
           'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
     },
+    //coa
     {
       'imagePath': 'images/coa.gif',
       'name': 'Comission on Audit Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The Commission on Audit Office is located at the ground floor of the Administration Building. Just walk a few steps straight and you will see it next to the Cashiering unit.',
     },
+    //extension
     {
       'imagePath': 'images/newadmin/extension.webp',
       'name': 'University Extension Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The University Extension Office is located at second floor of the Administration Building. Upon entering, you will find a stairs and when you reach seond floor, the extension office is located at the south part of the university Administration building.',
     },
     {
       'imagePath': 'images/newadmin/facultyunion.webp',
@@ -91,11 +106,12 @@ class _HomePageState extends State<HomePage> {
       'details':
           'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
     },
+    //hrmo
     {
       'imagePath': 'images/newadmin/hrmo.webp',
       'name': 'Human Resource Management Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The Human Resource Management Office is located at second floor of the Administration Building. Upon entering,  you will find a stairs and when you reach seond floor, the HRMO is located next to the office of Chief Admin of the university Administration building.',
     },
     {
       'imagePath': 'images/newadmin/ico.webp',
@@ -121,65 +137,81 @@ class _HomePageState extends State<HomePage> {
       'details':
           'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
     },
+    //networks
     {
       'imagePath': 'images/newadmin/networks.webp',
       'name': 'Networks System Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The Networks System Office is located at the second floor of the Administration Building. Upon reaching the second floor, you will find it already in your right part.',
     },
     {
       'imagePath': 'images/newadmin/nstp.webp',
       'name': 'NSTP',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The National Service Training Program Office is located at the third floor of the Administration Building. Upon reaching the third floor, you will find it on the first office to your left.',
     },
+    //oandasan
     {
       'imagePath': 'images/newadmin/oandasan.webp',
       'name': 'Oandasan Room',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'Upon entering the Administration Building, You will see the Oandasan Room on the third floor of the administration building.The office is located to the east part when you reach the third floor when facing north.',
     },
+    //op
     {
       'imagePath': 'images/newadmin/op.webp',
       'name': 'Office of the President',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'Upon entering the Administration Building, You will see the office of the President on the Third floor when you walk upstairs. The first office on the left part.',
     },
+    //pia
     {
       'imagePath': 'images/newadmin/pia.webp',
-      'name': 'Public & Iinternational Affairs Office',
+      'name': 'Public & International Affairs Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The Public & International Affairs Office is located at third floor of the University Administration Office. You can reach it while walking upstairs on the right stairs on the admission services part. The PIA office is located next to Internal Control Office(ICO).',
     },
+    //records
     {
       'imagePath': 'images/newadmin/records.webp',
       'name': 'Records Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The Records Office is located at the ground floor of the Administration Building. Upon entering, you will find it on the second office to your left.',
     },
+    //research
     {
       'imagePath': 'images/newadmin/research.webp',
       'name': 'University Research Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The University Research Office is located at the second floor of the Administration Building. Upon reaching the second floor,  you will find a stairs and when you reach seond floor, the research office is located at the south part next to the extension office of the university Administration building.',
     },
+    //tadena
     {
       'imagePath': 'images/newadmin/tadena.webp',
       'name': 'Dr. Romualdo B. Tadena Hall',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The Tadena Hall is located at the third floor of the Administration Building. You shall find it by reachig the end part of the Third floor of the University Administration Office.',
     },
+    //upim
     {
       'imagePath': 'images/newadmin/upim.webp',
       'name': 'UPIM Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The University Planning and Information Management Office is located at second floor of the Administration Building. Upon entering, you will find a stairs and when you reach seond floor, the office on the north part is the UPIM office.',
     },
+    //vpaa
+    {
+      'imagePath': 'images/newadmin/vpaa.webp',
+      'name': 'VPAA Office',
+      'details':
+          'The Vice President for Academic Affairs Office is located at the second floor of the Administration Building. Upon reaching the second floor, you shall see it already the first office on the left part.',
+    },
+    //vpfad
     {
       'imagePath': 'images/newadmin/vpfad.webp',
       'name': 'VPFad Office',
       'details':
-          'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+          'The Vice President for Finance and Administration Office is located at the ground floor of the Administration Building. Upon entering the ground floor, just walk straight until you reach the end part. You shall see the Budget Office in front of it.',
     },
     {
       'imagePath': 'images/newadmin/vpre.webp',

@@ -5,8 +5,76 @@ class OfficeImage {
   final String name;
   final String details;
 
-  OfficeImage(
-      {required this.imagePath, required this.name, required this.details});
+  OfficeImage({
+    required this.imagePath,
+    required this.name,
+    required this.details,
+  });
+}
+
+class FloorPage extends StatelessWidget {
+  final List<OfficeImage> floorImages;
+
+  FloorPage({required this.floorImages});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Floor'),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            ListView.builder(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              itemCount: floorImages.length,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: GestureDetector(
+                    onTap: () {
+                      _showImageDetails(context, floorImages[index]);
+                    },
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(12.0),
+                      child: Image.asset(
+                        floorImages[index].imagePath,
+                        width: double.infinity,
+                        height: 200,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showImageDetails(BuildContext context, OfficeImage image) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(image.name),
+          content: Text(image.details),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('Close'),
+            ),
+          ],
+        );
+      },
+    );
+  }
 }
 
 class FirstFloorPage extends StatelessWidget {
@@ -59,55 +127,7 @@ class FirstFloorPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('First Floor'),
-      ),
-      body: ListView.builder(
-        itemCount: firstFloorImages.length,
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: GestureDetector(
-              onTap: () {
-                // Handle image tap here
-                // You can navigate to a new page to show image details
-                _showImageDetails(context, firstFloorImages[index]);
-              },
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(12.0),
-                child: Image.asset(
-                  firstFloorImages[index].imagePath,
-                  width: double.infinity,
-                  height: 200,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          );
-        },
-      ),
-    );
-  }
-
-  void _showImageDetails(BuildContext context, OfficeImage image) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text(image.name),
-          content: Text(image.details),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text('Close'),
-            ),
-          ],
-        );
-      },
-    );
+    return FloorPage(floorImages: firstFloorImages);
   }
 }
 
@@ -159,55 +179,7 @@ class SecondFloorPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Second Floor'),
-      ),
-      body: ListView.builder(
-        itemCount: secondFloorImages.length,
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: GestureDetector(
-              onTap: () {
-                // Handle image tap here
-                // You can navigate to a new page to show image details
-                _showImageDetails(context, secondFloorImages[index]);
-              },
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(12.0),
-                child: Image.asset(
-                  secondFloorImages[index].imagePath,
-                  width: double.infinity,
-                  height: 200,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          );
-        },
-      ),
-    );
-  }
-
-  void _showImageDetails(BuildContext context, OfficeImage image) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text(image.name),
-          content: Text(image.details),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text('Close'),
-            ),
-          ],
-        );
-      },
-    );
+    return FloorPage(floorImages: secondFloorImages);
   }
 }
 
@@ -225,54 +197,13 @@ class ThirdFloorPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Third Floor'),
-      ),
-      body: ListView.builder(
-        itemCount: thirdFloorImages.length,
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: GestureDetector(
-              onTap: () {
-                // Handle image tap here
-                // You can navigate to a new page to show image details
-                _showImageDetails(context, thirdFloorImages[index]);
-              },
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(12.0),
-                child: Image.asset(
-                  thirdFloorImages[index].imagePath,
-                  width: double.infinity,
-                  height: 200,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          );
-        },
-      ),
-    );
+    return FloorPage(floorImages: thirdFloorImages);
   }
+}
 
-  void _showImageDetails(BuildContext context, OfficeImage image) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text(image.name),
-          content: Text(image.details),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text('Close'),
-            ),
-          ],
-        );
-      },
-    );
-  }
+void main() {
+  runApp(MaterialApp(
+    home:
+        FirstFloorPage(), // You can change this to SecondFloorPage() or ThirdFloorPage()
+  ));
 }

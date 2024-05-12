@@ -1789,26 +1789,6 @@ class _MapPageState extends State<MapPage> {
         alignment: Alignment.topRight,
         children: [
           Positioned(
-            top: 550.0,
-            right: 1.0,
-            child: FloatingActionButton(
-              backgroundColor: Color.fromARGB(255, 219, 184, 87),
-              foregroundColor: Colors.white,
-              onPressed: () {
-                // reset ang map
-                markers.clear();
-                polylines.clear();
-                markers.addAll(_createMarkersFromPaths(paths));
-                _googleMapController.animateCamera(
-                  CameraUpdate.newCameraPosition(_initialCameraPosition),
-                );
-
-                setState(() {});
-              },
-              child: const Icon(Icons.refresh),
-            ),
-          ),
-          Positioned(
             top: 400.0,
             right: 1.0,
             child: FloatingActionButton(
@@ -1855,6 +1835,41 @@ class _MapPageState extends State<MapPage> {
               child: const Icon(Icons.location_searching),
             ),
           ),
+          Positioned(
+            top: 550.0,
+            right: 1.0,
+            child: FloatingActionButton(
+              backgroundColor: Color.fromARGB(255, 219, 184, 87),
+              foregroundColor: Colors.white,
+              onPressed: () {
+                // reset ang map
+                markers.clear();
+                polylines.clear();
+                markers.addAll(_createMarkersFromPaths(paths));
+                _googleMapController.animateCamera(
+                  CameraUpdate.newCameraPosition(_initialCameraPosition),
+                );
+
+                setState(() {});
+              },
+              child: const Icon(Icons.refresh),
+            ),
+          ),
+          /*Positioned(
+            top: 550.0,
+            right: 1.0,
+            child: FloatingActionButton(
+              backgroundColor: Color.fromARGB(255, 219, 184, 87),
+              foregroundColor: Colors.white,
+              onPressed: () {
+                // reset ang map
+                
+
+                setState(() {});
+              },
+              child: const Icon(Icons.car_repair),
+            ),
+          ),*/
         ],
       ),
     );

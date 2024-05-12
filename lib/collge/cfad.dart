@@ -2,17 +2,27 @@ import 'package:flutter/material.dart';
 
 class CFad extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/cfad/records.webp', 'label': 'Records Office'},
-    {'imagePath': 'images/cfad/admission.webp', 'label': 'Admission Office'},
-    {'imagePath': 'images/cfad/cashier.webp', 'label': 'Cashier Office'},
-    {'imagePath': 'images/cfad/registrar.webp', 'label': 'Registrar Office'},
-    {'imagePath': 'images/cfad/coa.webp', 'label': 'COA Office'},
-    {'imagePath': 'images/cfad/guidance.webp', 'label': 'Guidance Office'},
-    {'imagePath': 'images/cfad/accounting.webp', 'label': 'Accounting Office'},
-    {'imagePath': 'images/cfad/img.webp', 'label': 'IMG Office'},
-    {'imagePath': 'images/cfad/budget.webp', 'label': 'Budget Office'},
-    {'imagePath': 'images/cfad/vpfad.webp', 'label': 'VPFAD Office'},
-    // Add more image URLs as needed for the first floor
+    {'imagePath': 'images/cfad/101.webp', 'label': 'Room 101'},
+    {'imagePath': 'images/cfad/102.webp', 'label': 'Room 102'},
+    {'imagePath': 'images/cfad/103.webp', 'label': 'Room 103'},
+    {'imagePath': 'images/cfad/gallery.webp', 'label': 'Gallery'},
+    {'imagePath': 'images/cfad/201.webp', 'label': 'Room 201'},
+    {'imagePath': 'images/cfad/202.webp', 'label': 'Room 202'},
+    {'imagePath': 'images/cfad/203.webp', 'label': 'Room 203'},
+    {'imagePath': 'images/cfad/204.webp', 'label': 'Room 204'},
+    {'imagePath': 'images/cfad/deansoffice.webp', 'label': "Dean's Office"},
+    {'imagePath': 'images/cfad/faculty.webp', 'label': 'Faculty Room'},
+    {'imagePath': 'images/cfad/301.webp', 'label': 'Room 301'},
+    {'imagePath': 'images/cfad/graphicsroom.webp', 'label': 'Graphics Room'},
+    {
+      'imagePath': 'images/cfad/galleria.webp',
+      'label': 'Galleria Esteban Villanueva'
+    },
+    {'imagePath': 'images/cfad/302.webp', 'label': 'Room 302'},
+    {
+      'imagePath': 'images/cfad/tanghalangpedro.webp',
+      'label': 'Tanghalang Pedro Bukaneg'
+    },
   ];
 
   @override

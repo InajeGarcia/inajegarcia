@@ -389,7 +389,7 @@ class PasucOffice extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Text(
-                'The PASUC Office is located at the third floor of the Administration Building. Upon reaching the third floor, you will find it on the third office to your right.',
+                'The PASUC Office is located at the second floor of the Administration Building. Upon reaching the second floor, the office after the VPAA is the PASUC Zonal Faculty Evaluation Center.',
                 textAlign: TextAlign.justify,
               ),
             ),
@@ -509,7 +509,7 @@ class CoaOffice extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Text(
-                'The Commission on Audit Office is located at the third floor of the Administration Building. Upon reaching the third floor, you will find it on the fifth office to your left.',
+                'The Commission on Audit Office is located at the ground floor of the Administration Building. Just walk a few steps straight and you will see it next to the Cashiering unit.',
                 textAlign: TextAlign.justify,
               ),
             ),
@@ -549,7 +549,7 @@ class NetworksSystemOffice extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Text(
-                'The Networks System Office is located at the second floor of the Administration Building. Upon reaching the second floor, you will find it on the last office to your right.',
+                'The Networks System Office is located at the second floor of the Administration Building. Upon reaching the second floor, you will find it already in your right part.',
                 textAlign: TextAlign.justify,
               ),
             ),
@@ -589,7 +589,7 @@ class UniversityResearchOffice extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Text(
-                'The University Research Office is located at the second floor of the Administration Building. Upon reaching the second floor, you will find it on the second office to your left.',
+                'The University Research Office is located at the second floor of the Administration Building. Upon reaching the second floor,  you will find a stairs and when you reach seond floor, the research office is located at the south part next to the extension office of the university Administration building.',
                 textAlign: TextAlign.justify,
               ),
             ),
@@ -629,7 +629,7 @@ class HrmoOffice extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Text(
-                'The Human Resource Management Office is located at the ground floor of the Administration Building. Upon entering, you will find it on the last office to your right.',
+                'The Human Resource Management Office is located at second floor of the Administration Building. Upon entering,  you will find a stairs and when you reach seond floor, the HRMO is located next to the office of Networks System of the university Administration building.',
                 textAlign: TextAlign.justify,
               ),
             ),
@@ -669,7 +669,7 @@ class UniversityExtensionOffice extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Text(
-                'The University Extension Office is located at the ground floor of the Administration Building. Upon entering, you will find it on the first office to your left.',
+                'The University Extension Office is located at second floor of the Administration Building. Upon entering, you will find a stairs and when you reach seond floor, the extension office is located at the south part of the university Administration building.',
                 textAlign: TextAlign.justify,
               ),
             ),
@@ -709,7 +709,7 @@ class UpimOffice extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Text(
-                'The University Planning and Information Management Office is located at the ground floor of the Administration Building. Upon entering, you will find it on the third office to your left.',
+                'The University Planning and Information Management Office is located at second floor of the Administration Building. Upon entering, you will find a stairs and when you reach seond floor, the office on the north part is the UPIM office.',
                 textAlign: TextAlign.justify,
               ),
             ),

@@ -84,7 +84,7 @@ List<College> colleges = [
   ),
   College(
     id: 8,
-    name: 'College of Health Sciences',
+    name: 'College of Health and Sciences',
     imageUrl: 'images/clogo/chs.webp',
     imageUrl2: 'images/chs/chsbuilding.webp',
     description:

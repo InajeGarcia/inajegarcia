@@ -20,19 +20,19 @@ class _HomePageState extends State<HomePage> {
   // Lists of image URLs for each officeImages
   final List<Map<String, dynamic>> officeImages = [
     {
-      'imagePath': 'images/newadmin/registrar.webp',
+      'imagePath': 'images/registrarcashier.gif',
       'name': 'Office of the Registrar',
       'details':
           'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
     },
     {
-      'imagePath': 'images/newadmin/cashier.webp',
+      'imagePath': 'images/registrarcashier.gif',
       'name': 'Cashiering Unit',
       'details':
           'Upon entering the Administration Building, You will see the Cashiering Unit, the second office to the left part.',
     },
     {
-      'imagePath': 'images/newadmin/accounting.webp',
+      'imagePath': 'images/accounting.gif',
       'name': 'Accounting Office',
       'details':
           'The Accounting Office is located at first floor of the Administration building, just enter the admin building and walk straight until you pass the second stairs, you are now in the Accounting Office.',
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
           'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
     },
     {
-      'imagePath': 'images/newadmin/budget.webp',
+      'imagePath': 'images/newadmin/budgetvpfad.gif',
       'name': 'Budget Office',
       'details':
           'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
           'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
     },
     {
-      'imagePath': 'images/newadmin/coa.webp',
+      'imagePath': 'images/coa.gif',
       'name': 'Comission on Audit Office',
       'details':
           'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
@@ -373,7 +373,6 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
                             onSubmitted: (value) {
-                              // Navigate to SearchResultPage with the search input
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -384,7 +383,6 @@ class _HomePageState extends State<HomePage> {
                             },
                             onChanged: (value) {
                               setState(() {});
-                              // Rebuild the widget to show/hide the clear button
                             },
                           ),
                         ),
@@ -394,7 +392,6 @@ class _HomePageState extends State<HomePage> {
                             onPressed: () {
                               _searchController.clear();
                               setState(() {});
-                              // Rebuild the widget to hide the clear button
                             },
                           ),
                       ],

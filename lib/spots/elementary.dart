@@ -4,6 +4,7 @@ class Elementary extends StatelessWidget {
   final List<String> firstFloorImages = [
     'images/spot/ctechite.webp',
     'images/spot/hostel.webp',
+    'images/cte/ctebuilding.webp',
     // Add more image URLs as needed for the first floor
   ];
 

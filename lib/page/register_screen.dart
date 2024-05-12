@@ -252,11 +252,22 @@ class _RegisterPageState extends State<RegisterPage> {
       User? user = userCredential.user;
 
       if (user != null) {
+        // Send email verification
+        await user.sendEmailVerification();
+
+        // Update user profile in Firestore
         await FirebaseFirestore.instance.collection('users').doc(user.uid).set({
           'firstName': _firstNameController.text,
           'lastName': _lastNameController.text,
           'email': _emailController.text,
         });
+
+        // Show verification message
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Registration successful. Please verify your email.'),
+          ),
+        );
 
         // Registration successful, return true
         return true;
@@ -267,6 +278,11 @@ class _RegisterPageState extends State<RegisterPage> {
     } catch (e) {
       // Handle registration error
       print('Failed to register: $e');
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Registration failed. Please try again.'),
+        ),
+      );
       return false;
     }
   }

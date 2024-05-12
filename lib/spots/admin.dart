@@ -13,21 +13,33 @@ class Admin extends StatelessWidget {
       'images/newadmin/records.webp',
       'images/newadmin/registrar.webp',
       'images/newadmin/cashier.webp',
-      // Add more image URLs as needed for the first floor
+      'images/newadmin/coa.webp',
+      'images/newadmin/accounting.webp',
+      'images/newadmin/finance.webp',
+      'images/newadmin/vpfad.webp',
+      'images/newadmin/budget.webp',
     ],
     // Second Floor
     [
       'images/newadmin/upim.webp',
       'images/newadmin/vpaa.webp',
       'images/newadmin/pasuc.webp',
-      // Add more image URLs as needed for the second floor
+      'images/newadmin/research.webp',
+      'images/newadmin/extension.webp',
+      'images/newadmin/pia.webp',
+      'images/newadmin/networks.webp',
+      'images/newadmin/hrmo.webp',
+      'images/newadmin/vpre.webp',
     ],
     // Third Floor
     [
-      'images/newadmin/tadena.webp',
+      'images/newadmin/legal.webp',
       'images/newadmin/oandasan.webp',
       'images/newadmin/op.webp',
-      // Add more image URLs as needed for the third floor
+      'images/newadmin/ico.webp',
+      'images/newadmin/fedalumni.webp',
+      'images/newadmin/boardsec.webp',
+      'images/newadmin/tadena.webp',
     ],
   ];
 
@@ -37,86 +49,121 @@ class Admin extends StatelessWidget {
       'Records Office',
       'Registrar Office',
       'Cashiering Unit',
-      // Add more nicknames as needed for the first floor
     ],
     // Second Floor
     [
       'UPIM Office',
       'VPAA Office',
       'PASUC Office',
-      // Add more nicknames as needed for the second floor
     ],
     // Third Floor
     [
       'Tadena Office',
       'Oandasan Office',
       'Office of the President',
-      // Add more nicknames as needed for the third floor
     ],
   ];
 
   final List<List<List<String>>> roomDetails = [
     // First Floor
     [
-      // Room 1
       [
         'Records Office',
         'Records Office',
-        // Add more details as needed for room 1
       ],
-      // Room 2
       [
         'Registrar',
         'Registrar Office',
-        // Add more details as needed for room 2
       ],
-      // Room 3
       [
         'Cashiering Unit',
         'Cashier Office',
-        // Add more details as needed for room 3
+      ],
+      [
+        'Commission on Audit',
+        'COA Office',
+      ],
+      [
+        'Accounting',
+        'Accounting Office',
+      ],
+      [
+        'Finance',
+        'FinanceOffice',
+      ],
+      [
+        'Vice President for Financial Administration',
+        'VPFad Office',
+      ],
+      [
+        'Budget',
+        'Budget Office',
       ],
     ],
     // Second Floor
     [
-      // Room 1
       [
         'University Planning and Information System Management',
         'UPIM Office',
-        // Add more details as needed for room 1
       ],
-      // Room 2
       [
         'VPAA Office',
         'VPAA OfficeVice President for Academic Affairs',
-        // Add more details as needed for room 2
       ],
-      // Room 3
       [
         'PASUC Office',
         'PASUC Zonal Faculty Evaluation Center',
-        // Add more details as needed for room 3
+      ],
+      [
+        'Research',
+        'University Research Office',
+      ],
+      [
+        'University Extension',
+        'Extension Office',
+      ],
+      [
+        'Public Information Affairs',
+        'PIA Office',
+      ],
+      [
+        'Human Resource Management Office',
+        'HRMOffice',
+      ],
+      [
+        'Vice President for Research and Extension',
+        'VPRE Office',
       ],
     ],
     // Third Floor
     [
-      // Room 1
       [
-        'Tadena Hall',
-        'Tadena Office',
-        // Add more details as needed for room 1
+        'Legal',
+        'Legal Office',
       ],
-      // Room 2
       [
         'Oandasan Room',
         'Oandasan Office',
-        // Add more details as needed for room 2
       ],
-      // Room 3
       [
         'Office of the President',
         'Office of the President',
-        // Add more details as needed for room 3
+      ],
+      [
+        'Internal Control Office',
+        'Internal Control Office',
+      ],
+      [
+        'UNP Federated Alumni Association',
+        'Office of UNP Federated Alumni Association',
+      ],
+      [
+        'Board Secretary',
+        'Office of the University Board Secretary',
+      ],
+      [
+        'Tadena Hall',
+        'Dr. Romualdo Tadena Hall',
       ],
     ],
   ];

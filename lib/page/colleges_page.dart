@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sharkspinpoint/widgets/data/college.dart';
-import 'package:sharkspinpoint/colleges/college_details_screen.dart'; // Import the detail page
+import 'package:sharkspinpoint/colleges/college_details_screen.dart';
 
 class CollegePage extends StatelessWidget {
   @override
@@ -33,7 +33,6 @@ class CollegePage extends StatelessWidget {
           College college = colleges[index];
           return GestureDetector(
             onTap: () {
-              // Navigate to detail page when a college item is tapped
               Navigator.push(
                 context,
                 MaterialPageRoute(

@@ -6,7 +6,7 @@ class CPad extends StatelessWidget {
     {'imagePath': 'images/cpad/guijo.webp', 'label': 'Guijo Room'},
     {'imagePath': 'images/cpad/narra.webp', 'label': 'Narra Room'},
     {
-      'imagePath': 'images/cpad/cpadaccreditationroom.webp',
+      'imagePath': 'images/cpad/cpadaccreditationrooom.webp',
       'label': 'Accreditation Room'
     },
     {

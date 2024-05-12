@@ -4,7 +4,7 @@ class CN extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {'imagePath': 'images/cn/cnoffice.webp', 'label': 'CN Office'},
     {
-      'imagePath': 'images/cn/cnresearchandextension.jpg',
+      'imagePath': 'images/cn/cnresearchandextension.webp',
       'label': 'CN Research and Extension'
     },
     // Add more image URLs as needed for the first floor

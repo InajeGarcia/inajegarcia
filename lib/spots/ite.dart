@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Ite extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/ctech//ctech/ite.webp',
+    'images/ctech/ctech/ite.webp',
 
     // Add more image URLs as needed for the first floor
   ];

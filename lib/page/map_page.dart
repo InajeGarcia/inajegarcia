@@ -1864,11 +1864,9 @@ class _MapPageState extends State<MapPage> {
     bool serviceEnabled;
     LocationPermission permission;
 
-    // Check if location services are enabled
+    // Check location if enabled
     serviceEnabled = await Geolocator.isLocationServiceEnabled();
     if (!serviceEnabled) {
-      // Location services are disabled
-      // Show an error message or prompt the user to enable location services
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Please enable location services.'),

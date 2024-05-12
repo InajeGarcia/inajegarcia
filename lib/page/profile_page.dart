@@ -242,7 +242,7 @@ class _ProfilePageState extends State<ProfilePage> {
               title: Text('Version 1.0.0',
                   style: TextStyle(fontWeight: FontWeight.bold)),
               onTap: () {
-                // Handle Version
+                // Show Version
               },
             ),
             ListTile(

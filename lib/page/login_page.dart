@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:sharkspinpoint/page/home_page.dart';
 import 'package:sharkspinpoint/page/register_screen.dart';
 import 'package:sharkspinpoint/page/tutorial_page.dart';
-import 'package:sharkspinpoint/screens/home_screen.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key, required this.title}) : super(key: key);
@@ -41,9 +39,8 @@ class _LoginPageState extends State<LoginPage> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(
-                'images/bglogo/welcome7.webp'), // Use the asset image as background
-            fit: BoxFit.cover, // Cover the entire screen
+            image: AssetImage('images/bglogo/welcome7.webp'),
+            fit: BoxFit.cover,
           ),
         ),
         padding: const EdgeInsets.all(20),
@@ -228,9 +225,9 @@ class _LoginPageState extends State<LoginPage> {
       );
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
-        print('No user found for that email.');
+        print('You have entered an invalid email.');
       } else if (e.code == 'wrong-password') {
-        print('Wrong password provided for that user.');
+        print('You have entered wrong password.');
       }
     } catch (e) {
       print(e);

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CTech extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {'imagePath': 'images/ctech/tcb101.webp', 'label': 'Room TCB101'},
-    {'imagePath': 'images/ctech/cb102.webp', 'label': 'Room TCB102'},
+    {'imagePath': 'images/ctech/tcb102.webp', 'label': 'Room TCB102'},
     {'imagePath': 'images/ctech/tech1.webp', 'label': 'Room Tech1'},
     {'imagePath': 'images/ctech/ctechdean.webp', 'label': 'Dean Office'},
     {'imagePath': 'images/ctech/innovationhub.webp', 'label': 'Innovation Hub'},

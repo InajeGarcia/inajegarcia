@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Mens extends StatelessWidget {
   final List<String> firstFloorImages = [
-    'images/ctech/tcb101.webp',
+    'images/cpad/cpadbuilding.webp',
 
     // Add more image URLs as needed for the first floor
   ];

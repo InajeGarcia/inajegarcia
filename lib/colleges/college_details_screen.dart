@@ -239,7 +239,7 @@ class CollegeDetailPage extends StatelessWidget {
                                 ),
                               );
                             } else if (college.name ==
-                                'College of Social Work') {
+                                'College of Socialwork') {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(

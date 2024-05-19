@@ -130,7 +130,7 @@ class AdminDetailPage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        ElevatedButton(
+                        /*ElevatedButton(
                           onPressed: () {
                             // Navigate to MapPage with the selectedVertexId based on college name
                             Navigator.push(
@@ -418,7 +418,7 @@ class AdminDetailPage extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                        ),
+                        ),*/
                       ],
                     ),
                   ],

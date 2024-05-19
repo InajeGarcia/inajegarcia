@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:sharkspinpoint/page/login_page.dart';
-import 'tutorial_page.dart'; // Import your TutorialPage widget
+import 'tutorial_page.dart';
+import 'splashscreen.dart'; // Import your TutorialPage widget
 
 class RegisterPage extends StatefulWidget {
   final String title;
@@ -207,7 +208,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => TutorialPage(),
+                                  builder: (context) => SplashScreen(),
                                 ),
                               );
                             } else {

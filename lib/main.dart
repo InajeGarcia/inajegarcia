@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart'; // Import FirebaseAuth
 import 'package:sharkspinpoint/screens/welcome_screen.dart';
 import 'package:sharkspinpoint/screens/home_screen.dart';
 import 'package:sharkspinpoint/page/colleges_page.dart';
-import 'package:sharkspinpoint/page/tutorial_page.dart';
+import 'package:sharkspinpoint/page/splashscreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
       },
       routes: {
         '/colleges': (context) => CollegePage(),
-        '/tutorial': (context) => TutorialPage(),
+        '/splashscreen': (context) => SplashScreen(),
       },
     );
   }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:sharkspinpoint/page/register_screen.dart';
-import 'package:sharkspinpoint/page/tutorial_page.dart';
+import 'register_screen.dart';
+import 'splashscreen.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key, required this.title}) : super(key: key);
@@ -200,7 +200,7 @@ class _LoginPageState extends State<LoginPage> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => TutorialPage(),
+          builder: (context) => SplashScreen(),
         ),
       );
     } on FirebaseAuthException catch (e) {
@@ -210,7 +210,7 @@ class _LoginPageState extends State<LoginPage> {
       } else if (e.code == 'wrong-password') {
         errorMessage = 'Wrong password provided.';
       } else {
-        errorMessage = 'An error occurred. Please try again.';
+        errorMessage = 'Incorrect Password. Please try again.';
       }
 
       ScaffoldMessenger.of(context).showSnackBar(

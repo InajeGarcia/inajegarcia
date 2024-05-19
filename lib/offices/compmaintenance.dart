@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class COmpmaintenance extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/cn/cnoffice.webp', 'label': 'CN Office'},
+    {'imagePath': 'images/newadmin/maintenance.webp', 'label': 'Maintenance'},
     {
       'imagePath': 'images/cn/cnresearchandextension.webp',
       'label': 'CN Research and Extension'

@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 
 class FInancialservices extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/cn/cnoffice.webp', 'label': 'CN Office'},
+    {
+      'imagePath': 'images/newadmin/finance.webp',
+      'label': 'Financial Services'
+    },
     {
       'imagePath': 'images/cn/cnresearchandextension.webp',
       'label': 'CN Research and Extension'

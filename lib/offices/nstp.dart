@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 
 class NStp extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/cn/cnoffice.webp', 'label': 'CN Office'},
-    {
-      'imagePath': 'images/cn/cnresearchandextension.webp',
-      'label': 'CN Research and Extension'
-    },
+    {'imagePath': 'images/newadmin/nstp.webp', 'label': 'NSTP'},
+
     // Add more image URLs as needed for the first floor
   ];
 

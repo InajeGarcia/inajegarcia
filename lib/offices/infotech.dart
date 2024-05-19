@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class INfotech extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/cn/cnoffice.webp', 'label': 'CN Office'},
     {
-      'imagePath': 'images/cn/cnresearchandextension.webp',
-      'label': 'CN Research and Extension'
+      'imagePath': 'images/newadmin/infotech.webp',
+      'label': 'Information Techlogy'
     },
+
     // Add more image URLs as needed for the first floor
   ];
 

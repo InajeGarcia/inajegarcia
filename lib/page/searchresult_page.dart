@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:sharkspinpoint/colleges/college_details_screen.dart';
 import 'package:sharkspinpoint/colleges/spot_details_screen.dart';
+import 'package:sharkspinpoint/widgets/data/admin_data.dart';
 import 'package:sharkspinpoint/widgets/data/college.dart';
 import 'package:sharkspinpoint/widgets/data/spot_screen.dart';
+import 'package:sharkspinpoint/colleges/admin_details_screen.dart';
 
 class SearchResultPage extends StatelessWidget {
   final String query;
@@ -27,6 +29,13 @@ class SearchResultPage extends StatelessWidget {
     List<Spot> filteredSpots = spots.where((spot) {
       // Normalize the spot name by removing spaces and converting to lowercase
       String normalizedSpotName = spot.name.replaceAll(' ', '').toLowerCase();
+      // Return true if the normalized spot name contains the normalized query
+      return normalizedSpotName.contains(normalizedQuery);
+    }).toList();
+
+    List<Admin> filteredAdmins = admins.where((admin) {
+      // Normalize the spot name by removing spaces and converting to lowercase
+      String normalizedSpotName = admin.name.replaceAll(' ', '').toLowerCase();
       // Return true if the normalized spot name contains the normalized query
       return normalizedSpotName.contains(normalizedQuery);
     }).toList();
@@ -109,7 +118,44 @@ class SearchResultPage extends StatelessWidget {
               },
             ),
           ],
-          if (filteredColleges.isEmpty && filteredSpots.isEmpty)
+          if (filteredAdmins.isNotEmpty) ...[
+            Text(
+              "Offices:",
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            ListView.separated(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              itemCount: filteredAdmins.length,
+              separatorBuilder: (context, index) {
+                return Divider(color: Colors.grey);
+              },
+              itemBuilder: (context, index) {
+                final admin = filteredAdmins[index];
+                return Padding(
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 8.0, horizontal: 16.0),
+                  child: ListTile(
+                    leading: Image.asset(admin.imageUrl),
+                    title: Text(admin.name),
+                    tileColor: admin.color.withOpacity(.5),
+                    onTap: () {
+                      // Navigate to the SpotDetailPage when the list item is clicked
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AdminDetailPage(admin: admin),
+                        ),
+                      );
+                    },
+                  ),
+                );
+              },
+            ),
+          ],
+          if (filteredColleges.isEmpty &&
+              filteredSpots.isEmpty &&
+              filteredAdmins.isEmpty)
             Center(
               child: Text(
                 "No results found",

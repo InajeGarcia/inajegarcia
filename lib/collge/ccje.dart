@@ -9,16 +9,16 @@ class _CCjeState extends State<CCje> {
   String folder = '1st Floor';
 
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/ccje/firstfloor/101.webp', 'label': 'Room 101'},
-    {'imagePath': 'images/ccje/firstfloor/102.webp', 'label': 'Room 102'},
-    {'imagePath': 'images/ccje/firstfloor/103.webp', 'label': 'Room 103'},
-    {'imagePath': 'images/ccje/firstfloor/105.webp', 'label': 'Room 105'},
+    {'imagePath': 'images/ccje/firstfloor/ccje101.webp', 'label': 'CCJE 101'},
+    {'imagePath': 'images/ccje/firstfloor/ccje102.webp', 'label': 'CCJE 102'},
+    {'imagePath': 'images/ccje/firstfloor/ccje103.webp', 'label': 'CCJE 103'},
+    {'imagePath': 'images/ccje/firstfloor/ccje105.webp', 'label': 'CCJE 105'},
     {
-      'imagePath': 'images/ccje/firstfloor/cr1stf.webp',
+      'imagePath': 'images/ccje/cr/ccjecr1stf.webp',
       'label': 'CR 1st Floor (Female)'
     },
     {
-      'imagePath': 'images/ccje/firstfloor/cr1stm.webp',
+      'imagePath': 'images/ccje/cr/ccjecr1stm.webp',
       'label': 'CR 1st Floor (Male)'
     },
   ];
@@ -31,7 +31,10 @@ class _CCjeState extends State<CCje> {
       'imagePath': 'images/ccje/secondfloor/forensicroom.webp',
       'label': 'Forensic Room'
     },
-    {'imagePath': 'images/ccje/secondfloor/library.webp', 'label': 'Library'},
+    {
+      'imagePath': 'images/ccje/secondfloor/ccjelibrary.webp',
+      'label': 'Library'
+    },
     {
       'imagePath': 'images/ccje/secondfloor/polygraphyroom.webp',
       'label': 'Polygraphy Room'
@@ -40,18 +43,18 @@ class _CCjeState extends State<CCje> {
       'imagePath': 'images/ccje/secondfloor/questioneddocument.webp',
       'label': 'Questioned Document Room'
     },
-    {'imagePath': 'images/ccje/secondfloor/201.webp', 'label': 'Room 201'},
-    {'imagePath': 'images/ccje/secondfloor/202.webp', 'label': 'Room 202'},
-    {'imagePath': 'images/ccje/secondfloor/203.webp', 'label': 'Room 203'},
-    {'imagePath': 'images/ccje/secondfloor/204.webp', 'label': 'Room 204'},
-    {'imagePath': 'images/ccje/secondfloor/205.webp', 'label': 'Room 205'},
-    {'imagePath': 'images/ccje/secondfloor/206.webp', 'label': 'Room 206'},
+    {'imagePath': 'images/ccje/secondfloor/ccje201.webp', 'label': 'Room 201'},
+    {'imagePath': 'images/ccje/secondfloor/ccje202.webp', 'label': 'Room 202'},
+    {'imagePath': 'images/ccje/secondfloor/ccje203.webp', 'label': 'Room 203'},
+    {'imagePath': 'images/ccje/secondfloor/ccje204.webp', 'label': 'Room 204'},
+    {'imagePath': 'images/ccje/secondfloor/ccje205.webp', 'label': 'Room 205'},
+    {'imagePath': 'images/ccje/secondfloor/ccje206.webp', 'label': 'Room 206'},
     {
-      'imagePath': 'images/ccje/secondfloor/cr2ndf.webp',
+      'imagePath': 'images/ccje/cr/ccjecr2ndf.webp',
       'label': 'CR 2nd Floor (Female)'
     },
     {
-      'imagePath': 'images/ccje/secondfloor/cr2ndm.webp',
+      'imagePath': 'images/ccje/cr/ccjecr2ndm.webp',
       'label': 'CR 2nd Floor (Male)'
     },
     {

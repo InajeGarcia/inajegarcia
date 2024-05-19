@@ -41,7 +41,7 @@ class _HomeState extends State<Home> {
           iconSize: 30,
           currentIndex: currentIndex,
           onTap: (index) => setState(() => currentIndex = index),
-          showUnselectedLabels: false,
+          showUnselectedLabels: true,
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.home_rounded),
@@ -69,11 +69,9 @@ class _HomeState extends State<Home> {
               backgroundColor: Color.fromARGB(255, 17, 44, 163),
             ),
             BottomNavigationBarItem(
-              icon: Icon(
-                  Icons.person_rounded), // Use an appropriate icon for profile
+              icon: Icon(Icons.person_rounded),
               label: "Profile",
-              backgroundColor: Color.fromARGB(
-                  255, 221, 154, 31), // Choose an appropriate color
+              backgroundColor: Color.fromARGB(255, 221, 154, 31),
             ),
           ],
         ),

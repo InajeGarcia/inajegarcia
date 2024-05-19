@@ -12,7 +12,7 @@ class TutorialPage extends StatelessWidget {
     'images/bglogo/profile.webp',
     'images/bglogo/offices.webp',
     'images/bglogo/canteen.webp',
-    'images/bglogo/restroom.webp',
+    'images/bglogo/restrooms.webp',
     'images/bglogo/utilities.webp',
   ];
 

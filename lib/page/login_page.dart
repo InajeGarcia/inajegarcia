@@ -22,20 +22,6 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(0, 255, 255, 255),
-      /*body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              //  Color.fromARGB(255, 16, 30, 156),
-              Color.fromARGB(255, 13, 88, 16),
-              Color.fromARGB(255, 13, 88, 16),
-            ],
-            stops: [0.0, 1.0],
-            tileMode: TileMode.clamp,
-          ),
-        ),*/
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -131,21 +117,6 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                   ),
-                  /*CheckboxListTile(
-                    title: const Text(
-                      "Remember me",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    contentPadding: EdgeInsets.zero,
-                    value: rememberValue,
-                    activeColor: Theme.of(context).colorScheme.primary,
-                    onChanged: (newValue) {
-                      setState(() {
-                        rememberValue = newValue!;
-                      });
-                    },
-                    controlAffinity: ListTileControlAffinity.leading,
-                  ),*/
                   const SizedBox(
                     height: 20,
                   ),
@@ -211,12 +182,21 @@ class _LoginPageState extends State<LoginPage> {
 
   void _signInWithEmailAndPassword() async {
     try {
+      // ignore: unused_local_variable
       UserCredential userCredential =
           await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: _emailController.text,
         password: _passwordController.text,
       );
-      // If login is successful, navigate to HomeScreen
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Login successful'),
+          backgroundColor: Colors.green,
+        ),
+      );
+
+      // If login is successful, navigate to TutorialPage
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -224,13 +204,28 @@ class _LoginPageState extends State<LoginPage> {
         ),
       );
     } on FirebaseAuthException catch (e) {
+      String errorMessage;
       if (e.code == 'user-not-found') {
-        print('You have entered an invalid email.');
+        errorMessage = 'No user found for that email.';
       } else if (e.code == 'wrong-password') {
-        print('You have entered wrong password.');
+        errorMessage = 'Wrong password provided.';
+      } else {
+        errorMessage = 'An error occurred. Please try again.';
       }
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(errorMessage),
+          backgroundColor: Colors.red,
+        ),
+      );
     } catch (e) {
-      print(e);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Incorrect Password. Please try again.'),
+          backgroundColor: Colors.red,
+        ),
+      );
     }
   }
 }

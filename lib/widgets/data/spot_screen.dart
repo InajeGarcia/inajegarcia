@@ -21,7 +21,7 @@ class Spot {
 List<Spot> spots = [
   Spot(
     id: 1,
-    name: 'UNP Administration Building',
+    name: 'Administration Building',
     imageUrl: 'images/spot/admin.webp',
     imageUrl2: 'images/spot/admin.webp',
     description:
@@ -30,7 +30,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 2,
-    name: 'UNP Gym',
+    name: 'Gym',
     imageUrl: 'images/spot/gymnasium.webp',
     imageUrl2: 'images/spot/gym.webp',
     description:
@@ -39,7 +39,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 3,
-    name: 'UNP Hostel',
+    name: 'Hostel',
     imageUrl: 'images/spot/hostel.webp',
     imageUrl2: 'images/spot/hostel.webp',
     description:
@@ -48,7 +48,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 4,
-    name: 'UNP C-Tech/ITE',
+    name: 'C-Tech/ITE',
     imageUrl: 'images/ctech/ctechite.webp',
     imageUrl2: 'images/ctech/ctechite.webp',
     description:
@@ -57,7 +57,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 5,
-    name: 'UNP PIO/Quality Assurance',
+    name: 'PIO/Quality Assurance',
     imageUrl: 'images/spot/pio.webp',
     imageUrl2: 'images/spot/pio.webp',
     description:
@@ -66,7 +66,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 6,
-    name: 'UNP Training Center',
+    name: 'Training Center',
     imageUrl: 'images/spot/training.webp',
     imageUrl2: 'images/spot/training.webp',
     description:
@@ -93,7 +93,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 9,
-    name: 'UNP Student Shed',
+    name: 'Student Shed',
     imageUrl: 'images/spot/shed.webp',
     imageUrl2: 'images/spot/shed.webp',
     description:
@@ -102,7 +102,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 10,
-    name: 'UNP Parking Area(Heavy Vehicles)',
+    name: 'Parking Area(Heavy Vehicles)',
     imageUrl: 'images/ce/cebuilding.webp',
     imageUrl2: 'images/ce/cebuildingt.webp',
     description:
@@ -111,7 +111,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 11,
-    name: 'UNP Groceria',
+    name: 'Groceria',
     imageUrl: 'images/spot/groceria.webp',
     imageUrl2: 'images/spot/groceria.webp',
     description:
@@ -120,7 +120,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 12,
-    name: 'UNP Guestel Canteen',
+    name: 'Guestel Canteen',
     imageUrl: 'images/spot/guestelcanteen.webp',
     imageUrl2: 'images/spot/guestelcanteen.webp',
     description:
@@ -129,7 +129,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 13,
-    name: 'UNP Chapel',
+    name: 'Chapel',
     imageUrl: 'images/spot/chapel.webp',
     imageUrl2: 'images/spot/chapel.webp',
     description:
@@ -138,7 +138,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 14,
-    name: 'UNP Lagoon',
+    name: 'Lagoon',
     imageUrl: 'images/spot/gymnasium.webp',
     imageUrl2: 'images/spot/gymnasium.webp',
     description:
@@ -147,7 +147,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 15,
-    name: 'UNP Library',
+    name: 'Library',
     imageUrl: 'images/spot/library.webp',
     imageUrl2: 'images/spot/library.webp',
     description:
@@ -156,7 +156,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 16,
-    name: 'UNP Founders Plaza',
+    name: 'Founders Plaza',
     imageUrl: 'images/spot/foundersplaza.webp',
     imageUrl2: 'images/spot/foundersplaza.webp',
     description:
@@ -165,7 +165,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 17,
-    name: 'UNP Guestel',
+    name: 'Guestel',
     imageUrl: 'images/spot/guestel.webp',
     imageUrl2: 'images/spot/guestel.webp',
     description:
@@ -174,7 +174,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 18,
-    name: 'UNP Ladies Dormitory',
+    name: 'Ladies Dormitory',
     imageUrl: 'images/spot/ladiesdorm.webp',
     imageUrl2: 'images/spot/ladiesdorm.webp',
     description:
@@ -183,7 +183,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 19,
-    name: 'UNP Mens Dormitory',
+    name: 'Mens Dormitory',
     imageUrl: 'images/spot/ladiesdorm.webp',
     imageUrl2: 'images/spot/ladiesdorm.webp',
     description:
@@ -192,7 +192,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 20,
-    name: 'UNP Grandstand',
+    name: 'Grandstand',
     imageUrl: 'images/spot/oval.webp',
     imageUrl2: 'images/spot/oval.webp',
     description:
@@ -201,7 +201,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 21,
-    name: 'UNP Oval',
+    name: 'Oval',
     imageUrl: 'images/spot/oval.webp',
     imageUrl2: 'images/spot/oval.webp',
     description:
@@ -210,7 +210,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 22,
-    name: 'UNP Motorpool',
+    name: 'Motorpool',
     imageUrl: 'images/spot/gym.webp',
     imageUrl2: 'images/spot/gym.webp',
     description:
@@ -219,7 +219,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 23,
-    name: 'UNP Canteen(Beside CCIT)',
+    name: 'Canteen(Beside CCIT)',
     imageUrl: 'images/canteen/canteen2.webp',
     imageUrl2: 'images/canteen/canteen5.webp',
     description:
@@ -228,7 +228,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 24,
-    name: 'UNP Canteen(Back)',
+    name: 'Canteen(Back)',
     imageUrl: 'images/ccje/ccjebuilding.webp',
     imageUrl2: 'images/ccje/ccjebuilding.webp',
     description:
@@ -237,7 +237,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 25,
-    name: 'UNP Property Office',
+    name: 'Property Office',
     imageUrl: 'images/utilities/property.webp',
     imageUrl2: 'images/utilities/propertybuilding.webp',
     description:
@@ -246,7 +246,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 26,
-    name: 'UNP Ceramic Center',
+    name: 'Ceramic Center',
     imageUrl: 'images/spot/ceramiccenter.webp',
     imageUrl2: 'images/spot/ceramiccenter.webp',
     description:
@@ -255,7 +255,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 27,
-    name: 'UNP Elementary',
+    name: 'Elementary',
     imageUrl: 'images/spot/hostel.webp',
     imageUrl2: 'images/spot/hostel.webp',
     description:
@@ -264,7 +264,7 @@ List<Spot> spots = [
   ),
   Spot(
     id: 28,
-    name: 'UNP Iconic Tower',
+    name: 'Iconic Tower',
     imageUrl: 'images/spot/tower.webp',
     imageUrl2: 'images/spot/tower.webp',
     description:

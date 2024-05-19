@@ -100,7 +100,7 @@ class _MapPageState extends State<MapPage> {
       //path1 cbaa
       [
         Vertex(
-          id: 'UNP Front Gate',
+          id: 'Front Gate',
           coordinates: const LatLng(17.559974974088316, 120.38454523460766),
         ),
         Vertex(
@@ -133,7 +133,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.5621636597217, 120.3829744920748),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -177,7 +177,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.562099993156703, 120.38189228316949),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -217,7 +217,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56195353777115, 120.38327765695604),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -253,7 +253,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561989698679408, 120.38323015206325),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -297,7 +297,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561771493651825, 120.3816447432489),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -345,7 +345,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56208669998302, 120.38189123995058),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -389,7 +389,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561771493651825, 120.3816447432489),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -445,7 +445,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56178430407246, 120.3816475711455),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -473,7 +473,7 @@ class _MapPageState extends State<MapPage> {
         ),
         //******************************************************************* */
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -517,7 +517,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56177854096707, 120.38165814161518),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -581,7 +581,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -633,7 +633,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56178430407246, 120.3816475711455),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -681,7 +681,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561788617987258, 120.38164503080858),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -725,7 +725,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561771493651825, 120.3816447432489),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -781,7 +781,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.562099993156703, 120.38189228316949),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -834,7 +834,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.562099993156703, 120.38189228316949),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -849,7 +849,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56015482489729, 120.3844602368566),
         ),
         Vertex(
-          id: 'UNP High School',
+          id: 'High School',
           coordinates: const LatLng(17.560520657301126, 120.38475940828498),
         ),
         //******************************************************************* */
@@ -861,7 +861,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.55999167985167, 120.38455703502324),
         ),
         Vertex(
-          id: 'UNP Hostel',
+          id: 'Hostel',
           coordinates: const LatLng(17.560289873000507, 120.3847599707087),
         ),
       ],
@@ -872,7 +872,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.55999167985167, 120.38455703502324),
         ),
         Vertex(
-          id: 'UNP Administration Building',
+          id: 'Administration Building',
           coordinates: const LatLng(17.56009534103797, 120.38423008788563),
         ),
       ],
@@ -887,7 +887,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56016505377676, 120.38445219022988),
         ),
         Vertex(
-          id: 'UNP C-Tech/ITE',
+          id: 'C-Tech/ITE',
           coordinates: const LatLng(17.560178937099924, 120.38449031687036),
         ),
       ],
@@ -906,7 +906,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.560372188465635, 120.38418396933632),
         ),
         Vertex(
-          id: 'UNP PIO/Quality Assurance',
+          id: 'PIO/Quality Assurance',
           coordinates: const LatLng(17.56044379052385, 120.38422420246975),
         ),
       ],
@@ -933,7 +933,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561394022779826, 120.3828910240549),
         ),
         Vertex(
-          id: 'UNP Training Center',
+          id: 'Training Center',
           coordinates: const LatLng(17.561539428338254, 120.38296126516431),
         ),
       ],
@@ -990,7 +990,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.560620533662124, 120.38385221840205),
         ),
         Vertex(
-          id: 'UNP Student Shed',
+          id: 'Student Shed',
           coordinates: const LatLng(17.560645200718263, 120.38377371951843),
         ),
       ],
@@ -1017,7 +1017,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.560830446811156, 120.38333394774986),
         ),
         Vertex(
-          id: 'UNP Parking Area(Heavy Vehicles)',
+          id: 'Parking Area(Heavy Vehicles)',
           coordinates: const LatLng(17.56067062109077, 120.3835552299837),
         ),
       ],
@@ -1040,7 +1040,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.560965228881724, 120.38340677448066),
         ),
         Vertex(
-          id: 'UNP Groceria',
+          id: 'Groceria',
           coordinates: const LatLng(17.561048651862784, 120.38338122146233),
         ),
       ],
@@ -1067,7 +1067,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561185082781027, 120.38316044610458),
         ),
         Vertex(
-          id: 'UNP Guestel Canteen',
+          id: 'Guestel Canteen',
           coordinates: const LatLng(17.56124879964856, 120.38319997937754),
         ),
       ],
@@ -1098,7 +1098,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56115820346847, 120.38285483130224),
         ),
         Vertex(
-          id: 'UNP Chapel',
+          id: 'Chapel',
           coordinates: const LatLng(17.561094842327954, 120.38294644237152),
         ),
       ],
@@ -1125,7 +1125,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561487542380807, 120.38277592142437),
         ),
         Vertex(
-          id: 'UNP Lagoon',
+          id: 'Lagoon',
           coordinates: const LatLng(17.561375503827943, 120.38260624911145),
         ),
       ],
@@ -1156,7 +1156,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56170257637834, 120.38269021395028),
         ),
         Vertex(
-          id: 'UNP Library',
+          id: 'Library',
           coordinates: const LatLng(17.56171354527912, 120.38270978191942),
         ),
       ],
@@ -1175,7 +1175,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.560827917441024, 120.38332740400536),
         ),
         Vertex(
-          id: 'UNP Founders Plaza',
+          id: 'Founders Plaza',
           coordinates: const LatLng(17.560925091411438, 120.38320134019001),
         ),
       ],
@@ -1202,7 +1202,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56127647241385, 120.383034140356),
         ),
         Vertex(
-          id: 'UNP Guestel',
+          id: 'Guestel',
           coordinates: const LatLng(17.561442048807614, 120.38316495702416),
         ),
       ],
@@ -1237,7 +1237,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561564314857613, 120.3822616714955),
         ),
         Vertex(
-          id: 'UNP Gym',
+          id: 'Gym',
           coordinates: const LatLng(17.56159659358165, 120.38219789557245),
         ),
       ],
@@ -1260,7 +1260,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.560266125561096, 120.38283322631564),
         ),
         Vertex(
-          id: 'UNP Mens Dormitory',
+          id: 'Mens Dormitory',
           coordinates: const LatLng(17.560162035514406, 120.38275475631701),
         ),
       ],
@@ -1291,7 +1291,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.562093020971197, 120.38191327077188),
         ),
         Vertex(
-          id: 'UNP Grandstand',
+          id: 'Grandstand',
           coordinates: const LatLng(17.562605466195862, 120.38090032753219),
         ),
       ],
@@ -1322,7 +1322,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.562093020971197, 120.38191327077188),
         ),
         Vertex(
-          id: 'UNP Oval',
+          id: 'Oval',
           coordinates: const LatLng(17.56215069572407, 120.3813703721726),
         ),
       ],
@@ -1341,7 +1341,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561368854240364, 120.38132346500653),
         ),
         Vertex(
-          id: 'UNP Motorpool',
+          id: 'Motorpool',
           coordinates: const LatLng(17.56124477900748, 120.38128228016143),
         ),
       ],
@@ -1428,7 +1428,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561336801612274, 120.38403818934937),
         ),
         Vertex(
-          id: 'UNP Canteen(Beside CCIT)',
+          id: 'Canteen(Beside CCIT)',
           coordinates: const LatLng(17.56150158282851, 120.38400993217004),
         ),
       ],
@@ -1459,7 +1459,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.560360457145602, 120.38266936282079),
         ),
         Vertex(
-          id: 'UNP Canteen(Back of CPAD/CLaw/CFAd/CCJE)',
+          id: 'Canteen(Back of CPAD/CLaw/CFAd/CCJE)',
           coordinates: const LatLng(17.560411296290525, 120.38257334570224),
         ),
       ],
@@ -1486,7 +1486,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561937115184065, 120.38328748579644),
         ),
         Vertex(
-          id: 'UNP Property Office',
+          id: 'Property Office',
           coordinates: const LatLng(17.561852564525292, 120.3832178202789),
         ),
       ],
@@ -1505,7 +1505,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.56082191304742, 120.38479461862337),
         ),
         Vertex(
-          id: 'UNP Ceramic Center',
+          id: 'Ceramic Center',
           coordinates: const LatLng(17.5613115161934, 120.3840613614196),
         ),
       ],
@@ -1524,7 +1524,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.559746090161617, 120.38415853551658),
         ),
         Vertex(
-          id: 'UNP Elementary',
+          id: 'Elementary',
           coordinates: const LatLng(17.559673760881445, 120.38422302019193),
         ),
       ],
@@ -1555,7 +1555,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561739549802382, 120.38241066547974),
         ),
         Vertex(
-          id: 'UNP Food Court(Event)',
+          id: 'Food Court(Event)',
           coordinates: const LatLng(17.561852068156014, 120.38248083892158),
         ),
       ],
@@ -1597,7 +1597,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.5621636597217, 120.3829744920748),
         ),
         Vertex(
-          id: 'UNP Back Gate',
+          id: 'Back Gate',
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
@@ -1616,7 +1616,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.561358723978135, 120.38052419413204),
         ),
         Vertex(
-          id: 'UNP Cybershark',
+          id: 'Cybershark',
           coordinates: const LatLng(17.56145248499981, 120.38053814474706),
         ),
         //******************************************************************* */
@@ -1632,7 +1632,7 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.560131328555965, 120.38443869384842),
         ),
         Vertex(
-          id: 'UNP Iconic Tower',
+          id: 'Iconic Tower',
           coordinates: const LatLng(17.55991652192564, 120.38427776131822),
         ),
         Vertex(
@@ -1691,43 +1691,43 @@ class _MapPageState extends State<MapPage> {
             vertex.id == 'College of Teacher Education' ||
             vertex.id == 'College of Technology' ||
             vertex.id == 'Laboratory School' ||
-            vertex.id == 'UNP Hostel' ||
-            vertex.id == 'UNP Administration Building' ||
-            vertex.id == 'UNP C-Tech/ITE' ||
-            vertex.id == 'UNP PIO/Quality Assurance' ||
-            vertex.id == 'UNP Training Center' ||
+            vertex.id == 'Hostel' ||
+            vertex.id == 'Administration Building' ||
+            vertex.id == 'C-Tech/ITE' ||
+            vertex.id == 'PIO/Quality Assurance' ||
+            vertex.id == 'Training Center' ||
             vertex.id == 'Student Center' ||
             vertex.id == 'Science Complex' ||
-            vertex.id == 'UNP Student Shed' ||
-            vertex.id == 'UNP Parking Area(Heavy Vehicles)' ||
-            vertex.id == 'UNP Groceria' ||
-            vertex.id == 'UNP Guestel Canteen' ||
-            vertex.id == 'UNP Chapel' ||
-            vertex.id == 'UNP Lagoon' ||
-            vertex.id == 'UNP Library' ||
-            vertex.id == 'UNP Founders Plaza' ||
-            vertex.id == 'UNP Guestel' ||
-            vertex.id == 'UNP Gym' ||
-            vertex.id == 'UNP Ladies Dormitory' ||
-            vertex.id == 'UNP Mens Dormitory' ||
-            vertex.id == 'UNP Grandstand' ||
-            vertex.id == 'UNP Oval' ||
-            vertex.id == 'UNP Motorpool' ||
+            vertex.id == 'Student Shed' ||
+            vertex.id == 'Parking Area(Heavy Vehicles)' ||
+            vertex.id == 'Groceria' ||
+            vertex.id == 'Guestel Canteen' ||
+            vertex.id == 'Chapel' ||
+            vertex.id == 'Lagoon' ||
+            vertex.id == 'Library' ||
+            vertex.id == 'Founders Plaza' ||
+            vertex.id == 'Guestel' ||
+            vertex.id == 'Gym' ||
+            vertex.id == 'Ladies Dormitory' ||
+            vertex.id == 'Mens Dormitory' ||
+            vertex.id == 'Grandstand' ||
+            vertex.id == 'Oval' ||
+            vertex.id == 'Motorpool' ||
             vertex.id == 'Guard House(Front)' ||
             //vertex.id == 'Guard House(Back)' ||
             vertex.id == 'Motor Parking(Back)' ||
             vertex.id == 'Motor Parking(Front)' ||
-            vertex.id == 'UNP Canteen(Beside CCIT)' ||
-            vertex.id == 'UNP Canteen(Back)' ||
-            vertex.id == 'UNP Property Office' ||
-            vertex.id == 'UNP Ceramic Center' ||
-            vertex.id == 'UNP Elementary' ||
-            vertex.id == 'UNP Food Court(Event)' ||
-            //vertex.id == 'UNP High School' ||
-            //vertex.id == 'UNP Cybershark' ||
-            vertex.id == 'UNP Iconic Tower' ||
-            vertex.id == 'UNP Front Gate' ||
-            vertex.id == 'UNP Back Gate') {
+            vertex.id == 'Canteen(Beside CCIT)' ||
+            vertex.id == 'Canteen(Back)' ||
+            vertex.id == 'Property Office' ||
+            vertex.id == 'Ceramic Center' ||
+            vertex.id == 'Elementary' ||
+            vertex.id == 'Food Court(Event)' ||
+            //vertex.id == 'High School' ||
+            //vertex.id == 'Cybershark' ||
+            vertex.id == 'Iconic Tower' ||
+            vertex.id == 'Front Gate' ||
+            vertex.id == 'Back Gate') {
           markerSet.add(
             Marker(
               markerId: MarkerId(vertex.id),

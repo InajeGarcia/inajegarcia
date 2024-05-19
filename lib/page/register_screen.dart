@@ -20,6 +20,7 @@ class _RegisterPageState extends State<RegisterPage> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   bool _passwordVisible = false;
+  bool _isEmailValid = true;
 
   @override
   Widget build(BuildContext context) {
@@ -108,7 +109,21 @@ class _RegisterPageState extends State<RegisterPage> {
                           fillColor: Colors.white.withOpacity(1),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(40),
-                            borderSide: BorderSide.none,
+                            borderSide: _isEmailValid
+                                ? BorderSide.none
+                                : BorderSide(color: Colors.red),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(40),
+                            borderSide: _isEmailValid
+                                ? BorderSide.none
+                                : BorderSide(color: Colors.red),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(40),
+                            borderSide: _isEmailValid
+                                ? BorderSide.none
+                                : BorderSide(color: Colors.red),
                           ),
                           contentPadding: const EdgeInsets.symmetric(
                             vertical: 15,
@@ -117,8 +132,21 @@ class _RegisterPageState extends State<RegisterPage> {
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {
+                            setState(() {
+                              _isEmailValid = false;
+                            });
                             return 'Please enter your email';
                           }
+                          if (!RegExp(r'^[a-zA-Z0-9._%+-]+@gmail\.com$')
+                              .hasMatch(value)) {
+                            setState(() {
+                              _isEmailValid = false;
+                            });
+                            return 'Please enter a valid Gmail address';
+                          }
+                          setState(() {
+                            _isEmailValid = true;
+                          });
                           return null;
                         },
                       ),
@@ -169,6 +197,12 @@ class _RegisterPageState extends State<RegisterPage> {
                             bool registrationSuccess = await _register();
 
                             if (registrationSuccess) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('Sign up successful'),
+                                  backgroundColor: Colors.green,
+                                ),
+                              );
                               // Redirect to TutorialPage after successful registration
                               Navigator.pushReplacement(
                                 context,
@@ -181,7 +215,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
                                   content: Text(
-                                      'Signup successful return to sign in.'),
+                                      'Registration failed. Please try again.'),
                                 ),
                               );
                             }
@@ -261,13 +295,6 @@ class _RegisterPageState extends State<RegisterPage> {
           'lastName': _lastNameController.text,
           'email': _emailController.text,
         });
-
-        // Show verification message
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Registration successful. Please verify your email.'),
-          ),
-        );
 
         // Registration successful, return true
         return true;

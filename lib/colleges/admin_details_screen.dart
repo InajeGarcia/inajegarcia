@@ -1,39 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sharkspinpoint/offices/accounting.dart';
-import 'package:sharkspinpoint/offices/admission.dart';
-import 'package:sharkspinpoint/offices/agribusiness.dart';
-import 'package:sharkspinpoint/offices/boardsec.dart';
-import 'package:sharkspinpoint/offices/budget.dart';
-import 'package:sharkspinpoint/offices/cashier.dart';
-import 'package:sharkspinpoint/offices/cgad.dart';
-import 'package:sharkspinpoint/offices/chiefadmin.dart';
-import 'package:sharkspinpoint/offices/coa.dart';
-import 'package:sharkspinpoint/offices/compmaintenance.dart';
-import 'package:sharkspinpoint/offices/extension.dart';
-import 'package:sharkspinpoint/offices/facultyunion.dart';
-import 'package:sharkspinpoint/offices/fedalumni.dart';
-import 'package:sharkspinpoint/offices/financialservice.dart';
-import 'package:sharkspinpoint/offices/hrmo.dart';
-import 'package:sharkspinpoint/offices/ico.dart';
-import 'package:sharkspinpoint/offices/ifd.dart';
-import 'package:sharkspinpoint/offices/infotech.dart';
-import 'package:sharkspinpoint/offices/instruction.dart';
-import 'package:sharkspinpoint/offices/legal.dart';
-import 'package:sharkspinpoint/offices/networks.dart';
-import 'package:sharkspinpoint/offices/nstp.dart';
-import 'package:sharkspinpoint/offices/oandasan.dart';
-import 'package:sharkspinpoint/offices/op.dart';
-import 'package:sharkspinpoint/offices/records.dart';
-import 'package:sharkspinpoint/offices/registrar.dart';
-import 'package:sharkspinpoint/offices/research.dart';
-import 'package:sharkspinpoint/offices/tadena.dart';
-import 'package:sharkspinpoint/offices/upim.dart';
-import 'package:sharkspinpoint/offices/vpaa.dart';
-import 'package:sharkspinpoint/offices/vpfad.dart';
-import 'package:sharkspinpoint/offices/vpre.dart';
-
-import 'package:sharkspinpoint/page/map_page.dart';
-
 import '../widgets/data/admin_data.dart';
 
 class AdminDetailPage extends StatelessWidget {

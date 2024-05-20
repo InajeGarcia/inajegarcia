@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:sharkspinpoint/page/vehiclepath.dart';
 
 class Vertex {
   final String id;
@@ -1664,6 +1665,145 @@ class _MapPageState extends State<MapPage> {
           coordinates: const LatLng(17.562642834082236, 120.38232585209586),
         ),
       ],
+      //vehicle way
+      [
+        Vertex(
+          id: 'way start',
+          coordinates: const LatLng(17.560034841898673, 120.38453535402208),
+        ),
+        Vertex(
+          id: 'way to cbaa',
+          coordinates: const LatLng(17.560227912029216, 120.38433821167261),
+        ),
+        Vertex(
+          id: 'way cbaa',
+          coordinates: const LatLng(17.560830136094243, 120.3848049160179),
+        ),
+        Vertex(
+          id: 'way between cas and cbaa',
+          coordinates: const LatLng(17.56103599141988, 120.38445354663766),
+        ),
+        Vertex(
+          id: 'way ccit',
+          coordinates: const LatLng(17.561437338173988, 120.3839447244402),
+        ),
+        Vertex(
+          id: 'way to chtm',
+          coordinates: const LatLng(17.562267368240356, 120.38278992895928),
+        ),
+        Vertex(
+          id: 'way to gym',
+          coordinates: const LatLng(17.5617555884985, 120.3824065007691),
+        ),
+        Vertex(
+          id: 'way to oval',
+          coordinates: const LatLng(17.562082439589858, 120.38190353322628),
+        ),
+        Vertex(
+          id: 'way to back gate',
+          coordinates: const LatLng(17.562657398070897, 120.38235744720525),
+        ),
+        Vertex(
+          id: 'way for vehicle',
+          coordinates: const LatLng(17.561803285105935, 120.3816633531891),
+        ),
+        Vertex(
+          id: 'way to cmed',
+          coordinates: const LatLng(17.56142331048948, 120.38135494167985),
+        ),
+        Vertex(
+          id: 'way to cmed2',
+          coordinates: const LatLng(17.56127142037483, 120.38104389795852),
+        ),
+        Vertex(
+          id: 'way to cmed3',
+          coordinates: const LatLng(17.56131300934746, 120.38078785587086),
+        ),
+        Vertex(
+          id: 'way to cmed4',
+          coordinates: const LatLng(17.56127142037483, 120.38104389795852),
+        ),
+        Vertex(
+          id: 'way to cmed5',
+          coordinates: const LatLng(17.56142331048948, 120.38135494167985),
+        ),
+        Vertex(
+          id: 'way for vehicle2',
+          coordinates: const LatLng(17.561803285105935, 120.3816633531891),
+        ),
+        Vertex(
+          id: 'way to ccje',
+          coordinates: const LatLng(17.561436839841765, 120.38216254152589),
+        ),
+        Vertex(
+          id: 'way to ce',
+          coordinates: const LatLng(17.560702347761268, 120.38319908549192),
+        ),
+        Vertex(
+          id: 'way to founders',
+          coordinates: const LatLng(17.560827030971353, 120.38332188901248),
+        ),
+        Vertex(
+          id: 'way to admin',
+          coordinates: const LatLng(17.560145316997083, 120.38427127946794),
+        ),
+        Vertex(
+          id: 'way end',
+          coordinates: const LatLng(17.560034841898673, 120.38453535402208),
+        ),
+        Vertex(
+          id: 'way to cbaa',
+          coordinates: const LatLng(17.560227912029216, 120.38433821167261),
+        ),
+        Vertex(
+          id: 'way to sc',
+          coordinates: const LatLng(17.560493518525515, 120.3839905857067),
+        ),
+        Vertex(
+          id: 'way to scomp',
+          coordinates: const LatLng(17.56067472982679, 120.38383528922556),
+        ),
+        Vertex(
+          id: 'way to chapel',
+          coordinates: const LatLng(17.56130223092861, 120.38301360210666),
+        ),
+        Vertex(
+          id: 'way to gym2',
+          coordinates: const LatLng(17.5617555884985, 120.3824065007691),
+        ),
+        Vertex(
+          id: 'way to ccje2',
+          coordinates: const LatLng(17.561436839841765, 120.38216254152589),
+        ),
+        Vertex(
+          id: 'way ce2',
+          coordinates: const LatLng(17.560702347761268, 120.38319908549192),
+        ),
+        Vertex(
+          id: 'way to founders2',
+          coordinates: const LatLng(17.560827030971353, 120.38332188901248),
+        ),
+        Vertex(
+          id: 'way founders to scomp',
+          coordinates: const LatLng(17.56099093666152, 120.38342913447735),
+        ),
+        Vertex(
+          id: 'way to scomp2',
+          coordinates: const LatLng(17.56067472982679, 120.38383528922556),
+        ),
+        Vertex(
+          id: 'way to sc2',
+          coordinates: const LatLng(17.560493518525515, 120.3839905857067),
+        ),
+        Vertex(
+          id: 'way sc to cas',
+          coordinates: const LatLng(17.560493518525515, 120.3839905857067),
+        ),
+        Vertex(
+          id: 'way cas to cbaa',
+          coordinates: const LatLng(17.56103599141988, 120.38445354663766),
+        ),
+      ],
     ];
   }
 
@@ -1727,6 +1867,7 @@ class _MapPageState extends State<MapPage> {
             //vertex.id == 'Cybershark' ||
             vertex.id == 'Iconic Tower' ||
             vertex.id == 'Front Gate' ||
+            vertex.id == 'way start' ||
             vertex.id == 'Back Gate') {
           markerSet.add(
             Marker(
@@ -1789,87 +1930,163 @@ class _MapPageState extends State<MapPage> {
         alignment: Alignment.topRight,
         children: [
           Positioned(
-            top: 400.0,
-            right: 1.0,
+            top: 310.0,
+            right: 1.5,
             child: FloatingActionButton(
-              backgroundColor: Color.fromARGB(255, 43, 163, 105),
+              backgroundColor: Color.fromARGB(255, 5, 128, 36),
               foregroundColor: Colors.white,
               onPressed: () => _googleMapController.animateCamera(
                 CameraUpdate.newCameraPosition(_initialCameraPosition),
               ),
-              child: const Icon(Icons.navigation_rounded),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Icon(Icons.navigation_rounded),
+                  /*Positioned(
+                    bottom: 8,
+                    child: Text(
+                      'Navigate',
+                      style: TextStyle(
+                          color: const Color.fromARGB(137, 255, 255, 255)),
+                    ),
+                  ),*/
+                ],
+              ),
             ),
           ),
           Positioned(
-            top: 473.0,
-            right: 1.0,
-            child: FloatingActionButton(
-              backgroundColor: Color.fromARGB(255, 26, 99, 194),
-              foregroundColor: Colors.white,
-              onPressed: () async {
-                Position position = await _determinePosition();
+            top: 380.0,
+            right: 1.5,
+            child: Column(
+              children: [
+                FloatingActionButton(
+                  backgroundColor: Color.fromARGB(255, 17, 44, 163),
+                  foregroundColor: Colors.white,
+                  onPressed: () async {
+                    Position position = await _determinePosition();
 
-                _googleMapController.animateCamera(
-                  CameraUpdate.newCameraPosition(
-                    CameraPosition(
-                        target: LatLng(position.latitude, position.longitude),
-                        zoom: 17),
-                  ),
-                );
+                    _googleMapController.animateCamera(
+                      CameraUpdate.newCameraPosition(
+                        CameraPosition(
+                            target:
+                                LatLng(position.latitude, position.longitude),
+                            zoom: 17),
+                      ),
+                    );
 
-                markers.clear();
-                polylines.clear();
+                    markers.clear();
+                    polylines.clear();
 
-                markers.add(
-                  Marker(
-                    markerId: const MarkerId('currentLocation'),
-                    position: LatLng(position.latitude, position.longitude),
-                    infoWindow: const InfoWindow(title: 'My Current Location'),
-                  ),
-                );
+                    markers.add(
+                      Marker(
+                        markerId: const MarkerId('currentLocation'),
+                        position: LatLng(position.latitude, position.longitude),
+                        infoWindow:
+                            const InfoWindow(title: 'My Current Location'),
+                      ),
+                    );
 
-                markers.addAll(_createMarkersFromPaths(paths));
+                    markers.addAll(_createMarkersFromPaths(paths));
 
-                setState(() {});
-              },
-              child: const Icon(Icons.location_searching),
+                    setState(() {});
+                  },
+                  child: const Icon(Icons.location_searching),
+                ),
+                SizedBox(height: 8), // Specify the height here
+                /*Text(
+                  'MyLocation',
+                  style: TextStyle(
+                      color: const Color.fromARGB(137, 255, 255, 255)),
+                ),*/
+              ],
             ),
           ),
           Positioned(
-            top: 550.0,
-            right: 1.0,
-            child: FloatingActionButton(
-              backgroundColor: Color.fromARGB(255, 219, 184, 87),
-              foregroundColor: Colors.white,
-              onPressed: () {
-                // reset ang map
-                markers.clear();
-                polylines.clear();
-                markers.addAll(_createMarkersFromPaths(paths));
-                _googleMapController.animateCamera(
-                  CameraUpdate.newCameraPosition(_initialCameraPosition),
-                );
+            top: 450.0,
+            right: 1.5,
+            child: Column(
+              children: [
+                FloatingActionButton(
+                  backgroundColor: Color.fromARGB(255, 221, 154, 31),
+                  foregroundColor: Colors.white,
+                  onPressed: () {
+                    // reset ang map
+                    markers.clear();
+                    polylines.clear();
+                    markers.addAll(_createMarkersFromPaths(paths));
+                    _googleMapController.animateCamera(
+                      CameraUpdate.newCameraPosition(_initialCameraPosition),
+                    );
 
-                setState(() {});
-              },
-              child: const Icon(Icons.refresh),
+                    setState(() {});
+                  },
+                  child: const Icon(Icons.refresh),
+                ),
+                SizedBox(height: 8), // Specify the height here
+                /*Text(
+                  'Reset',
+                  style: TextStyle(
+                      color: const Color.fromARGB(137, 255, 255, 255)),
+                ),*/
+              ],
             ),
           ),
-          /*Positioned(
-            top: 550.0,
-            right: 1.0,
-            child: FloatingActionButton(
-              backgroundColor: Color.fromARGB(255, 219, 184, 87),
-              foregroundColor: Colors.white,
-              onPressed: () {
-                // reset ang map
-                
-
-                setState(() {});
-              },
-              child: const Icon(Icons.car_repair),
+          Positioned(
+            top: 520.0,
+            right: 1.5,
+            child: Column(
+              children: [
+                FloatingActionButton(
+                  backgroundColor: Color.fromARGB(255, 5, 128, 36),
+                  foregroundColor: Colors.white,
+                  onPressed: () {
+                    for (int i = 0; i < paths.length; i++) {
+                      List<Vertex> path = paths[i];
+                      for (Vertex vertex in path) {
+                        if (vertex.id == 'way start') {
+                          _showShortestPath(i);
+                          return;
+                        }
+                      }
+                    }
+                  },
+                  child: const Icon(Icons.directions_car_rounded),
+                ),
+                SizedBox(height: 8), // Specify the height here
+                /*Text(
+                  'Vehicle Way',
+                  style: TextStyle(
+                      color: const Color.fromARGB(137, 255, 255, 255)),
+                ),*/
+              ],
             ),
-          ),*/
+          ),
+          Positioned(
+            top: 590.0,
+            right: 1.5,
+            child: Column(
+              children: [
+                FloatingActionButton(
+                  backgroundColor: Color.fromARGB(255, 17, 44, 163),
+                  foregroundColor: Colors.white,
+                  onPressed: () {
+                    // Navigate to VehiclePath using MaterialPageRoute
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => VehiclePath()),
+                    );
+                  },
+                  child: const Icon(Icons.refresh),
+                ),
+                SizedBox(height: 8), // Specify the height here
+                /*Text(
+                  'Refresh',
+                  style: TextStyle(
+                      color: const Color.fromARGB(137, 255, 255, 255)),
+                ),*/
+              ],
+            ),
+          ),
         ],
       ),
     );
@@ -1945,8 +2162,20 @@ class _MapPageState extends State<MapPage> {
     markers.addAll(_createMarkersFromPaths([path]));
 
     for (int i = 0; i < path.length - 1; i++) {
-      polylines.add(
-        Polyline(
+      Polyline polyline;
+      if (path[i].id == 'way start' && path[i + 1].id == 'way') {
+        polyline = Polyline(
+          polylineId: PolylineId('${path[i].id}-${path[i + 1].id}'),
+          points: [
+            path[i].coordinates,
+            path[i + 1].coordinates,
+          ],
+          color: Color.fromARGB(255, 97, 255, 77),
+          width: 6,
+          patterns: [PatternItem.dash(5.0)],
+        );
+      } else {
+        polyline = Polyline(
           polylineId: PolylineId('${path[i].id}-${path[i + 1].id}'),
           points: [
             path[i].coordinates,
@@ -1958,8 +2187,9 @@ class _MapPageState extends State<MapPage> {
             PatternItem.gap(5.0),
             PatternItem.dot,
           ],
-        ),
-      );
+        );
+      }
+      polylines.add(polyline);
     }
 
     setState(() {});

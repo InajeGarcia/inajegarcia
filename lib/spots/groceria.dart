@@ -11,7 +11,7 @@ class Groceria extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Available Rooms'),
+        title: Text('Groceria'),
       ),
       body: ListView.builder(
         itemCount: firstFloorImages.length,

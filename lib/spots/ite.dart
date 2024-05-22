@@ -11,7 +11,7 @@ class Ite extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Available Rooms'),
+        title: Text('C-Tech/ITE'),
       ),
       body: ListView.builder(
         itemCount: firstFloorImages.length,

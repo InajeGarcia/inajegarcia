@@ -355,7 +355,7 @@ class SpotDetailPage extends StatelessWidget {
                             backgroundColor: Colors.white,
                           ),
                           child: Text(
-                            'View Rooms',
+                            'View',
                             style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,

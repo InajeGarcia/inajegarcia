@@ -12,7 +12,7 @@ class Founders extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Available Rooms'),
+        title: Text('Founders Plaza'),
       ),
       body: ListView.builder(
         itemCount: firstFloorImages.length,

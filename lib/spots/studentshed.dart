@@ -10,7 +10,7 @@ class Shed extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Available Rooms'),
+        title: Text('Shed'),
       ),
       body: ListView.builder(
         itemCount: firstFloorImages.length,

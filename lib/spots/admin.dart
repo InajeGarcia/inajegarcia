@@ -172,7 +172,7 @@ class Admin extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Available Rooms'),
+        title: Text('Offices'),
       ),
       body: ListView.builder(
         itemCount: floorImages.length,
@@ -203,7 +203,7 @@ class Admin extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  subtitle: Text('Tap to view rooms'),
+                  subtitle: Text('Tap to view offices'),
                   leading: Image.asset(
                     floorImages[index],
                     width: 100,
@@ -237,7 +237,7 @@ class FloorDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Floor $floorNumber Rooms'),
+        title: Text('Floor $floorNumber Offices'),
       ),
       body: ListView.builder(
         itemCount: floorImages.length,

@@ -186,7 +186,7 @@ class CollegeDetailPage extends StatelessWidget {
                                 ),
                               );
                             } else if (college.name ==
-                                'College of Fine Arts and Designs') {
+                                'College of Fine Arts and Design') {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -276,7 +276,7 @@ class CollegeDetailPage extends StatelessWidget {
                             backgroundColor: Colors.white,
                           ),
                           child: Text(
-                            'View Rooms',
+                            'View',
                             style: TextStyle(
                               color: Colors.black,
                               //fontFamily: 'InterTight',

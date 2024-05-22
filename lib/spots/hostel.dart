@@ -11,7 +11,7 @@ class Hostel extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Available Rooms'),
+        title: Text('Hostel'),
       ),
       body: ListView.builder(
         itemCount: firstFloorImages.length,

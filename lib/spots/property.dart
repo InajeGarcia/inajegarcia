@@ -10,7 +10,7 @@ class Property extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Available Rooms'),
+        title: Text('Property Office'),
       ),
       body: ListView.builder(
         itemCount: firstFloorImages.length,

@@ -3,25 +3,25 @@ import 'package:flutter/material.dart';
 class CArch extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {
-      'imagePath': 'images/csw/c-301.webp',
+      'imagePath': 'images/carch/archi2nd.webp',
       'label': 'Room C-301',
       'detailImagePath': 'images/csw/c-301.webp',
       'detail': 'Detail about Room C-301'
     },
     {
-      'imagePath': 'images/csw/c-302.webp',
+      'imagePath': 'images/carch/archi2nd.webp',
       'label': 'Room C-302',
       'detailImagePath': 'images/csw/c-302.webp',
       'detail': 'Detail about Room C-302'
     },
     {
-      'imagePath': 'images/csw/c-303.webp',
+      'imagePath': 'images/carch/archi2nd.webp',
       'label': 'Room C-303',
       'detailImagePath': 'images/csw/c-303.webp',
       'detail': 'Detail about Room C-303'
     },
     {
-      'imagePath': 'images/csw/c-304.webp',
+      'imagePath': 'images/carch/archi2nd.webp',
       'label': 'Room C-304',
       'detailImagePath': 'images/csw/c-304.webp',
       'detail': 'Detail about Room C-304'

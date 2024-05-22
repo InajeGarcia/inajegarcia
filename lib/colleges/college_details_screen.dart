@@ -18,6 +18,7 @@ import 'package:sharkspinpoint/collge/ctech.dart';
 import 'package:sharkspinpoint/collge/ls.dart';
 import 'package:sharkspinpoint/page/map_page.dart';
 import 'package:sharkspinpoint/widgets/data/college.dart';
+import 'package:sharkspinpoint/collge/ou.dart';
 
 class CollegeDetailPage extends StatelessWidget {
   final College college;
@@ -267,6 +268,13 @@ class CollegeDetailPage extends StatelessWidget {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => LabSchool(),
+                                ),
+                              );
+                            } else if (college.name == 'Open University') {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => OU(),
                                 ),
                               );
                             }

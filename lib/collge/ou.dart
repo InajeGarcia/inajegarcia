@@ -1,55 +1,14 @@
 import 'package:flutter/material.dart';
 
-class CPad extends StatelessWidget {
+class OU extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
+      'frontImagePath': 'images/cpad/cpad-claw-ou1st.webp',
       'detailImagePath': 'images/cpad/ipil.webp',
-      'label': 'Ipil Room',
+      'label': 'OU Room',
       'detail': 'Detail about Ipil Room'
     },
-    {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
-      'detailImagePath': 'images/cpad/guijo.webp',
-      'label': 'Guijo Room',
-      'detail': 'Detail about Guijo Room'
-    },
-    {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
-      'detailImagePath': 'images/cpad/narra.webp',
-      'label': 'Narra Room',
-      'detail': 'Detail about Narra Room'
-    },
-    {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
-      'detailImagePath': 'images/cpad/cpadaccreditationrooom.webp',
-      'label': 'Accreditation Room',
-      'detail': 'Detail about Accreditation Room'
-    },
-    {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
-      'detailImagePath': 'images/cpad/cpadresourcecenter.webp',
-      'label': 'Resource Center',
-      'detail': 'Detail about Resource Center'
-    },
-    {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
-      'detailImagePath': 'images/cpad/passoffice.webp',
-      'label': 'Pass Office',
-      'detail': 'Detail about Pass Office'
-    },
-    {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
-      'detailImagePath': 'images/cpad/cpadstoreroom.webp',
-      'label': 'Store Room',
-      'detail': 'Detail about Store Room'
-    },
-    {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
-      'detailImagePath': 'images/cpad/cpadcr.webp',
-      'label': 'Comfort Room',
-      'detail': 'Detail about Comfort Room'
-    },
+
     // Add more images with front and detail image paths
   ];
 
@@ -57,7 +16,7 @@ class CPad extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CPAD'),
+        title: Text('Open University'),
       ),
       body: ListView.builder(
         itemCount: firstFloorImages.length,
@@ -174,6 +133,6 @@ class DetailScreen extends StatelessWidget {
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: CPad(),
+    home: OU(),
   ));
 }

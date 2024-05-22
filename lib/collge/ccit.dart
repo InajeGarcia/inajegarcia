@@ -33,19 +33,19 @@ class CCit extends StatelessWidget {
       'detail': 'Detail about Room cc203'
     },
     {
-      'imagePath': 'images/ccit/cc204.webp',
+      'imagePath': 'images/ccit/cas-ccit.webp',
       'label': 'Room cc204',
       'detailImagePath': 'images/ccit/cc204.webp',
       'detail': 'Detail about Room cc204'
     },
     {
-      'imagePath': 'images/ccit/cc205.webp',
+      'imagePath': 'images/ccit/cas-ccit.webp',
       'label': 'Room cc205',
       'detailImagePath': 'images/ccit/cc205.webp',
       'detail': 'Detail about Room cc205'
     },
     {
-      'imagePath': 'images/ccit/cc206.webp',
+      'imagePath': 'images/ccit/cas-ccit.webp',
       'label': 'Room cc206',
       'detailImagePath': 'images/ccit/cc206.webp',
       'detail': 'Detail about Room cc206'

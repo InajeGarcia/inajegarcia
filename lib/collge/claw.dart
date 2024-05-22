@@ -3,37 +3,37 @@ import 'package:flutter/material.dart';
 class CLaw extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {
-      'frontImagePath': 'images/claw/clawlibrary.webp',
+      'frontImagePath': 'images/claw/cpad-claw-ou1st.webp',
       'detailImagePath': 'images/claw/clawlibrary.webp',
       'label': 'Law Library',
       'detail': 'Detail about the Law Library'
     },
     {
-      'frontImagePath': 'images/cpad/guijo.webp',
+      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
       'detailImagePath': 'images/cpad/guijo.webp',
       'label': 'Guijo Room',
       'detail': 'Detail about the Guijo Room'
     },
     {
-      'frontImagePath': 'images/cpad/ipil.webp',
+      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
       'detailImagePath': 'images/cpad/ipil.webp',
       'label': 'Ipil Room',
       'detail': 'Detail about the Ipil Room'
     },
     {
-      'frontImagePath': 'images/cpad/molave.webp',
+      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
       'detailImagePath': 'images/cpad/molave.webp',
       'label': 'Molave Room',
       'detail': 'Detail about the Molave Room'
     },
     {
-      'frontImagePath': 'images/cpad/cpadaccreditationroom.webp',
+      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
       'detailImagePath': 'images/cpad/cpadaccreditationroom.webp',
       'label': 'Accreditation Room',
       'detail': 'Detail about the Accreditation Room'
     },
     {
-      'frontImagePath': 'images/cpad/graduatestudies.webp',
+      'frontImagePath': 'images/cpad/cpad-claw-ou1st.webp',
       'detailImagePath': 'images/cpad/graduatestudies.webp',
       'label': 'Graduate Studies',
       'detail': 'Detail about the Graduate Studies'

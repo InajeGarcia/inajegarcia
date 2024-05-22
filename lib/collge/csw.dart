@@ -3,31 +3,31 @@ import 'package:flutter/material.dart';
 class CSw extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {
-      'frontImagePath': 'images/ccje/functionhall2.webp',
+      'frontImagePath': 'images/ccje/ccje-csw.webp',
       'detailImagePath': 'images/ccje/functionhall2.webp',
       'label': 'Function Hall',
       'detail': 'Detail about Function Hall'
     },
     {
-      'frontImagePath': 'images/csw/c-301.webp',
+      'frontImagePath': 'images/csw/ccje-csw.webp',
       'detailImagePath': 'images/csw/c-301.webp',
       'label': 'Room C-301',
       'detail': 'Detail about Room C-301'
     },
     {
-      'frontImagePath': 'images/csw/c-302.webp',
+      'frontImagePath': 'images/csw/ccje-csw.webp',
       'detailImagePath': 'images/csw/c-302.webp',
       'label': 'Room C-302',
       'detail': 'Detail about Room C-302'
     },
     {
-      'frontImagePath': 'images/csw/c-303.webp',
+      'frontImagePath': 'images/csw/ccje-csw.webp',
       'detailImagePath': 'images/csw/c-303.webp',
       'label': 'Room C-303',
       'detail': 'Detail about Room C-303'
     },
     {
-      'frontImagePath': 'images/csw/c-304.webp',
+      'frontImagePath': 'images/csw/ccje-csw.webp',
       'detailImagePath': 'images/csw/c-304.webp',
       'label': 'Room C-304',
       'detail': 'Detail about Room C-304'

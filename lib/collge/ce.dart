@@ -57,7 +57,7 @@ class CE extends StatelessWidget {
       'detail': 'Detail about Room 103'
     },
     {
-      'imagePath': 'images/ce/ce201.webp',
+      'imagePath': 'images/ce/ce2nd.webp',
       'label': 'Room 201',
       'detailImagePath': 'images/ce/ce201.webp',
       'detail': 'Detail about Room 201'

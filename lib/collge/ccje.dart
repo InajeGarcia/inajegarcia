@@ -9,18 +9,18 @@ class _CCjeState extends State<CCje> {
   String folder = '1st Floor';
 
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/ccje/firstfloor/ccje101.webp', 'label': 'CCJE 101'},
-    {'imagePath': 'images/ccje/firstfloor/ccje102.webp', 'label': 'CCJE 102'},
-    {'imagePath': 'images/ccje/firstfloor/ccje103.webp', 'label': 'CCJE 103'},
-    {'imagePath': 'images/ccje/firstfloor/ccje105.webp', 'label': 'CCJE 105'},
+    {'imagePath': 'images/ccje/ccje-csw.webp', 'label': 'CCJE 101'},
+    {'imagePath': 'images/ccje/ccje-csw.webp', 'label': 'CCJE 102'},
+    {'imagePath': 'images/ccje/ccje-csw.webp', 'label': 'CCJE 103'},
+    {'imagePath': 'images/ccje/ccje-csw.webp', 'label': 'CCJE 105'},
     {
-      'imagePath': 'images/ccje/cr/ccjecr1stf.webp',
+      'imagePath': 'images/ccje/ccje-csw.webp',
       'label': 'CR 1st Floor (Female)',
       'detailImagePath': 'images/ccje/cr/ccjecr1stf.webp',
       'detail': 'Detail about CR 1st Floor (Female)'
     },
     {
-      'imagePath': 'images/ccje/cr/ccjecr1stm.webp',
+      'imagePath': 'images/ccje/ccje-csw.webp',
       'label': 'CR 1st Floor (Male)',
       'detailImagePath': 'images/ccje/cr/ccjecr1stm.webp',
       'detail': 'Detail about CR 1st Floor (Male)'

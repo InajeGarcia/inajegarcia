@@ -3,31 +3,31 @@ import 'package:flutter/material.dart';
 class CAs extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {
-      'imagePath': 'images/cas/mml.webp',
+      'imagePath': 'images/cas/cas-ccit.webp',
       'label': 'MML',
       'detailImagePath': 'images/cas/mml.webp',
       'detail': 'Detail about MML',
     },
     {
-      'imagePath': 'images/cas/bha101.webp',
+      'imagePath': 'images/cas/cas-ccit.webp',
       'label': 'Room BHA 101',
       'detailImagePath': 'images/cas/bha101.webp',
       'detail': 'Detail about Room BHA 101',
     },
     {
-      'imagePath': 'images/cas/bha202.webp',
+      'imagePath': 'images/cas/cas-ccit.webp',
       'label': 'Room BHA 202',
       'detailImagePath': 'images/cas/bha202.webp',
       'detail': 'Detail about Room BHA 202',
     },
     {
-      'imagePath': 'images/cas/caselibrary.webp',
+      'imagePath': 'images/cas/cas-ccit.webp',
       'label': 'Case Library',
       'detailImagePath': 'images/cas/caselibrary.webp',
       'detail': 'Detail about Case Library',
     },
     {
-      'imagePath': 'images/cas/caslearning.webp',
+      'imagePath': 'images/cas/cas-ccit.webp',
       'label': 'Learning Room',
       'detailImagePath': 'images/cas/caslearning.webp',
       'detail': 'Detail about Learning Room',

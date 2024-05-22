@@ -101,7 +101,7 @@ class _CCjeState extends State<CCje> {
         folder == '1st Floor' ? firstFloorImages : secondFloorImages;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Available Rooms'),
+        title: Text('CCJE'),
       ),
       body: Column(
         children: [

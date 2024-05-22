@@ -45,7 +45,7 @@ class _CBaaState extends State<CBaa> {
     List<Map<String, String>> images = folder == 'old' ? oldImages : newImages;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Available Rooms'),
+        title: Text('CBAA'),
       ),
       body: Column(
         children: [

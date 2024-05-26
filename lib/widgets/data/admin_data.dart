@@ -314,6 +314,42 @@ List<Admin> admins = [
         'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
     color: Color.fromARGB(255, 255, 99, 17),
   ),
+  Admin(
+    id: 34,
+    name: 'Auditorium',
+    imageUrl: 'images/spot/library.webp',
+    imageUrl2: 'images/spot/library.webp',
+    description:
+        'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    color: Color.fromARGB(255, 255, 99, 17),
+  ),
+  Admin(
+    id: 35,
+    name: 'Printing Services Office',
+    imageUrl: 'images/spot/library.webp',
+    imageUrl2: 'images/spot/library.webp',
+    description:
+        'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    color: Color.fromARGB(255, 255, 99, 17),
+  ),
+  Admin(
+    id: 36,
+    name: 'Serial & Thesis Section',
+    imageUrl: 'images/spot/library.webp',
+    imageUrl2: 'images/spot/library.webp',
+    description:
+        'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    color: Color.fromARGB(255, 255, 99, 17),
+  ),
+  Admin(
+    id: 37,
+    name: 'Ilocano Studies',
+    imageUrl: 'images/ctech/ctechite.webp',
+    imageUrl2: 'images/ctech/ctechite.webp',
+    description:
+        'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+    color: Color.fromARGB(255, 255, 99, 17),
+  ),
 ];
 void main() {
   runApp(MyApp());

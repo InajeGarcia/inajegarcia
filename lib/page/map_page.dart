@@ -2076,7 +2076,7 @@ class _MapPageState extends State<MapPage> {
                       MaterialPageRoute(builder: (context) => VehiclePath()),
                     );
                   },
-                  child: const Icon(Icons.directions_outlined),
+                  child: const Icon(Icons.map_rounded),
                 ),
                 SizedBox(height: 8), // Specify the height here
                 /*Text(

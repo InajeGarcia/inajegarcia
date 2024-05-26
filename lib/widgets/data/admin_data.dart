@@ -347,7 +347,7 @@ List<Admin> admins = [
     imageUrl: 'images/ctech/ctechite.webp',
     imageUrl2: 'images/ctech/ctechite.webp',
     description:
-        'Upon entering the Administration Building, You will see the office of the Registrar on the second office to the right part.',
+        'Upon Entering the University, you can see the Ilocano studies in the old C-Tech/Ite.',
     color: Color.fromARGB(255, 255, 99, 17),
   ),
 ];

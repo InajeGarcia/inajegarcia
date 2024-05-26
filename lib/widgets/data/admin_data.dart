@@ -325,7 +325,7 @@ List<Admin> admins = [
   ),
   Admin(
     id: 35,
-    name: 'Printing Services Office',
+    name: 'Printing Services Office (PSO)',
     imageUrl: 'images/spot/library.webp',
     imageUrl2: 'images/spot/library.webp',
     description:

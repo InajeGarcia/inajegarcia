@@ -350,6 +350,15 @@ List<Admin> admins = [
         'Upon Entering the University, you can see the Ilocano studies in the old C-Tech/Ite.',
     color: Color.fromARGB(255, 255, 99, 17),
   ),
+  Admin(
+    id: 38,
+    name: 'Medical Services Office (MSO)',
+    imageUrl: 'images/spot/mso.webp',
+    imageUrl2: 'images/spot/mso.webp',
+    description:
+        'Upon Entering the University, you can see the Ilocano studies in the old C-Tech/Ite.',
+    color: Color.fromARGB(255, 255, 99, 17),
+  ),
 ];
 void main() {
   runApp(MyApp());

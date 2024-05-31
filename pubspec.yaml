@@ -97,6 +97,8 @@ flutter:
     - images/cbaa/new/
     - images/ccit/
     - images/ccje/
+    - images/ccje/firstfloor/
+    - images/ccje/secondfloor/
     - images/ccje/cr/
     - images/ce/
     - images/ce/cr/
@@ -111,7 +113,7 @@ flutter:
     - images/csw/
     - images/cte/
     - images/ctech/
-    #  - images/icon/iconhome.webp
+    - images/youarehere/
     #  - images/ls
     - images/newadmin/
     - images/pfp/

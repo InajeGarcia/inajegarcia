@@ -10,13 +10,13 @@ class CAs extends StatelessWidget {
     },
     {
       'imagePath': 'images/youarehere/cas/bha101.webp',
-      'label': 'Room BHA 101',
+      'label': 'BHA 101',
       'detailImagePath': 'images/cas/bha101.webp',
       'detail': 'Detail about Room BHA 101',
     },
     {
       'imagePath': 'images/youarehere/cas/bha202.webp',
-      'label': 'Room BHA 202',
+      'label': 'BHA 202',
       'detailImagePath': 'images/cas/bha202.webp',
       'detail': 'Detail about Room BHA 202',
     },

@@ -113,7 +113,17 @@ flutter:
     - images/csw/
     - images/cte/
     - images/ctech/
-    - images/youarehere/
+    - images/youarehere/cas/
+    - images/youarehere/ccje-csw/
+    - images/youarehere/ce/
+    - images/youarehere/chs-cn/
+    - images/youarehere/chtm/
+    - images/youarehere/ctefloorplans/
+    - images/youarehere/graduateschool/
+    - images/youarehere/it/
+    - images/youarehere/newcbaafloorplans/
+    - images/youarehere/old cte/
+    - images/youarehere/oldctechfloorplans/
     #  - images/ls
     - images/newadmin/
     - images/pfp/

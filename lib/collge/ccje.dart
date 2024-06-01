@@ -9,18 +9,38 @@ class _CCjeState extends State<CCje> {
   String folder = '1st Floor';
 
   final List<Map<String, String>> firstFloorImages = [
-    {'imagePath': 'images/ccje/ccje-csw.webp', 'label': 'CCJE 101'},
-    {'imagePath': 'images/ccje/ccje-csw.webp', 'label': 'CCJE 102'},
-    {'imagePath': 'images/ccje/ccje-csw.webp', 'label': 'CCJE 103'},
-    {'imagePath': 'images/ccje/ccje-csw.webp', 'label': 'CCJE 105'},
     {
-      'imagePath': 'images/ccje/ccje-csw.webp',
+      'imagePath': 'images/youarehere/ccje-csw/ccje101.webp',
+      'label': 'CCJE 101',
+      'detailImagePath': 'images/ccje/firstfloor/101.webp',
+      'detail': 'Detail about CR 1st Floor (Female)'
+    },
+    {
+      'imagePath': 'images/youarehere/ccje-csw/ccje102.webp',
+      'label': 'CCJE 102',
+      'detailImagePath': 'images/ccje/cr/ccjecr1stf.webp',
+      'detail': 'Detail about CR 1st Floor (Female)'
+    },
+    {
+      'imagePath': 'images/youarehere/ccje-csw/ccje103.webp',
+      'label': 'CCJE 103',
+      'detailImagePath': 'images/ccje/cr/ccjecr1stf.webp',
+      'detail': 'Detail about CR 1st Floor (Female)'
+    },
+    {
+      'imagePath': 'images/youarehere/ccje-csw/ccje105.webp',
+      'label': 'CCJE 105',
+      'detailImagePath': 'images/ccje/cr/ccjecr1stf.webp',
+      'detail': 'Detail about CR 1st Floor (Female)'
+    },
+    {
+      'imagePath': 'images/youarehere/ccje-csw/ccje101.webp',
       'label': 'CR 1st Floor (Female)',
       'detailImagePath': 'images/ccje/cr/ccjecr1stf.webp',
       'detail': 'Detail about CR 1st Floor (Female)'
     },
     {
-      'imagePath': 'images/ccje/ccje-csw.webp',
+      'imagePath': 'images/youarehere/ccje-csw/ccje101.webp',
       'label': 'CR 1st Floor (Male)',
       'detailImagePath': 'images/ccje/cr/ccjecr1stm.webp',
       'detail': 'Detail about CR 1st Floor (Male)'
@@ -28,49 +48,79 @@ class _CCjeState extends State<CCje> {
   ];
   final List<Map<String, String>> secondFloorImages = [
     {
-      'imagePath': 'images/ccje/secondfloor/forensicbalistics.webp',
+      'imagePath': 'images/youarehere/ccje-csw/forensicbalistics.webp',
       'label': 'Forensic Ballistics Room',
       'detailImagePath': 'images/ccje/secondfloor/forensicbalistics.webp',
       'detail': 'Detail about Forensic Ballistics Room'
     },
     {
-      'imagePath': 'images/ccje/secondfloor/forensicroom.webp',
+      'imagePath': 'images/youarehere/ccje-csw/forensicroom.webp',
       'label': 'Forensic Room',
       'detailImagePath': 'images/ccje/secondfloor/forensicroom.webp',
       'detail': 'Detail about Forensic Room'
     },
     {
-      'imagePath': 'images/ccje/secondfloor/ccjelibrary.webp',
+      'imagePath': 'images/youarehere/ccje-csw/ccjelibrary.webp',
       'label': 'Library',
       'detailImagePath': 'images/ccje/secondfloor/ccjelibrary.webp',
       'detail': 'Detail about Library'
     },
     {
-      'imagePath': 'images/ccje/secondfloor/polygraphyroom.webp',
+      'imagePath': 'images/youarehere/ccje-csw/polygraphyroom.webp',
       'label': 'Polygraphy Room',
       'detailImagePath': 'images/ccje/secondfloor/polygraphyroom.webp',
       'detail': 'Detail about Polygraphy Room'
     },
     {
-      'imagePath': 'images/ccje/secondfloor/questioneddocument.webp',
+      'imagePath': 'images/youarehere/ccje-csw/questioneddocument.webp',
       'label': 'Questioned Document Room',
       'detailImagePath': 'images/ccje/secondfloor/questioneddocument.webp',
       'detail': 'Detail about Questioned Document Room'
     },
-    {'imagePath': 'images/ccje/secondfloor/ccje201.webp', 'label': 'Room 201'},
-    {'imagePath': 'images/ccje/secondfloor/ccje202.webp', 'label': 'Room 202'},
-    {'imagePath': 'images/ccje/secondfloor/ccje203.webp', 'label': 'Room 203'},
-    {'imagePath': 'images/ccje/secondfloor/ccje204.webp', 'label': 'Room 204'},
-    {'imagePath': 'images/ccje/secondfloor/ccje205.webp', 'label': 'Room 205'},
-    {'imagePath': 'images/ccje/secondfloor/ccje206.webp', 'label': 'Room 206'},
     {
-      'imagePath': 'images/ccje/cr/ccjecr2ndf.webp',
+      'imagePath': 'images/youarehere/ccje-csw/ccje201.webp',
+      'label': 'Room 201',
+      'detailImagePath': 'images/ccje/cr/ccjecr1stf.webp',
+      'detail': 'Detail about CR 1st Floor (Female)'
+    },
+    {
+      'imagePath': 'images/youarehere/ccje-csw/ccje202.webp',
+      'label': 'Room 202',
+      'detailImagePath': 'images/ccje/cr/ccjecr1stf.webp',
+      'detail': 'Detail about CR 1st Floor (Female)'
+    },
+    {
+      'imagePath': 'images/youarehere/ccje-csw/ccje203.webp',
+      'label': 'Room 203',
+      'detailImagePath': 'images/ccje/cr/ccjecr1stf.webp',
+      'detail': 'Detail about CR 1st Floor (Female)'
+    },
+    {
+      'imagePath': 'images/youarehere/ccje-csw/ccje204.webp',
+      'label': 'Room 204',
+      'detailImagePath': 'images/ccje/cr/ccjecr1stf.webp',
+      'detail': 'Detail about CR 1st Floor (Female)'
+    },
+    {
+      'imagePath': 'images/youarehere/ccje-csw/ccje205.webp',
+      'label': 'Room 205',
+      'detailImagePath': 'images/ccje/cr/ccjecr1stf.webp',
+      'detail': 'Detail about CR 1st Floor (Female)'
+    },
+    {
+      'imagePath': 'images/youarehere/ccje-csw/ccje206.webp',
+      'label': 'Room 206',
+      'detailImagePath': 'images/ccje/cr/ccjecr1stf.webp',
+      'detail': 'Detail about CR 1st Floor (Female)'
+    },
+    {
+      'imagePath': 'images/youarehere/ccje-csw/ccje201.webp',
       'label': 'CR 2nd Floor (Female)',
       'detailImagePath': 'images/ccje/cr/ccjecr2ndf.webp',
       'detail': 'Detail about CR 2nd Floor (Female)'
     },
     {
-      'imagePath': 'images/ccje/cr/ccjecr2ndm.webp',
+      'imagePath': 'images/youarehere/ccje-csw/ccje201.webp',
       'label': 'CR 2nd Floor (Male)',
       'detailImagePath': 'images/ccje/cr/ccjecr2ndm.webp',
       'detail': 'Detail about CR 2nd Floor (Male)'

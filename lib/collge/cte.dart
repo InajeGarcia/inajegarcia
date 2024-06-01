@@ -3,88 +3,118 @@ import 'package:flutter/material.dart';
 class CTe extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {
-      'frontImagePath': 'images/cte/cte201.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/201.webp',
       'detailImagePath': 'images/cte/cte201.webp',
       'label': 'Room 201',
       'detail': 'Detail about Room 201'
     },
     {
-      'frontImagePath': 'images/cte/cte202.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/202.webp',
       'detailImagePath': 'images/cte/cte202.webp',
       'label': 'Room 202',
       'detail': 'Detail about Room 202'
     },
     {
-      'frontImagePath': 'images/cte/cte203.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/203.webp',
       'detailImagePath': 'images/cte/cte203.webp',
       'label': 'Room 203',
       'detail': 'Detail about Room 203'
     },
     {
-      'frontImagePath': 'images/cte/cte204.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/204.webp',
       'detailImagePath': 'images/cte/cte204.webp',
       'label': 'Room 204',
       'detail': 'Detail about Room 204'
     },
     {
-      'frontImagePath': 'images/cte/cte205.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/205.webp',
       'detailImagePath': 'images/cte/cte205.webp',
       'label': 'Room 205',
       'detail': 'Detail about Room 205'
     },
     {
-      'frontImagePath': 'images/cte/cte206.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/206.webp',
       'detailImagePath': 'images/cte/cte206.webp',
       'label': 'Room 206',
       'detail': 'Detail about Room 206'
     },
     {
-      'frontImagePath': 'images/cte/cte207.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/207.webp',
       'detailImagePath': 'images/cte/cte207.webp',
       'label': 'Room 207',
       'detail': 'Detail about Room 207'
     },
     {
-      'frontImagePath': 'images/cte/cte301.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/301.webp',
       'detailImagePath': 'images/cte/cte301.webp',
       'label': 'Room 301',
       'detail': 'Detail about Room 301'
     },
     {
-      'frontImagePath': 'images/cte/cte302.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/302.webp',
       'detailImagePath': 'images/cte/cte302.webp',
       'label': 'Room 302',
       'detail': 'Detail about Room 302'
     },
     {
-      'frontImagePath': 'images/cte/cte303.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/303.webp',
       'detailImagePath': 'images/cte/cte303.webp',
       'label': 'Room 303',
       'detail': 'Detail about Room 303'
     },
     {
-      'frontImagePath': 'images/cte/cte304.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/304.webp',
       'detailImagePath': 'images/cte/cte304.webp',
       'label': 'Room 304',
       'detail': 'Detail about Room 304'
     },
     {
-      'frontImagePath': 'images/cte/cte305.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/305.webp',
       'detailImagePath': 'images/cte/cte305.webp',
       'label': 'Room 305',
       'detail': 'Detail about Room 305'
     },
     {
-      'frontImagePath': 'images/cte/cte306.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/306.webp',
       'detailImagePath': 'images/cte/cte306.webp',
       'label': 'Room 306',
       'detail': 'Detail about Room 306'
     },
     {
-      'frontImagePath': 'images/cte/cte307.webp',
+      'frontImagePath': 'images/youarehere/ctefloorplans/307.webp',
       'detailImagePath': 'images/cte/cte307.webp',
       'label': 'Room 307',
       'detail': 'Detail about Room 307'
+    },
+    {
+      'frontImagePath': 'images/youarehere/ctefloorplans/403.webp',
+      'detailImagePath': 'images/cte/cte403.webp',
+      'label': 'Room 403',
+      'detail': 'Detail about Room 403'
+    },
+    {
+      'frontImagePath': 'images/youarehere/ctefloorplans/404.webp',
+      'detailImagePath': 'images/cte/cte404.webp',
+      'label': 'Room 404',
+      'detail': 'Detail about Room 404'
+    },
+    {
+      'frontImagePath': 'images/youarehere/ctefloorplans/405.webp',
+      'detailImagePath': 'images/cte/cte405.webp',
+      'label': 'Room 405',
+      'detail': 'Detail about Room 405'
+    },
+    {
+      'frontImagePath': 'images/youarehere/ctefloorplans/406.webp',
+      'detailImagePath': 'images/cte/cte406.webp',
+      'label': 'Room 406',
+      'detail': 'Detail about Room 406'
+    },
+    {
+      'frontImagePath': 'images/youarehere/ctefloorplans/407.webp',
+      'detailImagePath': 'images/cte/cte407.webp',
+      'label': 'Room 407',
+      'detail': 'Detail about Room 407'
     },
     // Add more images with front and detail image paths
   ];

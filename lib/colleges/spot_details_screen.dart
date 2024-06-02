@@ -185,13 +185,6 @@ class SpotDetailPage extends StatelessWidget {
                                   builder: (context) => Chapel(),
                                 ),
                               );
-                            } else if (spot.name == 'Elementary') {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Elementary(),
-                                ),
-                              );
                             } else if (spot.name == 'Founders Plaza') {
                               Navigator.push(
                                 context,

@@ -184,8 +184,8 @@ List<Spot> spots = [
   Spot(
     id: 19,
     name: 'Mens Dormitory',
-    imageUrl: 'images/spot/ladiesdorm.webp',
-    imageUrl2: 'images/spot/ladiesdorm.webp',
+    imageUrl: 'images/cpad/cpadbuilding.webp',
+    imageUrl2: 'images/cpad/cpadbuilding.webp',
     description:
         "The men's dormitory at our university offers a comfortable and supportive living environment for male students. With spacious rooms, modern amenities, and a welcoming atmosphere, our dormitory provides a home away from home for students. Conveniently located on campus, the dormitory offers easy access to academic buildings, dining facilities, and recreational areas. Our dedicated resident assistants and staff are available to provide support and assistance to ensure that students have a positive and enriching experience during their time in residence. Whether studying together, participating in dormitory events, or forming lifelong friendships, the men's dormitory is a vibrant community where students can thrive both academically and personally.",
     color: Color.fromARGB(255, 255, 99, 17),
@@ -255,15 +255,6 @@ List<Spot> spots = [
   ),
   Spot(
     id: 27,
-    name: 'Elementary',
-    imageUrl: 'images/spot/hostel.webp',
-    imageUrl2: 'images/spot/hostel.webp',
-    description:
-        "The university elementary school is dedicated to providing a nurturing and stimulating learning environment for young students. With a focus on academic excellence, social development, and creative exploration, our school offers a comprehensive and engaging curriculum that prepares students for future success. Our dedicated faculty and staff are committed to providing personalized attention and support to each child, fostering a love of learning and a sense of curiosity. With small class sizes, modern facilities, and innovative teaching methods, we create a dynamic and inclusive learning community where every child can thrive. From the classroom to the playground, the university elementary school is where young minds grow, discover, and achieve their full potential.",
-    color: Color.fromARGB(255, 255, 99, 17),
-  ),
-  Spot(
-    id: 28,
     name: 'Iconic Tower',
     imageUrl: 'images/spot/tower.webp',
     imageUrl2: 'images/spot/tower.webp',

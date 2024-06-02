@@ -395,8 +395,8 @@ List<Admin> admins = [
   Admin(
     id: 43,
     name: 'Infrastructure Project Management & Development Office (IPMDO)',
-    imageUrl: 'images/spot/sc.webp',
-    imageUrl2: 'images/spot/sc.webp',
+    imageUrl: 'images/cas/casbuilding.webp',
+    imageUrl2: 'images//cas/casbuilding.webp',
     description: '',
     color: Color.fromARGB(255, 255, 99, 17),
   ),
@@ -539,6 +539,60 @@ List<Admin> admins = [
     name: 'Sports, Culture & the Arts Programs',
     imageUrl: 'images/spot/sc.webp',
     imageUrl2: 'images/spot/sc.webp',
+    description:
+        'Upon Entering the University, you can see the Ilocano studies in the old C-Tech/Ite.',
+    color: Color.fromARGB(255, 255, 99, 17),
+  ),
+  Admin(
+    id: 61,
+    name: 'Mushroom Research and Development Center',
+    imageUrl: 'images/spot/admin.webp',
+    imageUrl2: 'images/spot/admin.webp',
+    description:
+        'Upon Entering the University, you can see the Ilocano studies in the old C-Tech/Ite.',
+    color: Color.fromARGB(255, 255, 99, 17),
+  ),
+  Admin(
+    id: 62,
+    name: 'Mushroom Research and Development Center',
+    imageUrl: 'images/spot/admin.webp',
+    imageUrl2: 'images/spot/admin.webp',
+    description:
+        'Upon Entering the University, you can see the Ilocano studies in the old C-Tech/Ite.',
+    color: Color.fromARGB(255, 255, 99, 17),
+  ),
+  Admin(
+    id: 63,
+    name: 'Aqua Marine Resources and Development Center',
+    imageUrl: 'images/spot/admin.webp',
+    imageUrl2: 'images/spot/admin.webp',
+    description:
+        'Upon Entering the University, you can see the Ilocano studies in the old C-Tech/Ite.',
+    color: Color.fromARGB(255, 255, 99, 17),
+  ),
+  Admin(
+    id: 64,
+    name: 'Governance and Policy Research Center',
+    imageUrl: 'images/cpad/cpadbuilding.webp',
+    imageUrl2: 'images/cpad/gprc.webp',
+    description:
+        'Upon Entering the University, you can see the Ilocano studies in the old C-Tech/Ite.',
+    color: Color.fromARGB(255, 255, 99, 17),
+  ),
+  Admin(
+    id: 65,
+    name: 'Intellectual Property Office',
+    imageUrl: 'images/spot/admin.webp',
+    imageUrl2: 'images/spot/admin.webp',
+    description:
+        'Upon Entering the University, you can see the Ilocano studies in the old C-Tech/Ite.',
+    color: Color.fromARGB(255, 255, 99, 17),
+  ),
+  Admin(
+    id: 66,
+    name: 'IT Quality Services',
+    imageUrl: 'images/spot/admin.webp',
+    imageUrl2: 'images/spot/admin.webp',
     description:
         'Upon Entering the University, you can see the Ilocano studies in the old C-Tech/Ite.',
     color: Color.fromARGB(255, 255, 99, 17),

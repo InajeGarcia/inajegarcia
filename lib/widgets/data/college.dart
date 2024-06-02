@@ -73,7 +73,7 @@ List<College> colleges = [
         "Welcome to the College of Engineering (CE), where innovation fuels progress and imagination transforms into reality. As a leading institution in engineering education, CE offers a diverse range of programs designed to equip students with the knowledge and skills needed to tackle the world's most pressing challenges. From civil and mechanical engineering to electrical and computer engineering, our curriculum blends theory with hands-on experience, preparing graduates to excel in their chosen fields. At CE, we foster a culture of collaboration, creativity, and ethical responsibility, empowering our students to become visionary leaders and problem solvers in a rapidly changing world. Join us as we engineer solutions that shape the future and make a lasting impact on society. Welcome to CE, where your journey to engineering excellence begins.",
     color: Color.fromARGB(255, 201, 68, 15),
   ),
-  College(
+  /*College(
     id: 7,
     name: 'College of Fine Arts and Design',
     imageUrl: 'images/clogo/cfad.webp',
@@ -81,7 +81,7 @@ List<College> colleges = [
     description:
         "Welcome to the College of Fine Arts and Designs (CFad), where innovation fuels progress and imagination transforms into reality. As a leading institution in engineering education, CE offers a diverse range of programs designed to equip students with the knowledge and skills needed to tackle the world's most pressing challenges. From civil and mechanical engineering to electrical and computer engineering, our curriculum blends theory with hands-on experience, preparing graduates to excel in their chosen fields. At CE, we foster a culture of collaboration, creativity, and ethical responsibility, empowering our students to become visionary leaders and problem solvers in a rapidly changing world. Join us as we engineer solutions that shape the future and make a lasting impact on society. Welcome to CE, where your journey to engineering excellence begins.",
     color: Color.fromARGB(255, 201, 68, 15),
-  ),
+  ),*/
   College(
     id: 8,
     name: 'College of Health and Sciences',

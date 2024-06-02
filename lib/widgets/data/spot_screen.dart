@@ -211,8 +211,8 @@ List<Spot> spots = [
   Spot(
     id: 22,
     name: 'Motorpool',
-    imageUrl: 'images/spot/gym.webp',
-    imageUrl2: 'images/spot/gym.webp',
+    imageUrl: 'images/cmed/cmedbuilding.webp',
+    imageUrl2: 'images/cmed/cmedbuilding.webp',
     description:
         "The university motorpool is a vital resource for our campus community, providing reliable transportation options for faculty, staff, and students. From maintenance and repairs to vehicle rentals and shuttle services, the motorpool ensures that our transportation needs are met safely and efficiently. With a fleet of well-maintained vehicles and dedicated staff, we strive to provide convenient and accessible transportation solutions for all members of the university community. Whether it's getting to and from campus, attending off-site meetings, or participating in university events, the motorpool is here to support our transportation needs and enhance our campus experience.",
     color: Color.fromARGB(255, 255, 99, 17),

@@ -3,31 +3,74 @@ import 'package:flutter/material.dart';
 class CHs extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {
-      'frontImagePath': 'images/chs/chs505.webp',
+      'frontImagePath': 'images/youarehere/chs-cn/505a.webp',
       'detailImagePath': 'images/chs/chs505.webp',
       'label': 'Room 505',
       'detail': 'Detail about Room 505'
     },
     {
-      'frontImagePath': 'images/chs/chs506.webp',
-      'detailImagePath': 'images/chs/chs506.webp',
+      'frontImagePath': 'images/youarehere/chs-cn/505b.webp',
+      'detailImagePath': 'images/chs/chs505.webp',
+      'label': 'Room 505',
+      'detail': 'Detail about Room 505'
+    },
+    {
+      'frontImagePath': 'images/youarehere/chs-cn/507.webp',
+      'detailImagePath': 'images/chs/chs505.webp',
       'label': 'Room 506',
       'detail': 'Detail about Room 506'
     },
     {
-      'frontImagePath': 'images/chs/chs507.webp',
+      'frontImagePath': 'images/youarehere/chs-cn/507.webp',
       'detailImagePath': 'images/chs/chs507.webp',
       'label': 'Room 507',
       'detail': 'Detail about Room 507'
     },
     {
-      'frontImagePath': 'images/chs/biologicalsciencelaboratory.webp',
+      'frontImagePath': 'images/youarehere/chs-cn/201.webp',
+      'detailImagePath': 'images/youarehere/chs-cn/201.webp',
+      'label': 'Room 201',
+      'detail': 'Detail about Room 201'
+    },
+    {
+      'frontImagePath': 'images/youarehere/chs-cn/202.webp',
+      'detailImagePath': 'images/youarehere/chs-cn/202.webp',
+      'label': 'Room 202',
+      'detail': 'Detail about Room 202'
+    },
+    {
+      'frontImagePath': 'images/youarehere/chs-cn/203.webp',
+      'detailImagePath': 'images/youarehere/chs-cn/203.webp',
+      'label': 'Room 203',
+      'detail': 'Detail about Room 203'
+    },
+    {
+      'frontImagePath': 'images/youarehere/chs-cn/204.webp',
+      'detailImagePath': 'images/youarehere/chs-cn/204.webp',
+      'label': 'Room 204',
+      'detail': 'Detail about Room 204'
+    },
+
+    {
+      'frontImagePath': 'images/youarehere/chs-cn/205.webp',
+      'detailImagePath': 'images/youarehere/chs-cn/205.webp',
+      'label': 'Room 205',
+      'detail': 'Detail about Room 205'
+    },
+    {
+      'frontImagePath': 'images/youarehere/chs-cn/206.webp',
+      'detailImagePath': 'images/youarehere/chs-cn/206.webp',
+      'label': 'Room 206',
+      'detail': 'Detail about Room 206'
+    },
+    {
+      'frontImagePath': 'images/youarehere/chs-cn/accreditationroom.webp',
       'detailImagePath': 'images/chs/biologicalsciencelaboratory.webp',
       'label': 'Biological Science Laboratory',
       'detail': 'Detail about the Biological Science Laboratory'
     },
     {
-      'frontImagePath': 'images/chs/chsoffice.webp',
+      'frontImagePath': 'images/youarehere/chs-cn/chsfaculty.webp',
       'detailImagePath': 'images/chs/chsoffice.webp',
       'label': 'CHS Office',
       'detail': 'Detail about the CHS Office'

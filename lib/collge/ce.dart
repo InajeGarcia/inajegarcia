@@ -3,61 +3,73 @@ import 'package:flutter/material.dart';
 class CE extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {
-      'imagePath': 'images/ce/cedean.webp',
+      'imagePath': 'images/youarehere/ce/edsa.webp',
+      'label': 'EDSA',
+      'detailImagePath': 'images/youarehere/ce/edsa.webp',
+      'detail': 'Detail about EDSA'
+    },
+    {
+      'imagePath': 'images/youarehere/ce/researchex.webp',
+      'label': 'Dean\'s Office',
+      'detailImagePath': 'images/youarehere/ce/researchex.webp',
+      'detail': 'Detail about Dean\'s Office'
+    },
+    {
+      'imagePath': 'images/youarehere/ce/deansoffice.webp',
       'label': 'Dean\'s Office',
       'detailImagePath': 'images/ce/cedean.webp',
       'detail': 'Detail about Dean\'s Office'
     },
     {
-      'imagePath': 'images/ce/cefacultyroom.webp',
+      'imagePath': 'images/youarehere/ce/faculty.webp',
       'label': 'Faculty Room',
       'detailImagePath': 'images/ce/cefacultyroom.webp',
       'detail': 'Detail about Faculty Room'
     },
     {
-      'imagePath': 'images/ce/cehydraulicslaboratory.webp',
+      'imagePath': 'images/youarehere/carch/carchhydraulics.webp',
       'label': 'Hydraulics Laboratory',
       'detailImagePath': 'images/ce/cehydraulicslaboratory.webp',
       'detail': 'Detail about Hydraulics Laboratory'
     },
     {
-      'imagePath': 'images/ce/celaboratory.webp',
+      'imagePath': 'images/youarehere/carch/carchlaboffice.webp',
       'label': 'CE Laboratory',
       'detailImagePath': 'images/ce/celaboratory.webp',
       'detail': 'Detail about CE Laboratory'
     },
     {
-      'imagePath': 'images/ce/celibrary.webp',
+      'imagePath': 'images/youarehere/carch/carchlibrary.webp',
       'label': 'CE Library',
       'detailImagePath': 'images/ce/celibrary.webp',
       'detail': 'Detail about CE Library'
     },
     {
-      'imagePath': 'images/ce/cematerials.webp',
+      'imagePath': 'images/youarehere/carch/carchmats&soil.webp',
       'label': 'Materials Room',
       'detailImagePath': 'images/ce/cematerials.webp',
       'detail': 'Detail about Materials Room'
     },
     {
-      'imagePath': 'images/ce/ce101.webp',
+      'imagePath': 'images/youarehere/ce/101.webp',
       'label': 'Room 101',
       'detailImagePath': 'images/ce/ce101.webp',
       'detail': 'Detail about Room 101'
     },
     {
-      'imagePath': 'images/ce/ce102.webp',
+      'imagePath': 'images/youarehere/ce/102.webp',
       'label': 'Room 102',
       'detailImagePath': 'images/ce/ce102.webp',
       'detail': 'Detail about Room 102'
     },
     {
-      'imagePath': 'images/ce/ce103.webp',
+      'imagePath': 'images/youarehere/ce/103.webp',
       'label': 'Room 103',
       'detailImagePath': 'images/ce/ce103.webp',
       'detail': 'Detail about Room 103'
     },
     {
-      'imagePath': 'images/ce/ce2nd.webp',
+      'imagePath': 'images/youarehere/ce/201.webp',
       'label': 'Room 201',
       'detailImagePath': 'images/ce/ce201.webp',
       'detail': 'Detail about Room 201'

@@ -8,6 +8,55 @@ class OU extends StatelessWidget {
       'label': 'OU Room',
       'detail': 'Detail about Ipil Room'
     },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/ipil.webp',
+      'detailImagePath': 'images/cpad/ipil.webp',
+      'label': 'Ipil Room',
+      'detail': 'Detail about Ipil Room'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/guijo.webp',
+      'detailImagePath': 'images/cpad/guijo.webp',
+      'label': 'Guijo Room',
+      'detail': 'Detail about Guijo Room'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/narra.webp',
+      'detailImagePath': 'images/cpad/narra.webp',
+      'label': 'Narra Room',
+      'detail': 'Detail about Narra Room'
+    },
+    {
+      'frontImagePath':
+          'images/youarehere/graduateschool/accreditationroom.webp',
+      'detailImagePath': 'images/cpad/cpadaccreditationrooom.webp',
+      'label': 'Accreditation Room',
+      'detail': 'Detail about Accreditation Room'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/resourceroom.webp',
+      'detailImagePath': 'images/cpad/cpadresourcecenter.webp',
+      'label': 'Resource Center',
+      'detail': 'Detail about Resource Center'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/passoffice.webp',
+      'detailImagePath': 'images/cpad/passoffice.webp',
+      'label': 'Pass Office',
+      'detail': 'Detail about Pass Office'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/storeroom.webp',
+      'detailImagePath': 'images/cpad/cpadstoreroom.webp',
+      'label': 'Store Room',
+      'detail': 'Detail about Store Room'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/storeroom.webp',
+      'detailImagePath': 'images/cpad/cpadcr.webp',
+      'label': 'Comfort Room',
+      'detail': 'Detail about Comfort Room'
+    },
 
     // Add more images with front and detail image paths
   ];

@@ -3,48 +3,59 @@ import 'package:flutter/material.dart';
 class CHtm extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {
-      'frontImagePath': 'images/chtm/chtm201.webp',
+      'frontImagePath': 'images/youarehere/chtm/chtm201.webp',
       'detailImagePath': 'images/chtm/chtm201.webp',
       'label': 'Room 201',
       'detail': 'Detail about Room 201'
     },
     {
-      'frontImagePath': 'images/chtm/chtm202.webp',
+      'frontImagePath': 'images/youarehere/chtm/chtm202.webp',
       'detailImagePath': 'images/chtm/chtm202.webp',
       'label': 'Room 202',
       'detail': 'Detail about Room 202'
     },
     {
-      'frontImagePath': 'images/chtm/chtm301.webp',
+      'frontImagePath': 'images/youarehere/chtm/chtm204.webp',
       'detailImagePath': 'images/chtm/chtm301.webp',
       'label': 'Room 301',
       'detail': 'Detail about Room 301'
     },
     {
-      'frontImagePath': 'images/chtm/chtmcr.webp',
+      'frontImagePath': 'images/youarehere/chtm/chtmlibrary.webp',
       'detailImagePath': 'images/chtm/chtmcr.webp',
       'label': 'CR',
       'detail': 'Detail about the CR'
     },
     {
-      'frontImagePath': 'images/chtm/chtmcr2.webp',
+      'frontImagePath': 'images/youarehere/chtm/chtmlibrary.webp',
       'detailImagePath': 'images/chtm/chtmcr2.webp',
-      'label': 'CR 2',
-      'detail': 'Detail about CR 2'
+      'label': 'Library',
+      'detail': 'Detail about Library'
     },
     {
-      'frontImagePath': 'images/chtm/chtmfacultyroom.webp',
+      'frontImagePath': 'images/youarehere/chtm/chtmfaculty.webp',
       'detailImagePath': 'images/chtm/chtmfacultyroom.webp',
       'label': 'Faculty Room',
       'detail': 'Detail about the Faculty Room'
     },
     {
-      'frontImagePath': 'images/chtm/shatsoffice.webp',
+      'frontImagePath': 'images/youarehere/chtm/chtmfaculty.webp',
       'detailImagePath': 'images/chtm/shatsoffice.webp',
       'label': 'SHATs Office',
       'detail': 'Detail about SHATs Office'
     },
-    // Add more images with front and detail image paths
+    {
+      'frontImagePath': 'images/youarehere/chtm/chtm201.webp',
+      'detailImagePath': 'images/chtm/chtm201.webp',
+      'label': 'Room 201',
+      'detail': 'Detail about Room 201'
+    },
+    {
+      'frontImagePath': 'images/youarehere/chtm/chtmdeansoffice.webp',
+      'detailImagePath': 'images/youarehere/chtm/chtmdeansoffice.webp',
+      'label': 'Dean\'s Office',
+      'detail': 'Detail about Dean\'s Office'
+    },
   ];
 
   @override

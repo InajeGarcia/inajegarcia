@@ -124,7 +124,8 @@ flutter:
     - images/youarehere/newcbaafloorplans/
     - images/youarehere/old cte/
     - images/youarehere/oldctechfloorplans/
-    #  - images/ls
+    - images/youarehere/cmed/
+    - images/youarehere/carch/
     - images/newadmin/
     - images/pfp/
     - images/scicomplex/

@@ -3,40 +3,72 @@ import 'package:flutter/material.dart';
 class CLaw extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {
-      'frontImagePath': 'images/claw/cpad-claw-ou1st.webp',
+      'frontImagePath': 'images/youarehere/graduateschool/lawlibrary.webp',
       'detailImagePath': 'images/claw/clawlibrary.webp',
       'label': 'Law Library',
       'detail': 'Detail about the Law Library'
     },
     {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
-      'detailImagePath': 'images/cpad/guijo.webp',
-      'label': 'Guijo Room',
-      'detail': 'Detail about the Guijo Room'
-    },
-    {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
-      'detailImagePath': 'images/cpad/ipil.webp',
-      'label': 'Ipil Room',
-      'detail': 'Detail about the Ipil Room'
-    },
-    {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
+      'frontImagePath': 'images/youarehere/graduateschool/molave.webp',
       'detailImagePath': 'images/cpad/molave.webp',
       'label': 'Molave Room',
       'detail': 'Detail about the Molave Room'
     },
     {
-      'frontImagePath': 'images/cpad/cpad-claw-ou2nd.webp',
-      'detailImagePath': 'images/cpad/cpadaccreditationroom.webp',
-      'label': 'Accreditation Room',
-      'detail': 'Detail about the Accreditation Room'
-    },
-    {
-      'frontImagePath': 'images/cpad/cpad-claw-ou1st.webp',
+      'frontImagePath': 'images/youarehere/graduateschool/graduateschool.webp',
       'detailImagePath': 'images/cpad/graduatestudies.webp',
       'label': 'Graduate Studies',
       'detail': 'Detail about the Graduate Studies'
+    },
+    //////////////////////////////////////////////////
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/ipil.webp',
+      'detailImagePath': 'images/cpad/ipil.webp',
+      'label': 'Ipil Room',
+      'detail': 'Detail about Ipil Room'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/guijo.webp',
+      'detailImagePath': 'images/cpad/guijo.webp',
+      'label': 'Guijo Room',
+      'detail': 'Detail about Guijo Room'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/narra.webp',
+      'detailImagePath': 'images/cpad/narra.webp',
+      'label': 'Narra Room',
+      'detail': 'Detail about Narra Room'
+    },
+    {
+      'frontImagePath':
+          'images/youarehere/graduateschool/accreditationroom.webp',
+      'detailImagePath': 'images/cpad/cpadaccreditationrooom.webp',
+      'label': 'Accreditation Room',
+      'detail': 'Detail about Accreditation Room'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/resourceroom.webp',
+      'detailImagePath': 'images/cpad/cpadresourcecenter.webp',
+      'label': 'Resource Center',
+      'detail': 'Detail about Resource Center'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/passoffice.webp',
+      'detailImagePath': 'images/cpad/passoffice.webp',
+      'label': 'Pass Office',
+      'detail': 'Detail about Pass Office'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/storeroom.webp',
+      'detailImagePath': 'images/cpad/cpadstoreroom.webp',
+      'label': 'Store Room',
+      'detail': 'Detail about Store Room'
+    },
+    {
+      'frontImagePath': 'images/youarehere/graduateschool/storeroom.webp',
+      'detailImagePath': 'images/cpad/cpadcr.webp',
+      'label': 'Comfort Room',
+      'detail': 'Detail about Comfort Room'
     },
     // Add more images with front and detail image paths
   ];

@@ -3,26 +3,32 @@ import 'package:flutter/material.dart';
 class CArch extends StatelessWidget {
   final List<Map<String, String>> firstFloorImages = [
     {
-      'imagePath': 'images/carch/archi2nd.webp',
+      'imagePath': 'images/youarehere/carch/101.webp',
       'label': 'Room C-301',
       'detailImagePath': 'images/csw/c-301.webp',
       'detail': 'Detail about Room C-301'
     },
     {
-      'imagePath': 'images/carch/archi2nd.webp',
+      'imagePath': 'images/youarehere/carch/201.webp',
       'label': 'Room C-302',
       'detailImagePath': 'images/csw/c-302.webp',
       'detail': 'Detail about Room C-302'
     },
     {
-      'imagePath': 'images/carch/archi2nd.webp',
-      'label': 'Room C-303',
+      'imagePath': 'images/youarehere/carch/deansoffice.webp',
+      'label': 'Dean\'s Office',
       'detailImagePath': 'images/csw/c-303.webp',
-      'detail': 'Detail about Room C-303'
+      'detail': 'Detail about Dean\'s Office'
     },
     {
-      'imagePath': 'images/carch/archi2nd.webp',
-      'label': 'Room C-304',
+      'imagePath': 'images/youarehere/carch/203.webp',
+      'label': 'Room 203',
+      'detailImagePath': 'images/csw/c-304.webp',
+      'detail': 'Detail about Room C-304'
+    },
+    {
+      'imagePath': 'images/youarehere/carch/203.webp',
+      'label': 'Room 203',
       'detailImagePath': 'images/csw/c-304.webp',
       'detail': 'Detail about Room C-304'
     },

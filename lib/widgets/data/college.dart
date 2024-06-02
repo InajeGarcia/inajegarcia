@@ -163,9 +163,9 @@ List<College> colleges = [
   ),
   College(
     id: 17,
-    name: 'Laboratory School (LS)',
+    name: 'Laboratory School',
     imageUrl: 'images/clogo/ls.webp',
-    imageUrl2: 'images/cpad/ctebuilding.webp',
+    imageUrl2: 'images/cte/ctebuilding.webp',
     description:
         "Welcome to Laboratory School(LS), where innovation drives progress and technology transforms the world. As a leading institution in technology education, CTech offers dynamic programs that prepare students for success in the rapidly evolving tech industry. From computer science and engineering to information technology and cybersecurity, our curriculum combines theoretical knowledge with hands-on experience, ensuring graduates are equipped with the skills and expertise needed to thrive in their chosen fields. Our faculty, comprised of experienced professionals and scholars, mentor students to become creative problem solvers and leaders in technology innovation. At CTech, we emphasize collaboration, critical thinking, and cutting-edge research, empowering our graduates to make meaningful contributions to society through the application of technology. Join us as we explore the frontiers of technology, push the boundaries of innovation, and shape the future of the digital world. Welcome to CTech, where your journey to a tech-driven future begins.",
     color: Color.fromARGB(255, 18, 97, 67),
